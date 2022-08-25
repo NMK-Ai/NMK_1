@@ -1843,27 +1843,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2295"/>
         <source>AutoRES Option</source>
-        <translation>자동RES 옵션</translation>
+        <translation>خيار الدقة التلقائية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2295"/>
         <source>Sets the auto RES option. 1. Adjust the temporary cruise speed, 2. Adjust the set speed itself according to the presence or absence of a preceding car. 3. Adjust the cruise speed if there is a preceding car, and adjust the set speed if there is no preceding car. Please note that the automatic RES may not work well depending on the conditions.</source>
-        <translation>자동 RES 옵션을 설정합니다. 1. 크루즈속도조정: 설정속도는 그대로 두고 크루즈 속도만 현재속도보다 조금 높게 재 설정합니다., 2. 설정속도조정: 설정(MAX)속도를 현재속도로 조정하여 설정합니다., 3. 자동(선행차): 선행차가 있으면 크루즈속도를 조정하고, 선행차가 없으면 설정속도를 조정합니다. 조건에 따라 자동 RES가 잘 작동하지 않을 수 있으니 참고해주세요.(ex. 곡률이 큰 커브 구간에서는 안전상 동작하지 않게 하였음).</translation>
+        <translation>يضبط خيار الدقة تلقائي. 1. اضبط سرعة الانطلاق المؤقتة ، 2. اضبط السرعة المضبوطة نفسها وفقًا لوجود أو عدم وجود سيارة سابقة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2353"/>
         <source>CruiseSet</source>
-        <translation>크루즈속도조정</translation>
+        <translation>مثبت السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2355"/>
         <source>MaxSpeedSet</source>
-        <translation>설정속도조정</translation>
+        <translation>أقصى سرعة للتثبيت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2357"/>
         <source>AUTO(LeadCar)</source>
-        <translation>자동(선행차)</translation>
+        <translation>أقصى (السيارة بالمقدمة )</translation>
     </message>
 </context>
 <context>
@@ -1871,12 +1871,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2361"/>
         <source>AutoRES Condition</source>
-        <translation>자동RES 조건</translation>
+        <translation>الدقة التلقائية حسب الحالة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2361"/>
         <source>Sets the automatic RES condition. When the brake is released/operated when the accelerator pedal is operated.</source>
-        <translation>자동RES 조건을 설정합니다. 가속페달조작시 / 브레이크해제시.</translation>
+        <translation>يضبط حالة الدقة التلقائي. عند تحرير / تشغيل الفرامل عند الضغط على دواسة الوقود.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2419"/>
@@ -1886,7 +1886,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2421"/>
         <source>OnGas</source>
-        <translation>가속페달조작시</translation>
+        <translation>الفرامل المباشرة</translation>
     </message>
 </context>
 <context>
@@ -1894,17 +1894,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2425"/>
         <source>AutoRES Allow(sec)</source>
-        <translation>자동RES 허용시간(초)</translation>
+        <translation>تفعيل الدقة التلقائية(초)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2425"/>
         <source>Adjust the automatic RES allowance time. Automatic RES operates only within the set time after the cruise is released.</source>
-        <translation>자동RES 허용 시간을 설정합니다. 자동RES는 크루즈가 해제된 후 설정된 시간 내에만 작동합니다.</translation>
+        <translation>ضبط وقت بدل الدقة التلقائي. تعمل ميزة الدقة التلقائية فقط في الوقت المحدد بعد تفعيل مثبت السرعة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2481"/>
         <source>NoLimit</source>
-        <translation>제한 없음</translation>
+        <translation>بدون حدود</translation>
     </message>
 </context>
 <context>
@@ -1912,22 +1912,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2489"/>
         <source>Auto Engage Spd(kph)</source>
-        <translation>자동 인게이지 속도(kph)</translation>
+        <translation>التفعيل التلقائي عن التسارع(kph)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2489"/>
         <source>Set the automatic engage speed.</source>
-        <translation>자동 인게이지 속도를 설정합니다.</translation>
+        <translation>ضبط التشغيل تلقائياً عند التسارع.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2545"/>
         <source>atDGear</source>
-        <translation>D기어시</translation>
+        <translation>على ترس القيادة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2547"/>
         <source>atDepart</source>
-        <translation>출발시</translation>
+        <translation>عند المغادرة</translation>
     </message>
 </context>
 <context>
@@ -1935,17 +1935,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2555"/>
         <source>SafetyCamDist Adj(%)</source>
-        <translation>안전구간 감속거리 조정(%)</translation>
+        <translation>معايرة المسافة عن كاميرا السرعة(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2555"/>
         <source>Reduce or increase the deceleration start distance during deceleration of the safety section (+ value: deceleration start from a long distance, -value: deceleration start at a short distance) = interpolation value X interpolation value X reduction/increase ratio according to difference between current speed and cam speed.</source>
-        <translation>안전구간 감속시 감속시작거리를 줄이거나 늘립니다(+값: 원거리부터 감속시작, -값: 단거리부터 감속시작) = 보간값 X 보간값 X 현재속도와 캠속도의 차이에 따른 감속/감속비.</translation>
+        <translation>قم بتقليل أو زيادة مسافة بدء التباطؤ أثناء تباطؤ قسم الأمان (+ القيمة: يبدأ التباطؤ من مسافة طويلة ، - القيمة: بدء التباطؤ على مسافة قصيرة) = قيمة الاستيفاء X قيمة الاستيفاء X نسبة التخفيض / الزيادة وفقًا للاختلاف بين سرعة المركبة وسرعة الكاميرا.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2611"/>
         <source>Default</source>
-        <translation>기본값</translation>
+        <translation>افتراضي</translation>
     </message>
 </context>
 <context>
@@ -1953,12 +1953,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2620"/>
         <source>MAX_STEER</source>
-        <translation>MAX_STEER</translation>
+        <translation>أقصى_التفاف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2620"/>
         <source>Modify the Panda MAX_STEEER value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_STEER 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة أقصى التفاف على الباندا. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -1971,7 +1971,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2679"/>
         <source>Modify the panda RT_DELTA value. Press the Run button below to apply. It might be 7(DeltaDown)X16=112?</source>
-        <translation>판다 RT_DELTA 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오. 7(DeltaDown)X16=112?</translation>
+        <translation>تعديل قيمة RT_DELTA الباندا. اضغط على زر التشغيل أدناه للتطبيق. قد يكون 7 (DeltaDown) X16 = 112؟</translation>
     </message>
 </context>
 <context>
@@ -1984,7 +1984,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2738"/>
         <source>Modify the Panda MAX_RATE_UP value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_RATE_UP 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة الباندا زيادة أقصى معدل. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -1997,7 +1997,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2797"/>
         <source>Modify the Panda MAX_RATE_DOWN value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_RATE_DOWN 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة الباندا خفض أقصى معدل. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -2005,12 +2005,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2857"/>
         <source>CameraOffset</source>
-        <translation>카메라 오프셋</translation>
+        <translation>معايرة الكاميرا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2857"/>
         <source>Sets the CameraOffset value. (+value:Move Left, -value:Move Right)</source>
-        <translation>CameraOffset 값을 설정합니다. (+값:왼쪽으로 이동, -값:오른쪽으로 이동)</translation>
+        <translation>يضبط قيمة CameraOffset. (+ value: Move Left، -value: Move Right) (+ القيمة: تحريك لليسار ، -قيمة: تحريك لليمين)</translation>
     </message>
 </context>
 <context>
@@ -2018,12 +2018,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2920"/>
         <source>PathOffset</source>
-        <translation>Path 오프셋</translation>
+        <translation>موازن المسار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2920"/>
         <source>Sets the PathOffset value. (+value:Move left, -value:Move right)</source>
-        <translation>PathOffset 값을 설정합니다. (+값:왼쪽으로 이동, -value:오른쪽으로 이동)</translation>
+        <translation>يضبط قيمة موازنة المسار.. (+ القيمة: التحرك لليسار -القيمة : التحرك لليمين) (+ القيمة: تحريك لليسار ، -القيمة: تحريك لليمين)</translation>
     </message>
 </context>
 <context>
@@ -2031,12 +2031,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2983"/>
         <source>SteerRatio</source>
-        <translation>SteerRatio</translation>
+        <translation>نسبة التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2983"/>
         <source>Sets the SteerRatio default value.</source>
-        <translation>SteerRatio 기본값을 설정합니다.</translation>
+        <translation>يضبط القيمة الافتراضية لنسبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2044,12 +2044,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3081"/>
         <source>SteerRatioMax</source>
-        <translation>SteerRatio최대값</translation>
+        <translation>نسبة التوجيه كحد أقصى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3081"/>
         <source>Sets the SteerRatio maximum value.</source>
-        <translation>SteerRatio 최대값을 설정합니다.</translation>
+        <translation>يضبط الحد الأقصى لقيمة نسبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2057,12 +2057,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3179"/>
         <source>SteerActuatorDelay</source>
-        <translation>SteerActuatorDelay</translation>
+        <translation>تأخير مشغل التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3179"/>
         <source>Adjust the SteerActuatorDelay value.</source>
-        <translation>SteerActuatorDelay 값을 조정합니다.</translation>
+        <translation>يضبط قيمة الدودة الكهربائية.</translation>
     </message>
 </context>
 <context>
@@ -2070,12 +2070,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3242"/>
         <source>SteerRateCost</source>
-        <translation>SteerRateCost</translation>
+        <translation>معدل التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3242"/>
         <source>Adjust the SteerRateCost value.</source>
-        <translation>SteerRateCost 값을 조정합니다.</translation>
+        <translation>يضبط قوة معدل التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2083,12 +2083,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3305"/>
         <source>SteerLimitTimer</source>
-        <translation>SteerLimitTimer</translation>
+        <translation>توقيت حد التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3305"/>
         <source>Adjust the SteerLimitTimer value.</source>
-        <translation>SteerLimitTimer 값을 조정합니다.</translation>
+        <translation>يضبط قيمة توقيت حد التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2101,7 +2101,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3368"/>
         <source>Adjust the TireStiffnessFactor value.</source>
-        <translation>TireStiffnessFactor 값을 조정합니다.</translation>
+        <translation>TireStiffnessFactor يضبط قيمة.</translation>
     </message>
 </context>
 <context>
@@ -2109,22 +2109,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3434"/>
         <source>SMBase: </source>
-        <translation>SM기본: </translation>
+        <translation>SMأساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3461"/>
         <source>SMMax: </source>
-        <translation>SM최대: </translation>
+        <translation>SMأقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3512"/>
         <source>The value cannot exceed SteerMax</source>
-        <translation>값은 SteerMax를 초과할 수 없습니다</translation>
+        <translation>값은 SteerMax لا يمكن أن تتجاوز القيمة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3529"/>
         <source>The value cannot be less than SteerMaxBase</source>
-        <translation>값은 SteerMaxBase보다 작을 수 없습니다</translation>
+        <translation>SteerMaxBase لا يمكن أن تكون القيمة أقل من</translation>
     </message>
 </context>
 <context>
@@ -2132,22 +2132,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3564"/>
         <source>DtUpBase: </source>
-        <translation>DtUp기본: </translation>
+        <translation>DtUp أساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3591"/>
         <source>DtUpMax: </source>
-        <translation>DtUp최대: </translation>
+        <translation>DtUp أقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3642"/>
         <source>The value cannot exceed maximum DeltaUp value</source>
-        <translation>값은 최대 DeltaUp값을 초과할 수 없습니다</translation>
+        <translation>لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة DeltaUp</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3659"/>
         <source>The value cannot be less than DeltaUp default value</source>
-        <translation>값은 DeltaUp 기본값보다 작을 수 없습니다</translation>
+        <translation>لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لـ DeltaUp</translation>
     </message>
 </context>
 <context>
@@ -2155,22 +2155,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3694"/>
         <source>DtDnBase: </source>
-        <translation>DtDn기본: </translation>
+        <translation>DtDn أساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3721"/>
         <source>DtDnMax: </source>
-        <translation>DtDn최대: </translation>
+        <translation>DtDn أقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3772"/>
         <source>The value cannot exceed maximum DeltaDown value</source>
-        <translation>값은 최대 DeltaDown 값을 초과할 수 없습니다</translation>
+        <translation>لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة DeltaDown</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3789"/>
         <source>The value cannot be less than DeltaDown default value</source>
-        <translation>값은 DeltaDown 기본값보다 작을 수 없습니다</translation>
+        <translation>لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لـ DeltaDown</translation>
     </message>
 </context>
 <context>
@@ -2178,12 +2178,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3821"/>
         <source>SteerThreshold</source>
-        <translation>SteerThreshold</translation>
+        <translation>عتبة التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3821"/>
         <source>Adjust the SteerThreshold value.</source>
-        <translation>SteerThreshold를 조정합니다.</translation>
+        <translation>اضبط قيمة عتبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2191,12 +2191,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3881"/>
         <source>LatControl(Reboot)</source>
-        <translation>조향제어방법(Reboot)</translation>
+        <translation>طريقة التحكم في التوجيه (Reboot)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3881"/>
         <source>Set the steering control method(PID/INDI/LQR/TORQUE). Reboot Required.</source>
-        <translation>조향제어방법(PID/INDI/LQR/TORQUE)을 설정합니다. 재부팅이 필요합니다.</translation>
+        <translation>اضبط طريقة التحكم في التوجيه(PID/INDI/LQR/TORQUE)إعادة تشغيل المطلوبة.</translation>
     </message>
 </context>
 <context>
@@ -2209,7 +2209,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3952"/>
         <source>Adjust Kp</source>
-        <translation>Kp 조정</translation>
+        <translation>Kp تعديل</translation>
     </message>
 </context>
 <context>
@@ -2222,7 +2222,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4015"/>
         <source>Adjust Ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2235,7 +2235,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4078"/>
         <source>Adjust Kd</source>
-        <translation>Kd 조정</translation>
+        <translation>Kd تعديل</translation>
     </message>
 </context>
 <context>
@@ -2248,7 +2248,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4141"/>
         <source>Adjust Kf</source>
-        <translation>Kf 조정</translation>
+        <translation>Kf تعديل</translation>
     </message>
 </context>
 <context>
@@ -2261,7 +2261,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4204"/>
         <source>Adjust OuterLoopGain</source>
-        <translation>OuterLoopGain 조정</translation>
+        <translation>OuterLoopGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2274,7 +2274,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4267"/>
         <source>Adjust InnerLoopGain</source>
-        <translation>InnerLoopGain 조정</translation>
+        <translation>InnerLoopGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2287,7 +2287,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4330"/>
         <source>Adjust TimeConstant</source>
-        <translation>TimeConstant 조정</translation>
+        <translation>TimeConstant تعديل</translation>
     </message>
 </context>
 <context>
@@ -2300,7 +2300,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4393"/>
         <source>Adjust ActuatorEffectiveness</source>
-        <translation>ActuatorEffectiveness 조정</translation>
+        <translation>ActuatorEffectiveness تعديل</translation>
     </message>
 </context>
 <context>
@@ -2313,7 +2313,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4456"/>
         <source>Adjust Scale</source>
-        <translation>Scale 조정</translation>
+        <translation>Scale تعديل</translation>
     </message>
 </context>
 <context>
@@ -2326,7 +2326,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4515"/>
         <source>Adjust ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2339,7 +2339,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4578"/>
         <source>Adjust DcGain</source>
-        <translation>DcGain 조정</translation>
+        <translation>DcGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2352,7 +2352,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4641"/>
         <source>Adjust Kp</source>
-        <translation>Kp 조정</translation>
+        <translation>Kp تعديل</translation>
     </message>
 </context>
 <context>
@@ -2365,7 +2365,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4709"/>
         <source>Adjust Kf</source>
-        <translation>Kf 조정</translation>
+        <translation>Kf تعديل</translation>
     </message>
 </context>
 <context>
@@ -2378,7 +2378,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4777"/>
         <source>Adjust Ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2391,7 +2391,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4845"/>
         <source>Adjust Friction</source>
-        <translation>Friction 조정</translation>
+        <translation>Friction تعديل</translation>
     </message>
 </context>
 <context>
@@ -2404,7 +2404,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4908"/>
         <source>Adjust MaxLatAccel</source>
-        <translation>MaxLatAccel 조정</translation>
+        <translation>MaxLatAccel تعديل</translation>
     </message>
 </context>
 <context>
@@ -2417,7 +2417,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4971"/>
         <source>Adjust TorqueAngDeadZone</source>
-        <translation>TorqueAngDeadZone 조정</translation>
+        <translation>TorqueAngDeadZone تعديل</translation>
     </message>
 </context>
 <context>
@@ -2425,12 +2425,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5034"/>
         <source>CruiseGap</source>
-        <translation>크루즈갭</translation>
+        <translation>مسافة مثبت السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5034"/>
         <source>Adjust the inter-vehicle distance (TR) according to the cruise gap. TR refers to the time in seconds of collision with the car in front, and the larger it becomes, the farther it is from the car in front.</source>
-        <translation>크루즈 갭에 따라 차량 간 거리(TR)를 조정하십시오. TR은 앞차와 충돌한 시간(초 단위)을 말하며, 크기가 커질수록 앞차와의 거리가 멀어집니다.</translation>
+        <translation>اضبط المسافة بين السيارات (TR) وفقًا لفجوة الرحلات. يشير TR إلى الوقت بالثواني من الاصطدام مع السيارة التي أمامك ، وكلما زاد حجمها ، كلما ابتعدت عن السيارة التي أمامك.</translation>
     </message>
 </context>
 <context>
@@ -2438,17 +2438,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5252"/>
         <source>Use DynamicTR</source>
-        <translation>다이나믹TR 사용</translation>
+        <translation>استخدم TR الديناميكي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5252"/>
         <source>Use DynamicTR and assign it to the corresponding gap and adjust TR by speed below.</source>
-        <translation>다이나믹TR 사용 및 해당 갭에 할당하고 아래 속도로 TR을 조절합니다.</translation>
+        <translation>استخدم DynamicTR وقم بتعيينه للفجوة المقابلة واضبط TR حسب السرعة أدناه.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5310"/>
         <source>UnUse</source>
-        <translation>사용안함</translation>
+        <translation>غير مستعمل</translation>
     </message>
 </context>
 <context>
@@ -2456,12 +2456,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5517"/>
         <source>LaneChange Time (km/h: value)</source>
-        <translation>차선변경 시간(km/h: 값)</translation>
+        <translation>وقت تغيير المسار (km/h: القيمة)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5517"/>
         <source>When changing lanes, adjust the timing of lane change for each speed. If you want a quick lane change, increase the value and lower the value if you want a slow lane change.</source>
-        <translation>차선 변경 시 속도별로 차선 변경 타이밍을 조정합니다. 빠른 차선 변경을 원하는 경우 값을 늘리고 느린 차선 변경을 원하는 경우 값을 낮춥니다.</translation>
+        <translation>عند تغيير الحارة ، اضبط توقيت تغيير الحارة لكل سرعة. إذا كنت تريد تغييرًا سريعًا للحارة ، فقم بزيادة القيمة وخفض القيمة إذا كنت تريد تغييرًا بطيئًا للحارة.</translation>
     </message>
 </context>
 <context>

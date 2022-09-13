@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ko_KR">
+<TS version="2.1" language="ar_SA">
 <context>
     <name>RichTextDialog</name>
     <message>
         <location filename="../qt/widgets/input.cc" line="259"/>
         <source>Ok</source>
-        <translation>확인</translation>
+        <translation>موافق</translation>
     </message>
 </context>
 <context>
@@ -15,12 +15,12 @@
         <location filename="../qt/widgets/input.cc" line="222"/>
         <location filename="../qt/widgets/input.cc" line="227"/>
         <source>Ok</source>
-        <translation>확인</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="227"/>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -28,13 +28,13 @@
     <message>
         <location filename="../qt/widgets/input.cc" line="72"/>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>الغاء</translation>
     </message>
     <message numerus="yes">
         <location filename="../qt/widgets/input.cc" line="169"/>
         <source>Need at least %n character(s)!</source>
         <translation>
-            <numerusform>최소 %n 자가 필요합니다!</numerusform>
+            <numerusform>حرف %n تحتاج على الأقل</numerusform>
         </translation>
     </message>
 </context>
@@ -43,12 +43,12 @@
     <message>
         <location filename="../qt/widgets/input.cc" line="302"/>
         <source>Select</source>
-        <translation>선택</translation>
+        <translation>اختار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="335"/>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -56,22 +56,22 @@
     <message>
         <location filename="../qt/widgets/input.cc" line="364"/>
         <source>UPDATE</source>
-        <translation>업데이트</translation>
+        <translation>تحديث</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="407"/>
         <source>Update</source>
-        <translation>업데이트</translation>
+        <translation>تحديث</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="407"/>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>الغاء</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="407"/>
         <source>Detail</source>
-        <translation>세부사항</translation>
+        <translation>التفاصيل</translation>
     </message>
 </context>
 <context>
@@ -79,27 +79,27 @@
     <message>
         <location filename="../qt/widgets/input.cc" line="421"/>
         <source>Select a commit you want to go back and then press Ok to apply</source>
-        <translation>돌아가고자 하는 커밋번호를 선택 후 확인을 누르세요</translation>
+        <translation>حدد الالتزام الذي تريد الرجوع إليه ثم اضغط على موافق للتطبيق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="445"/>
         <source>This will run below command: git reset --hard </source>
-        <translation>다음 명령어를 실행합니다: git reset --hard </translation>
+        <translation>هذا سوف يعمل تحت الأمر: git reset --hard </translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="454"/>
         <source>No selection.</source>
-        <translation>선택항목이 없습니다.</translation>
+        <translation>لا اختيار.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="471"/>
         <source>Ok</source>
-        <translation>확인</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/input.cc" line="471"/>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -107,17 +107,17 @@
     <message>
         <location filename="../qt/home.cc" line="568"/>
         <source>UPDATE</source>
-        <translation>업데이트</translation>
+        <translation>تحديث</translation>
     </message>
     <message>
         <location filename="../qt/home.cc" line="659"/>
         <source>ALERTS</source>
-        <translation>경고</translation>
+        <translation>تنبيه</translation>
     </message>
     <message>
         <location filename="../qt/home.cc" line="659"/>
         <source>ALERT</source>
-        <translation>경고</translation>
+        <translation>تنبيه</translation>
     </message>
 </context>
 <context>
@@ -125,19 +125,19 @@
     <message>
         <location filename="../qt/sidebar.cc" line="79"/>
         <source>Hold 0.3 sec on the button to enter Setting Menu.</source>
-        <translation>설정메뉴 진입을 위해 0.3초 이상 누르세요.</translation>
+        <translation>اضغط على الزر 0.3 ثانية للدخول إلى قائمة الإعداد.</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="94"/>
         <location filename="../qt/sidebar.cc" line="96"/>
         <source>NETWORK</source>
-        <translation>네트워크</translation>
+        <translation>شبكة الاتصال</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="94"/>
         <location filename="../qt/sidebar.cc" line="111"/>
         <source>OFFLINE</source>
-        <translation>오프라인</translation>
+        <translation>غير متصل</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="96"/>
@@ -145,60 +145,60 @@
         <location filename="../qt/sidebar.cc" line="115"/>
         <location filename="../qt/sidebar.cc" line="117"/>
         <source>ONLINE</source>
-        <translation>온라인</translation>
+        <translation>متصل</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="100"/>
         <location filename="../qt/sidebar.cc" line="103"/>
         <location filename="../qt/sidebar.cc" line="105"/>
         <source>TEMP</source>
-        <translation>장치온도</translation>
+        <translation>الحرارة</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="100"/>
         <source>HIGH</source>
-        <translation>높음</translation>
+        <translation>عالية جداً</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="103"/>
         <source>GOOD</source>
-        <translation>좋음</translation>
+        <translation>مرتفعة</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="105"/>
         <source>OK</source>
-        <translation>양호</translation>
+        <translation>جيدة</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="96"/>
         <source>ERROR</source>
-        <translation>오류</translation>
+        <translation>خطاء</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="111"/>
         <source>PANDA</source>
-        <translation>판다</translation>
+        <translation>الباندا</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="109"/>
         <location filename="../qt/sidebar.cc" line="113"/>
         <source>VEHICLE</source>
-        <translation>차량</translation>
+        <translation>المركبة</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="113"/>
         <source>OFFROAD</source>
-        <translation>오프로드</translation>
+        <translation>غير متصل</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="115"/>
         <source>GPS Search</source>
-        <translation>GPS검색중</translation>
+        <translation>GPS البحث</translation>
     </message>
     <message>
         <location filename="../qt/sidebar.cc" line="117"/>
         <source>SAT : </source>
-        <translation>위성: </translation>
+        <translation>الأقمار: </translation>
     </message>
 </context>
 <context>
@@ -206,57 +206,57 @@
     <message>
         <location filename="../qt/text.cc" line="55"/>
         <source>Update</source>
-        <translation>업데이트</translation>
+        <translation>تحديث</translation>
     </message>
     <message>
         <location filename="../qt/text.cc" line="56"/>
         <source>MixPlorer</source>
-        <translation>믹스플로러</translation>
+        <translation>التطبيقات</translation>
     </message>
     <message>
         <location filename="../qt/text.cc" line="57"/>
         <source>Restore</source>
-        <translation>커밋복구</translation>
+        <translation>استرجع</translation>
     </message>
     <message>
         <location filename="../qt/text.cc" line="58"/>
         <source>Reset</source>
-        <translation>커밋초기화</translation>
+        <translation>إعادة ضبط</translation>
     </message>
     <message>
         <location filename="../qt/text.cc" line="86"/>
         <source>Exit</source>
-        <translation>종료</translation>
+        <translation>خروج</translation>
     </message>
     <message>
         <location filename="../qt/util.cc" line="20"/>
         <source>dashcam</source>
-        <translation>대시캠</translation>
+        <translation>داش كام</translation>
     </message>
     <message>
         <location filename="../qt/util.cc" line="20"/>
         <source>openpilot</source>
-        <translation>오픈파일럿</translation>
+        <translation>القائد الآلي</translation>
     </message>
     <message numerus="yes">
         <location filename="../qt/util.cc" line="81"/>
         <source>%n minute(s) ago</source>
         <translation>
-            <numerusform>%n분 전</numerusform>
+            <numerusform>%n دقيقة(s) ago</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qt/util.cc" line="84"/>
         <source>%n hour(s) ago</source>
         <translation>
-            <numerusform>%n시간 전</numerusform>
+            <numerusform>%n ساعة(s) ago</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qt/util.cc" line="87"/>
         <source>%n day(s) ago</source>
         <translation>
-            <numerusform>%n일 전</numerusform>
+            <numerusform>%n يوم(s) ago</numerusform>
         </translation>
     </message>
 </context>
@@ -273,12 +273,12 @@
     <message>
         <location filename="../qt/widgets/prime.cc" line="199"/>
         <source>Show QR Code</source>
-        <translation>QR 코드 확인</translation>
+        <translation>إظهار رمز الاستجابة السريعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/prime.cc" line="218"/>
         <source>Scan Device!</source>
-        <translation>장치를 스캔하세요!</translation>
+        <translation>تفحص الجهاز!</translation>
     </message>
 </context>
 <context>
@@ -286,22 +286,22 @@
     <message>
         <location filename="../qt/widgets/drive_stats.cc" line="37"/>
         <source>Drives</source>
-        <translation>주행</translation>
+        <translation>القيادة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/drive_stats.cc" line="39"/>
         <source>Hours</source>
-        <translation>시간</translation>
+        <translation>الساعات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/drive_stats.cc" line="44"/>
         <source>ALL TIME</source>
-        <translation>전체 시간</translation>
+        <translation>جميع الأوقات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/drive_stats.cc" line="46"/>
         <source>PAST WEEK</source>
-        <translation>지난 주</translation>
+        <translation>الاسبوع الماضي</translation>
     </message>
 </context>
 <context>
@@ -309,22 +309,22 @@
     <message>
         <location filename="../qt/widgets/offroad_alerts.cc" line="26"/>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>إغلاق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/offroad_alerts.cc" line="31"/>
         <source>Snooze Update</source>
-        <translation>업데이트 일시중지</translation>
+        <translation>تذكير بالتحديث</translation>
     </message>
     <message>
         <location filename="../qt/widgets/offroad_alerts.cc" line="42"/>
         <source>Reboot and Update</source>
-        <translation>업데이트 및 재부팅</translation>
+        <translation>إعادة التشغيل والتحديث</translation>
     </message>
     <message>
         <location filename="../qt/widgets/offroad_alerts.cc" line="47"/>
         <source>Retry to Register</source>
-        <translation>등록 재시도</translation>
+        <translation>أعد محاولة التسجيل</translation>
     </message>
 </context>
 <context>
@@ -332,53 +332,53 @@
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="7"/>
         <source>SSH Keys</source>
-        <translation>SSH 키</translation>
+        <translation>SSH مفتاح</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="7"/>
         <source>Warning: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will NEVER ask you to add their GitHub username.</source>
-        <translation>경고：이렇게 하면 GitHub 설정의 모든 공용 키에 대한 SSH 액세스 권한이 부여됩니다. 자신의 사용자 이름이 아닌 GitHub 사용자 이름을 입력하지 마십시오. comma 직원은 GitHub 사용자 이름을 추가하도록 요청하지 않습니다.</translation>
+        <translation>يمنح هذا وصول SSH إلى جميع المفاتيح العامة في إعدادات GitHub. لا تدخل أبدًا اسم مستخدم GitHub بخلاف اسم المستخدم الخاص بك. لن يطلب منك موظف كوما أبدًا إضافة اسم مستخدم GitHub الخاص به.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="13"/>
         <location filename="../qt/widgets/ssh_keys.cc" line="44"/>
         <source>ADD</source>
-        <translation>추가</translation>
+        <translation>اضافة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="14"/>
         <source>Enter your GitHub username</source>
-        <translation>GitHub 사용자 ID</translation>
+        <translation>أدخل اسم مستخدم GitHub الخاص بك</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="16"/>
         <source>LOADING</source>
-        <translation>로딩</translation>
+        <translation>جار التحميل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="39"/>
         <source>Legacy Key</source>
-        <translation>기존키 이용</translation>
+        <translation>مفتاح مشفر</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="41"/>
         <source>REMOVE</source>
-        <translation>제거</translation>
+        <translation>إزالة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="57"/>
         <source>Username &apos;%1&apos; has no keys on GitHub</source>
-        <translation>&apos;%1&apos;의 키가 GitHub에 없습니다</translation>
+        <translation>&apos;%1&apos;ليس لديه مفاتيح على GitHub</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="61"/>
         <source>Request timed out</source>
-        <translation>요청 시간 초과</translation>
+        <translation>انتهت مدة الطلب</translation>
     </message>
     <message>
         <location filename="../qt/widgets/ssh_keys.cc" line="63"/>
         <source>Username &apos;%1&apos; doesn&apos;t exist on GitHub</source>
-        <translation>&apos;%1&apos; 계정이 GitHub에 없습니다</translation>
+        <translation>&apos;%1&apos; اسم المستخدم غير موجود على GitHub</translation>
     </message>
 </context>
 <context>
@@ -386,7 +386,7 @@
     <message>
         <location filename="../qt/widgets/ssh_keys.h" line="13"/>
         <source>Enable SSH</source>
-        <translation>SSH 활성화</translation>
+        <translation>SSH تفعيل</translation>
     </message>
 </context>
 <context>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../qt/offroad/driverview.cc" line="55"/>
         <source>camera starting</source>
-        <translation>카메라 시작 중</translation>
+        <translation>بدء تشغيل الكاميرا</translation>
     </message>
 </context>
 <context>
@@ -402,22 +402,22 @@
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="79"/>
         <source>Terms &amp; Conditions</source>
-        <translation>약관</translation>
+        <translation>البنود والشروط</translation>
     </message>
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="107"/>
         <source>Decline</source>
-        <translation>거절</translation>
+        <translation>رفض</translation>
     </message>
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="111"/>
         <source>Scroll to accept</source>
-        <translation>내용확인을 위해 아래로 스크롤하세요</translation>
+        <translation>قم بالتمرير للقبول</translation>
     </message>
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="126"/>
         <source>Agree</source>
-        <translation>동의</translation>
+        <translation>موافق</translation>
     </message>
 </context>
 <context>
@@ -425,17 +425,17 @@
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="140"/>
         <source>You must accept the Terms and Conditions in order to use openpilot.</source>
-        <translation>오픈파일럿을 사용하려면 이용 약관에 동의해야 합니다.</translation>
+        <translation>يجب عليك قبول الشروط والأحكام من أجل استخدام القائد الآلي.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="149"/>
         <source>Back</source>
-        <translation>뒤로</translation>
+        <translation>الخلف</translation>
     </message>
     <message>
         <location filename="../qt/offroad/onboarding.cc" line="154"/>
         <source>Decline, uninstall %1</source>
-        <translation>거절, %1 제거</translation>
+        <translation>رفض ، إلغاء التثبيت</translation>
     </message>
 </context>
 <context>
@@ -443,92 +443,92 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="127"/>
         <source>Dongle ID</source>
-        <translation>동글 ID</translation>
+        <translation>معرف الجهاز</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="127"/>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>غ/م</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="128"/>
         <source>Serial</source>
-        <translation>시리얼</translation>
+        <translation>الرقم التسلسلي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="134"/>
         <source>Driver Camera</source>
-        <translation>운전자 카메라</translation>
+        <translation>كاميرا السائق</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="134"/>
         <source>PREVIEW</source>
-        <translation>미리보기</translation>
+        <translation>عرض</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="135"/>
         <source>Preview the driver facing camera to ensure that driver monitoring has good visibility. (vehicle must be off)</source>
-        <translation>운전자 모니터링 상태를 확인하기 위해 운전자를 향한 카메라를 미리보기 합니다. (차량연결은 해제되어 있어야 합니다)</translation>
+        <translation>قم بمعاينة الكاميرا المواجهة للسائق للتأكد من أن مراقبة السائق تتمتع برؤية جيدة.. (يجب أن تكون السيارة مطفأة)</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="140"/>
         <source>Review Training Guide</source>
-        <translation>트레이닝 가이드 다시보기</translation>
+        <translation>مراجعة دليل التدريب</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="140"/>
         <source>REVIEW</source>
-        <translation>다시보기</translation>
+        <translation>عرض</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="140"/>
         <source>Review the rules, features, and limitations of openpilot</source>
-        <translation>openpilot의 규칙, 기능 및 제한 다시보기</translation>
+        <translation>راجع القواعد والميزات والقيود الخاصة بـ القائد اللآلي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="142"/>
         <source>Are you sure you want to review the training guide?</source>
-        <translation>트레이닝 가이드를 다시보시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد مراجعة دليل التدريب؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="150"/>
         <source>Regulatory</source>
-        <translation>규제</translation>
+        <translation>التنظيم</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="150"/>
         <source>VIEW</source>
-        <translation>보기</translation>
+        <translation>معاينة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="158"/>
         <source>Reset Calibration</source>
-        <translation>캘리브레이션 재설정</translation>
+        <translation>إعادة ضبط المعايرة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="158"/>
         <source>RESET</source>
-        <translation>재설정</translation>
+        <translation>إعادة تعيين</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="161"/>
         <source>Are you sure you want to reset calibration?</source>
-        <translation>캘리브레이션을 재설정하시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد إعادة ضبط المعايرة؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="172"/>
         <source>Change Language</source>
-        <translation>언어 변경</translation>
+        <translation>تغيير اللغة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="172"/>
         <source>CHANGE</source>
-        <translation>변경</translation>
+        <translation>تغيير</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="176"/>
         <source>Select a language</source>
-        <translation>언어를 선택하세요</translation>
+        <translation>اختر اللغة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="195"/>
@@ -538,72 +538,72 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="200"/>
         <source>Reboot</source>
-        <translation>재부팅</translation>
+        <translation>اعادة التشغيل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="205"/>
         <source>Power Off</source>
-        <translation>전원 종료</translation>
+        <translation>إيقاف التشغيل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="227"/>
         <source>openpilot requires the device to be mounted within 4° left or right and within 5° up or 8° down. openpilot is continuously calibrating, resetting is rarely required.</source>
-        <translation>오픈파일럿은 장치를 좌측 또는 우측은 4° 이내, 위쪽 5° 또는 아래쪽은 8° 이내로 설치해야 합니다. 그리고 주행 중 지속적으로 보정되므로 리셋이 거의 필요하지 않습니다.</translation>
+        <translation>يتطلب القائد الآلي أن يتم تركيب الجهاز في حدود 4 درجات يسارًا أو يمينًا و 5 درجات لأعلى أو 8 درجات لأسفل. يقوم برنامج القائد الآلي بالمعايرة بشكل مستمر ، ونادراً ما تكون إعادة الضبط مطلوبة.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="238"/>
         <source> Your device is pointed %1° %2 and %3° %4.</source>
-        <translation> 장치가 %1° %2 그리고 %3° %4에 위치하고 있습니다.</translation>
+        <translation> جهازك مائل٪ 1 °٪ 2 و٪ 3 °٪ 4.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="239"/>
         <source>down</source>
-        <translation>아래로</translation>
+        <translation>تحت</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="239"/>
         <source>up</source>
-        <translation>위로</translation>
+        <translation>فوق</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="240"/>
         <source>left</source>
-        <translation>좌측으로</translation>
+        <translation>يسار</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="240"/>
         <source>right</source>
-        <translation>우측으로</translation>
+        <translation>يمين</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="251"/>
         <source>Are you sure you want to refresh?</source>
-        <translation>리프레시 하시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد التحديث؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="261"/>
         <source>Disengage to Refresh</source>
-        <translation>리프레시 하려면 해제하세요</translation>
+        <translation>فك الارتباط للتحديث</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="267"/>
         <source>Are you sure you want to reboot?</source>
-        <translation>재부팅 하시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد إعادة التشغيل؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="274"/>
         <source>Disengage to Reboot</source>
-        <translation>재부팅 하려면 해제하세요</translation>
+        <translation>فك الارتباط لإعادة التشغيل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="280"/>
         <source>Are you sure you want to power off?</source>
-        <translation>전원을 종료하시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد إيقاف التشغيل؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="287"/>
         <source>Disengage to Power Off</source>
-        <translation>전원을 종료하려면 해제하세요</translation>
+        <translation>فك الارتباط لإيقاف التشغيل</translation>
     </message>
 </context>
 <context>
@@ -611,48 +611,48 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="707"/>
         <source>Device</source>
-        <translation>장치</translation>
+        <translation>الجهاز</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="708"/>
         <location filename="../qt/offroad/settings.cc" line="753"/>
         <source>Network</source>
-        <translation>네트워크</translation>
+        <translation>الشبكة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="709"/>
         <source>Toggles</source>
-        <translation>토글</translation>
+        <translation>الخيارات </translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="710"/>
         <source>Software</source>
-        <translation>소프트웨어</translation>
+        <translation>البرنامج</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="711"/>
         <source>UIMenu</source>
-        <translation>UI메뉴</translation>
+        <translation>واجهة المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="712"/>
         <source>Driving</source>
-        <translation>주행메뉴</translation>
+        <translation>القيادة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="713"/>
         <source>Developer</source>
-        <translation>개발자</translation>
+        <translation>التطوير</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="714"/>
         <source>Tuning</source>
-        <translation>튜닝메뉴</translation>
+        <translation>التعديل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="721"/>
         <source>Navigation</source>
-        <translation>네비게이션</translation>
+        <translation>الخرائط</translation>
     </message>
 </context>
 <context>
@@ -660,78 +660,78 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="292"/>
         <source>Git Remote</source>
-        <translation>Git 주소</translation>
+        <translation>التحكم عن بعد</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="293"/>
         <source>Git Branch</source>
-        <translation>Git 브랜치</translation>
+        <translation>الفرع البرمجي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="294"/>
         <source>Git Commit</source>
-        <translation>Git 커밋</translation>
+        <translation>آخر تعديل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="295"/>
         <source>OS Version</source>
-        <translation>OS 버전</translation>
+        <translation>اصدار النظام</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="296"/>
         <source>Fork</source>
-        <translation>포크</translation>
+        <translation>الفرع</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="297"/>
         <source>Last Update Check</source>
-        <translation>마지막 업데이트 확인</translation>
+        <translation>آخر فحص للتحديث</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="298"/>
         <source>Check for Updates</source>
-        <translation>업데이트 지금 확인</translation>
+        <translation>البحث عن التحديث</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="311"/>
         <source>LOCAL: %1  REMOTE: %2%3%4 </source>
-        <translation>로컬: %1  원격: %2%3%4 </translation>
+        <translation>محلي: %1  عن عن بعد: %2%3%4 </translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="314"/>
         <source>Network connection is missing or unstable. Check the connection.</source>
-        <translation>네트워크 연결이 끊겼거나 불안정합니다. 연결 상태를 확인하세요.</translation>
+        <translation>اتصال الشبكة مفقود أو غير مستقر. تحقق من الاتصال.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="317"/>
         <source>Local and remote match. No update required.</source>
-        <translation>로컬과 원격 커밋이 일치합니다. 업데이트가 필요 없습니다.</translation>
+        <translation>التحديث المحلي وعن بعد مطابق: لا يوجد تحديث جديد.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="344"/>
         <source>UNINSTALL</source>
-        <translation>제거</translation>
+        <translation>الغاء التثبيت</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="344"/>
         <source>Uninstall %1</source>
-        <translation>%1 제거</translation>
+        <translation>%1 الغاء التثبيت</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="346"/>
         <source>Are you sure you want to uninstall?</source>
-        <translation>제거하시겠습니까?</translation>
+        <translation>هل أنت متأكد أنك تريد إلغاء التثبيت؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="373"/>
         <source>failed to fetch update</source>
-        <translation>업데이트를 가져올 수 없습니다</translation>
+        <translation>فشل في جلب التحديث</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="374"/>
         <location filename="../qt/offroad/settings.cc" line="395"/>
         <source>CHECK</source>
-        <translation>확인</translation>
+        <translation>فحص</translation>
     </message>
 </context>
 <context>
@@ -739,23 +739,23 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="411"/>
         <source>Wi-Fi Settings</source>
-        <translation>Wi-Fi 설정</translation>
+        <translation>اعدادات الواي فاي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="411"/>
         <location filename="../qt/offroad/settings.cc" line="415"/>
         <source>OPEN</source>
-        <translation>열기</translation>
+        <translation>افتح</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="415"/>
         <source>Tethering Settings</source>
-        <translation>테더링 설정</translation>
+        <translation>إعدادات الربط</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="419"/>
         <source>IP Address</source>
-        <translation>IP 주소</translation>
+        <translation>عنوان IP</translation>
     </message>
 </context>
 <context>
@@ -763,28 +763,28 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="481"/>
         <source>Delete All Recorded Files</source>
-        <translation>녹화된 파일 전체 삭제</translation>
+        <translation>حذف كافة الملفات المسجلة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="481"/>
         <location filename="../qt/offroad/settings.cc" line="489"/>
         <source>RUN</source>
-        <translation>실행</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="483"/>
         <source>Delete all saved recorded files. Do you want to proceed?</source>
-        <translation>녹화된 영상 파일을 모두 삭제하시겠습니까?</translation>
+        <translation>احذف جميع الملفات المسجلة المحفوظة. هل تريد المتابعة؟</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="489"/>
         <source>Delete All Driving Logs</source>
-        <translation>주행로그 전부 삭제</translation>
+        <translation>حذف كافة سجلات القيادة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="491"/>
         <source>Delete all saved driving logs. Do you want to proceed?</source>
-        <translation>저장된 주행로그를 전부 삭제하시겠습니까?</translation>
+        <translation>احذف جميع سجلات القيادة المحفوظة. هل تريد المتابعة؟</translation>
     </message>
 </context>
 <context>
@@ -792,112 +792,112 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="42"/>
         <source>Enable openpilot</source>
-        <translation>오픈파일럿 사용</translation>
+        <translation>تمكين القائد الآلي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="43"/>
         <source>Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.</source>
-        <translation>어댑티브 크루즈 컨트롤 및 차선 유지 운전자 보조를 위해 오픈파일럿 시스템을 사용하십시오. 이 기능을 사용하려면 항상 주의를 기울여야 합니다.</translation>
+        <translation>استخدم نظام القائد الآلي للتحكم التكيفي في ثبات السرعة والحفاظ على مساعدة السائق. انتباهك مطلوب في جميع الأوقات لاستخدام هذه الميزة. يسري تغيير هذا الإعداد عند إيقاف تشغيل السيارة.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="48"/>
         <source>Enable Lane Departure Warnings</source>
-        <translation>차선 이탈 경고 사용</translation>
+        <translation>تفعيل تحذيرات مغادرة الحارة المرورية</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="49"/>
         <source>Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31 mph (50 km/h).</source>
-        <translation>차량이 50km/h(31mph) 이상의 속도로 주행하는 동안 방향 지시등이 활성화되지 않은 상태에서 차선이탈이 발생한 경우 경고를 보냅니다.</translation>
+        <translation>تلقي تنبيهات للتوجه مرة أخرى إلى الحارة عندما تنجرف سيارتك فوق خط المسار المكتشف دون تنشيط إشارة الانعطاف أثناء القيادة لمسافة تزيد عن 31 ميلاً في الساعة (50 كم / ساعة).</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="54"/>
         <source>Enable Right-Hand Drive</source>
-        <translation>우핸들 운전 차량 사용</translation>
+        <translation>تمكين القيادة باليد اليمنى</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="55"/>
         <source>Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat.</source>
-        <translation>오픈파일럿이 좌측 교통 규칙을 준수하고 우측 운전석에서 운전자 모니터링을 수행하도록 설정합니다.</translation>
+        <translation>اسمح للقائد الآلي بالانصياع لاتفاقيات المرور اليسرى وإجراء مراقبة للسائق على مقعد السائق الأيمن.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="60"/>
         <source>Use Metric System</source>
-        <translation>미터법 사용</translation>
+        <translation>استخدم النظام المتري</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="61"/>
         <source>Display speed in km/h instead of mph.</source>
-        <translation>mph 대신 km/h로 속도를 표시합니다.</translation>
+        <translation>عرض السرعة بالكيلو متر في الساعة بدلا من ميلا في الساعة.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="66"/>
         <source>Record and Upload Driver Camera</source>
-        <translation>운전자 카메라 녹화 및 업로드</translation>
+        <translation>تسجيل وتحميل كاميرا السائق</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="67"/>
         <source>Upload data from the driver facing camera and help improve the driver monitoring algorithm.</source>
-        <translation>운전자 카메라에서 데이터를 업로드하고 운전자 모니터링 알고리즘을 개선합니다.</translation>
+        <translation>قم بتحميل البيانات من الكاميرا المواجهة للسائق وساعد في تحسين خوارزمية مراقبة السائق.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="72"/>
         <source>Enable Lane selector Mode</source>
-        <translation>차선유지 선택 모드 사용</translation>
+        <translation>قم بتمكين وضع محدد المسار</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="73"/>
         <source>Activate lane selection mode. Lane Mode, Lane Less, AUTO can be selected and switched on the screen.</source>
-        <translation>차선 선택 모드를 활성화합니다. 화면에서 레인온리, 레인리스, AUTO를 선택하고 전환할 수 있습니다.</translation>
+        <translation>قم بتنشيط وضع اختيار الحارة. يمكن تحديد "وضع المسار" و "لين أقل" و "تلقائي" وتشغيله على الشاشة.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="79"/>
         <source>Show ETA in 24h format</source>
-        <translation>24시간 형식으로 도착예정시간 표시</translation>
+        <translation>إظهار الوقت المقدر للوصول بتنسيق 24 ساعة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="80"/>
         <source>Use 24h format instead of am/pm</source>
-        <translation>오전/오후 대신 24시간 형식 사용</translation>
+        <translation>استخدم تنسيق 24 ساعة بدلاً من صباحًا / مساءً</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="87"/>
         <source>Enable Driver Monitoring</source>
-        <translation>드라이버 모니터링 활성화</translation>
+        <translation>تمكين مراقبة السائق</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="88"/>
         <source>Use the driver monitoring function.</source>
-        <translation>드라이버 모니터링을 활성화 합니다. 실시간으로 운전자를 감시합니다.</translation>
+        <translation>استخدم وظيفة مراقبة السائق.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="93"/>
         <source>Enable Driving Log Record</source>
-        <translation>주행 로그 기록 사용</translation>
+        <translation>تفعيل سجل القيادة</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="94"/>
         <source>Record the driving log locally for data analysis. Only loggers are activated and not uploaded to the server.</source>
-        <translation>데이터 분석을 위해 주행 기록(카바나)을 로컬에 저장하세요. 로거만 활성화되고 서버에 업로드되지 않습니다. 이 기능은 리소스를 많이 사용하므로 데이터 분석외 평시에는 해당기능을 끄는것을 권장합니다.</translation>
+        <translation>سجل سجل القيادة محليًا لتحليل البيانات. يتم تنشيط المسجلين فقط ولا يتم تحميلهم على الخادم.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="99"/>
         <source>Enable Sending Log to Server</source>
-        <translation>주행 로그 업로드 활성화</translation>
+        <translation>قم بتمكين إرسال السجل إلى الخادم</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="100"/>
         <source>Activate the upload process to transmit system logs and other driving data to the server. Upload it only off-road.</source>
-        <translation>업로드 프로세스를 활성화하여 시스템 로그 및 기타 주행 데이터를 서버로 전송합니다. 오프로드 상태에서만 업로드합니다. 이 기능은 리소스를 많이 사용하므로 데이터 분석외 평시에는 해당기능을 끄는것을 권장합니다.</translation>
+        <translation>قم بتنشيط عملية التحميل لإرسال سجلات النظام وبيانات القيادة الأخرى إلى الخادم. قم بتحميله فقط على الطرق الوعرة.</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="110"/>
         <source>openpilot Longitudinal Control</source>
-        <translation>오픈파일럿 롱 컨트롤</translation>
+        <translation>التحكم الطولي بالقائد الآلي</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="111"/>
         <source>openpilot will disable the car&apos;s radar and will take over control of gas and brakes. Warning: this disables AEB!</source>
-        <translation>오픈파일럿은 차량의 레이더를 비활성화하고 가속과 브레이크의 제어에 관여합니다. 경고: AEB가 비활성화 됩니다!</translation>
+        <translation>سوف يقوم برنامج القائد الآلي بتعطيل رادار السيارة وسيتولى التحكم في الغاز والمكابح. تحذير: هذا يعطل نظام فرملة الطوارئ (AEB)!</translation>
     </message>
 </context>
 <context>
@@ -905,62 +905,62 @@
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="39"/>
         <source>Steer control Method</source>
-        <translation>스티어링 모드</translation>
+        <translation>طريقة التحكم في التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="53"/>
         <source>method</source>
-        <translation>방법</translation>
+        <translation>الطريقة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="114"/>
         <source>Driver to Steer Angle</source>
-        <translation>Driver to Steer Angle</translation>
+        <translation>زاوية التوجيه للسائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="115"/>
         <source>Improve the edge between the driver and the openpilot.</source>
-        <translation>Improve the edge between the driver and the openpilot.</translation>
+        <translation>تحسين الهامش بين السائق والقائد الآلي.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="124"/>
         <source>Driver to Steer</source>
-        <translation>Driver to Steer</translation>
+        <translation>السائق إلى التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="125"/>
         <source>Controls smooth torque by the driver  From OpkrMaxSteeringAngle. def:0.002(5sec)</source>
-        <translation>Controls smooth torque by the driver  From OpkrMaxSteeringAngle. def:0.002(5sec)</translation>
+        <translation>يتحكم في عزم الدوران السلس من قبل السائق من OpkrMaxSteeringAngle. def:0.002(5sec)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="135"/>
         <source>Steer Angle</source>
-        <translation>Steer Angle</translation>
+        <translation>زاوية التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="136"/>
         <source>Controls torque by steering angle From OpkrMaxSteeringAngle. def:0.001(10sec)</source>
-        <translation>Controls torque by steering angle From OpkrMaxSteeringAngle. def:0.001(10sec)</translation>
+        <translation>يتحكم في عزم الدوران من خلال زاوية التوجيه من OpkrMaxSteeringAngle. def:0.001(10sec)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="145"/>
         <source>Normal driver to Steer</source>
-        <translation>Steer Angle</translation>
+        <translation>زاوية التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="146"/>
         <source>Controls torque limitation due to normal driver handle intervention. def:0.001(10sec)</source>
-        <translation>Controls torque limitation due to normal driver handle intervention. def:0.001(10sec)</translation>
+        <translation>يتحكم في الحد من عزم الدوران بسبب تدخل مقبض القير اليدوي.. def:0.001(10sec)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="227"/>
         <source>Max Steering Angle</source>
-        <translation>최대 허용 조향각</translation>
+        <translation>زاوية التوجيه القصوى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/steerWidget.cc" line="228"/>
         <source>Set the maximum steering angle of the handle where the openpilot is possible. Please note that some vehicles may experience errors if the angle is set above 90 degrees.</source>
-        <translation>오픈파일럿이 가능한 핸들의 최대 조향 각도를 설정합니다. 각도를 90도 이상으로 설정하면 일부 차량에 오류가 발생할 수 있습니다.</translation>
+        <translation>اضبط أقصى زاوية توجيه للمقود حيث يكون القائد الآلي ممكنًا. يرجى ملاحظة أن بعض المركبات قد تتعرض لأخطاء إذا تم ضبط الزاوية فوق 90 درجة.</translation>
     </message>
 </context>
 <context>
@@ -968,7 +968,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="24"/>
         <source>Lateral Control(Reboot)</source>
-        <translation>조향제어 방법(Reboot)</translation>
+        <translation>التحكم الجانبي (إعادة التشغيل)</translation>
     </message>
 </context>
 <context>
@@ -976,7 +976,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="149"/>
         <source>Long Control</source>
-        <translation>롱 컨트롤</translation>
+        <translation>تحكم طويل</translation>
     </message>
 </context>
 <context>
@@ -984,22 +984,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="170"/>
         <source>Panda Values</source>
-        <translation>판다 값</translation>
+        <translation>قيم الباندا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="181"/>
         <source>Change Panda Values</source>
-        <translation>판다 값 변경</translation>
+        <translation>تغيير قيم الباندا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="181"/>
         <source>RUN</source>
-        <translation>실행</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="183"/>
         <source>Apply the changed panda value. Do you want to proceed? It automatically reboots.</source>
-        <translation>변경된 판다 값을 적용합니다. 계속하시겠습니까? 자동으로 재부팅됩니다.</translation>
+        <translation>تطبيق قيمة الباندا المتغيرة. هل تريد المتابعة؟ يتم إعادة التشغيل تلقائيًا.</translation>
     </message>
 </context>
 <context>
@@ -1007,28 +1007,28 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="191"/>
         <source>Git Branch Change</source>
-        <translation>Git 리포지토리/브랜치</translation>
+        <translation>تغيير الفرع البرمجي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="198"/>
         <source>Git Reset</source>
-        <translation>Git 리셋</translation>
+        <translation>اعادة ضبط الفرع البرمجي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="198"/>
         <location filename="../qt/widgets/opkr.cc" line="207"/>
         <source>RUN</source>
-        <translation>실행</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="200"/>
         <source>Apply the latest commitment details of Remote Git after forced initialization of local changes. Do you want to proceed?</source>
-        <translation>로컬 변경 내용을 강제로 초기화한 후 원격 Git의 최신 커밋을 적용합니다. 계속하시겠습니까?</translation>
+        <translation>قم بتطبيق أحدث تفاصيل التزام التحديث السحابي بعد التهيئة الإجبارية للتغييرات المحلية. هل تريد المتابعة؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="207"/>
         <source>GitPull Restore</source>
-        <translation>GitPull 복구</translation>
+        <translation>استعادة اخر تحديث</translation>
     </message>
 </context>
 <context>
@@ -1036,12 +1036,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="226"/>
         <source>Util Program</source>
-        <translation>유틸리티 프로그램</translation>
+        <translation>برامج اضافية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="233"/>
         <source>Panda Flashing(OLD)</source>
-        <translation>판다 플래싱 (OLD)</translation>
+        <translation>تعريف البندا (قديم)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="233"/>
@@ -1050,32 +1050,32 @@
         <location filename="../qt/widgets/opkr.cc" line="256"/>
         <location filename="../qt/widgets/opkr.cc" line="262"/>
         <source>RUN</source>
-        <translation>실행</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="235"/>
         <source>Panda&apos;s green LED blinks quickly during panda flashing. Never turn off or disconnect the device arbitrarily. Do you want to proceed?</source>
-        <translation>판다가 번쩍이는 동안 판다의 녹색 LED가 빠르게 깜박입니다. 장치를 임의로 끄거나 분리하지 마십시오. 계속하시겠습니까?</translation>
+        <translation>يومض مؤشر LED الأخضر للباندا بسرعة أثناء وميض الباندا. لا تقم أبدًا بإيقاف تشغيل الجهاز أو فصله بشكل تعسفي. هل تريد المتابعة؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="241"/>
         <source>Panda Flashing(NEW)</source>
-        <translation>판다 플래싱 (NEW)</translation>
+        <translation>تعريف الباندا (جديد)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="249"/>
         <source>Open Android Settings</source>
-        <translation>안드로이드 설정 열기</translation>
+        <translation>افتح اعدادات الاندرويد</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="256"/>
         <source>SoftKey RUN/SET</source>
-        <translation>소프트키 실행/설정</translation>
+        <translation>مفتاح ناعم تشغيل/تثبيت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="262"/>
         <source>RUN Mixplorer</source>
-        <translation>믹스플로러 실행</translation>
+        <translation>تشغيل تطلبيق Mixplorer</translation>
     </message>
 </context>
 <context>
@@ -1083,62 +1083,62 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="276"/>
         <source>Parameter Preset</source>
-        <translation>파라미터 프리셋</translation>
+        <translation>حفظ الإعدادات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="293"/>
         <source>Load Preset1</source>
-        <translation>프리셋1 로드</translation>
+        <translation>تحميل الإعداد 1</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="297"/>
         <source>Do you want to load Preset1?</source>
-        <translation>프리셋1을 로드하시겠습니까?</translation>
+        <translation>هل تريد تحميل التعديل1؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="302"/>
         <source>Save Preset1</source>
-        <translation>프리셋1 저장</translation>
+        <translation>حفظ الإعداد 1</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="306"/>
         <source>Do you want to save Preset1?</source>
-        <translation>프리셋1에 저장하시겠습니까?</translation>
+        <translation>هل تريد حفظ التعديل1؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="315"/>
         <source>Load Preset2</source>
-        <translation>프리셋2 로드</translation>
+        <translation>تحميل الإعداد 2</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="319"/>
         <source>Do you want to load Preset2?</source>
-        <translation>프리셋2를 로드하시겠습니까?</translation>
+        <translation>هل تريد تحميل التعديل2؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="324"/>
         <source>Save Preset2</source>
-        <translation>프리셋2 저장</translation>
+        <translation>حفظ الإعداد 2</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="328"/>
         <source>Do you want to save Preset2?</source>
-        <translation>프리셋2에 저장하시겠습니까?</translation>
+        <translation>هل تريد حفظ التعديل2؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="333"/>
         <source>Parameters Init</source>
-        <translation>파라미터 초기화</translation>
+        <translation>المعامل الذكية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="333"/>
         <source>RUN</source>
-        <translation>실행</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="335"/>
         <source>Initialize parameters. Changes in the EON menu are changed to the initial set value. Do you want to proceed?</source>
-        <translation>파라미터를 초기화합니다. 메뉴의 변경 사항이 초기 설정 값으로 변경됩니다. 계속하시겠습니까?</translation>
+        <translation>تهيئة المعلمات. يتم تغيير التغييرات في قائمة الأيون إلى القيمة المحددة الأولية. هل تريد المتابعة؟</translation>
     </message>
 </context>
 <context>
@@ -1146,82 +1146,82 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="358"/>
         <source>Change Repo/Branch</source>
-        <translation>리포지토리/브랜치 변경</translation>
+        <translation>تغيير الملف / الفرع</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="358"/>
         <source>Change to another open pilot code. You can change it by entering ID/repository/branch.</source>
-        <translation>다른 오픈파일럿 코드로 변경합니다. 아이디/리포지토리/브랜치를 입력하여 변경할 수 있습니다.</translation>
+        <translation>التغيير إلى ملف آخر مفتوح. يمكنك تغييره عن طريق إدخال المعرف / البرنامج / الفرع..</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="360"/>
         <source>CHANGE</source>
-        <translation>변경</translation>
+        <translation>تغيير</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="361"/>
         <source>First: Input the Git ID.</source>
-        <translation>첫번째: Git ID를 입력하세요.</translation>
+        <translation>أولاً: أدخل معرف جت هب.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="364"/>
         <source>Second: Input the repository.</source>
-        <translation>두번째: 리포지토리를 입력하세요.</translation>
+        <translation>ثانيًا: إدخال الملف.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="367"/>
         <source>Last: Input the branch name.</source>
-        <translation>마지막: 브랜치 이름을 입력하세요.</translation>
+        <translation>أخيرًا: أدخل اسم الفرع.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="371"/>
         <source>This will download the branch and takes a little time.</source>
-        <translation>입력내용을 확인하세요. 실행하시겠습니까?</translation>
+        <translation>سيؤدي هذا إلى تنزيل الفرع ويستغرق بعض الوقت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="371"/>
         <source>Branch: </source>
-        <translation>브랜치: </translation>
+        <translation>الفرع: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="373"/>
         <source>DONE</source>
-        <translation>완료</translation>
+        <translation>انتهى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="442"/>
         <source> The ID does not exist. Return to the input window, press the cancel button, and try again from the beginning.</source>
-        <translation> ID가 존재하지 않습니다. 입력 창으로 돌아가서 취소 버튼을 누른 다음 처음부터 다시 시도하십시오.</translation>
+        <translation>المعرف غير موجود. ارجع إلى نافذة الإدخال واضغط على زر الإلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="446"/>
         <source>The requested time has exceeded.</source>
-        <translation>요청한 시간이 초과되었습니다.</translation>
+        <translation>تم تجاوز الوقت المطلوب.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="448"/>
         <source>The ID does not exist. Return to the input window, press the cancel button, and try again from the beginning.</source>
-        <translation>ID가 존재하지 않습니다. 입력 창으로 돌아가서 취소 버튼을 누른 다음 처음부터 다시 시도하십시오.</translation>
+        <translation>المعرف غير موجود. ارجع إلى نافذة الإدخال واضغط على زر الإلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="465"/>
         <source> The repository does not exist. Return to the input window, press the cancel button, and try again from the beginning.</source>
-        <translation> 리포지토리가 없습니다. 입력 창으로 돌아가서 취소 버튼을 누른 다음 처음부터 다시 시도하십시오.</translation>
+        <translation> الملف غير موجود. ارجع إلى نافذة الإدخال واضغط على زر الإلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="471"/>
         <source>The Repository does not exist. Return to the input window, press the cancel button, and try again from the beginning.</source>
-        <translation>리포지토리가 없습니다. 입력 창으로 돌아가서 취소 버튼을 누른 다음 처음부터 다시 시도하십시오.</translation>
+        <translation>الملف غير موجود. ارجع إلى نافذة الإدخال واضغط على زر الإلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="488"/>
         <source> The branch does not exist. Press the cancel button and try again from the beginning.</source>
-        <translation> 브랜치가 존재하지 않습니다. 취소 버튼을 누르고 처음부터 다시 시도하십시오.</translation>
+        <translation> الفرع غير موجود. اضغط على زر إلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="494"/>
         <source>The Branch does not exist. Return to the input window, press the cancel button, and try again from the beginning.</source>
-        <translation>브랜치가 존재하지 않습니다. 입력 창으로 돌아가서 취소 버튼을 누른 다음 처음부터 다시 시도하십시오.</translation>
+        <translation>الفرع غير موجود. ارجع إلى نافذة الإدخال واضغط على زر الإلغاء وحاول مرة أخرى من البداية.</translation>
     </message>
 </context>
 <context>
@@ -1229,7 +1229,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="504"/>
         <source>Commit (Local/Remote)</source>
-        <translation>커밋 (로컬/원격)</translation>
+        <translation>التعديل (محلي / بعيد)</translation>
     </message>
 </context>
 <context>
@@ -1237,27 +1237,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="524"/>
         <source>Driving Camera</source>
-        <translation>드라이빙 카메라</translation>
+        <translation>كاميرا القيادة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="524"/>
         <source>Preview the open pilot driving screen.</source>
-        <translation>오픈파일럿 주행 화면을 미리 봅니다.</translation>
+        <translation>معاينة شاشة القائد الآلي.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="581"/>
         <source>UNVIEW</source>
-        <translation>보기해제</translation>
+        <translation>معاينة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="584"/>
         <source>PREVIEW</source>
-        <translation>미리보기</translation>
+        <translation>معاينة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="585"/>
         <source>CALVIEW</source>
-        <translation>캘리보기</translation>
+        <translation>المعاينة</translation>
     </message>
 </context>
 <context>
@@ -1265,27 +1265,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="611"/>
         <source>Select Your Car</source>
-        <translation>차량을 선택하세요</translation>
+        <translation>حدد سيارتك</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="637"/>
         <source>Do you want to unset?</source>
-        <translation>설정을 해제하시겠습니까?</translation>
+        <translation>هل تريد عدم ضبطها؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="655"/>
         <source>Press OK to set your car as</source>
-        <translation>[확인]을 눌러 차량을 다음과 같이 설정합니다</translation>
+        <translation>اضغط على "موافق" لتعيين سيارتك كـ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="676"/>
         <source>UNSET</source>
-        <translation>해제</translation>
+        <translation>عدم تعيين</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="679"/>
         <source>SET</source>
-        <translation>설정</translation>
+        <translation>تعيين</translation>
     </message>
 </context>
 <context>
@@ -1293,27 +1293,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="711"/>
         <source>RELOAD</source>
-        <translation>새로고침</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="726"/>
         <source>Now will checkout the branch</source>
-        <translation>이제 브랜치를 체크아웃합니다</translation>
+        <translation>الآن سوف يتم التحقق من الفرع</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="726"/>
         <source>The device will be rebooted if completed.</source>
-        <translation>완료되면 장치가 재부팅됩니다.</translation>
+        <translation>سيتم إعادة تشغيل الجهاز إذا اكتمل.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="742"/>
         <source>Your branch is already</source>
-        <translation>이미 해당 브랜치입니다</translation>
+        <translation>فرعك البرمجي جاهز</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="779"/>
         <source>Select Branch you want to change</source>
-        <translation>변경할 브랜치 선택</translation>
+        <translation>حدد الفرع الذي تريد تغييره</translation>
     </message>
 </context>
 <context>
@@ -1321,28 +1321,28 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="807"/>
         <source>Select Your TimeZone</source>
-        <translation>표준 시간대 선택</translation>
+        <translation>حدد المنطقة الزمنية الخاصة بك</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="833"/>
         <source>Do you want to set default?</source>
-        <translation>기본값으로 설정하시겠습니까?</translation>
+        <translation>هل تريد تعيين الافتراضي؟</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="851"/>
         <source>Press OK to set your timezone as</source>
-        <translation>시간대를 다음과 같이 설정하려면 [확인]을 누르십시오</translation>
+        <translation>اضغط على "موافق" لتعيين المنطقة الزمنية الخاصة بك على أنها</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="832"/>
         <location filename="../qt/widgets/opkr.cc" line="866"/>
         <source>UNSET</source>
-        <translation>해제</translation>
+        <translation>غدم تعيين</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="869"/>
         <source>SET</source>
-        <translation>설정</translation>
+        <translation>تعيين</translation>
     </message>
 </context>
 <context>
@@ -1350,67 +1350,67 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="874"/>
         <source>EON AutoShutdown</source>
-        <translation>장치 자동 종료</translation>
+        <translation>إطفاء جهاز الايون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="874"/>
         <source>EON is automatically turned off after the set time while the engine is turned off (offload) after driving (onload).</source>
-        <translation>주행(온로드) 후 시동종료 시 설정된 시간이 지나면 장치가 자동으로 꺼집니다.</translation>
+        <translation>يتم إيقاف تشغيل الأيون تلقائيًا بعد الوقت المحدد أثناء إيقاف تشغيل المحرك (الإطفاء) بعد القيادة (عند تشغيل المحرك).</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="932"/>
         <source>AlwaysOn</source>
-        <translation>항상켜기</translation>
+        <translation>دائما متاح</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="934"/>
         <source>RightOff</source>
-        <translation>바로끄기</translation>
+        <translation>حالا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="936"/>
         <source>30sec</source>
-        <translation>30초</translation>
+        <translation>30 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="938"/>
         <source>1min</source>
-        <translation>1분</translation>
+        <translation>1 دقيقة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="940"/>
         <source>3mins</source>
-        <translation>3분</translation>
+        <translation>3 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="942"/>
         <source>5mins</source>
-        <translation>5분</translation>
+        <translation>5 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="944"/>
         <source>10mins</source>
-        <translation>10분</translation>
+        <translation>10 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="946"/>
         <source>30mins</source>
-        <translation>30분</translation>
+        <translation>30 دقيقة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="948"/>
         <source>1hour</source>
-        <translation>1시간</translation>
+        <translation>1 ساعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="950"/>
         <source>3hours</source>
-        <translation>3시간</translation>
+        <translation>3 ساعات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="952"/>
         <source>5hours</source>
-        <translation>5시간</translation>
+        <translation>5 ساعات</translation>
     </message>
 </context>
 <context>
@@ -1418,42 +1418,42 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="956"/>
         <source>EON ForceShutdown</source>
-        <translation>장치 강제 종료</translation>
+        <translation>إيقاف الايون جبريا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="956"/>
         <source>If the screen is turned off while off-road without driving (on-road X), force it to turn off after a certain period of time. When a touch event occurs, the off time is reset.</source>
-        <translation>장치 오프로드 시 화면이 꺼진 경우 일정 시간이 지나면 강제로 꺼지도록 합니다. 터치 이벤트가 발생하면 종료 시간이 초기화됩니다.</translation>
+        <translation>إذا تم إيقاف تشغيل الشاشة أثناء القيادة على الطرق الوعرة دون القيادة (على الطريق X) ، فاجبرها على الانطفاء بعد فترة زمنية معينة. عند حدوث حدث يعمل باللمس ، تتم إعادة ضبط وقت الإيقاف.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1014"/>
         <source>AlwaysOn</source>
-        <translation>항상켜기</translation>
+        <translation>دائما متاح</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1016"/>
         <source>1min</source>
-        <translation>1분</translation>
+        <translation>1 دقيقة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1018"/>
         <source>3mins</source>
-        <translation>3분</translation>
+        <translation>3 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1020"/>
         <source>5mins</source>
-        <translation>5분</translation>
+        <translation>5 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1022"/>
         <source>10mins</source>
-        <translation>10분</translation>
+        <translation>10 دقائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1024"/>
         <source>30mins</source>
-        <translation>30분</translation>
+        <translation>30 دقيقة</translation>
     </message>
 </context>
 <context>
@@ -1461,22 +1461,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1029"/>
         <source>EON Volume Control(%)</source>
-        <translation>장치 볼륨 조절(%)</translation>
+        <translation>التحكم بحجم الصوت للأيون(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1029"/>
         <source>Adjust the volume of EON. Android Default/Manual Settings</source>
-        <translation>장치 볼륨을 조절합니다. 안드로이드 기본/수동 설정</translation>
+        <translation>اضبط مستوى صوت الأيون. إعدادات الأندرويد الافتراضية / اليدوية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1092"/>
         <source>Default</source>
-        <translation>기본값</translation>
+        <translation>افتراضي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1094"/>
         <source>Mute</source>
-        <translation>음소거</translation>
+        <translation>كتم</translation>
     </message>
 </context>
 <context>
@@ -1484,17 +1484,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1111"/>
         <source>EON Brightness Control(%)</source>
-        <translation>장치 밝기 조절(%)</translation>
+        <translation>التحكم في سطوع الأيون(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1111"/>
         <source>Manually adjust the brightness of the EON screen.</source>
-        <translation>장치 화면의 밝기를 수동으로 조정합니다.</translation>
+        <translation>اضبط سطوع شاشة الأيون يدويًا.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1171"/>
         <source>Auto</source>
-        <translation>자동</translation>
+        <translation>تلقائي</translation>
     </message>
 </context>
 <context>
@@ -1502,17 +1502,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1177"/>
         <source>Brightness at SCR Off(%)</source>
-        <translation>화면꺼짐 시 밝기(%)</translation>
+        <translation>السطوع عند إيقاف تشغيل المركبة(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1177"/>
         <source>When using the EON screen off function, the brightness is reduced according to the automatic brightness ratio.</source>
-        <translation>장치 화면 끄기 기능 사용 시, 자동 밝기 비율에 따라 밝기가 감소됩니다.</translation>
+        <translation>عند استخدام وظيفة إيقاف تشغيل شاشة الأيون ، يتم تقليل السطوع وفقًا لنسبة السطوع التلقائية.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1237"/>
         <source>Dark</source>
-        <translation>끄기</translation>
+        <translation>مظلم</translation>
     </message>
 </context>
 <context>
@@ -1520,32 +1520,32 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1243"/>
         <source>EON SCR Off Timer</source>
-        <translation>장치 화면 끄기 타이머</translation>
+        <translation>إيقاف تشغيل الشاشة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1243"/>
         <source>Turn off the EON screen or reduce brightness to protect the screen after driving starts. It automatically brightens or turns on when a touch or event occurs.</source>
-        <translation>주행 시작 후 화면을 보호하기 위해 장치 화면을 끄거나 밝기를 줄이십시오. 터치나 이벤트가 발생하면 자동으로 밝아지거나 켜집니다.</translation>
+        <translation>قم بإيقاف تشغيل شاشة الأيون أو تقليل السطوع لحماية الشاشة بعد بدء القيادة. يضيء تلقائيًا أو يتم تشغيله عند حدوث لمسة أو حدث.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1305"/>
         <source>AlwaysOn</source>
-        <translation>항상켜기</translation>
+        <translation>دائما متاح</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1307"/>
         <source>15secs</source>
-        <translation>15초</translation>
+        <translation>15 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1309"/>
         <source>30secs</source>
-        <translation>30초</translation>
+        <translation>30 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1311"/>
         <source>min(s)</source>
-        <translation>분</translation>
+        <translation>دقيقة</translation>
     </message>
 </context>
 <context>
@@ -1553,12 +1553,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1315"/>
         <source>BAT MinCharging Value</source>
-        <translation>배터리 최소 충전 값</translation>
+        <translation>أقل شحن للبطاريات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1315"/>
         <source>Sets the minimum battery charge value.</source>
-        <translation>최소 배터리 충전 값을 설정합니다.</translation>
+        <translation>يضبط الحد الأدنى لقيمة شحن البطارية.</translation>
     </message>
 </context>
 <context>
@@ -1566,12 +1566,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1374"/>
         <source>BAT MaxCharging Value</source>
-        <translation>배터리 최대 충전 값</translation>
+        <translation>أعلى شحن للبطاريات</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1374"/>
         <source>Sets the maximum battery charge value.</source>
-        <translation>최대 배터리 충전 값을 설정합니다.</translation>
+        <translation>يضبط الحد الأقصى لقيمة شحن البطارية.</translation>
     </message>
 </context>
 <context>
@@ -1579,12 +1579,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1433"/>
         <source>Number of Recorded Files</source>
-        <translation>녹화 파일 개수</translation>
+        <translation>عدد الملفات المسجلة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1433"/>
         <source>Sets the maximum number of recording files. Check file size and max recording count to not exceed your storage.</source>
-        <translation>최대 녹화 파일 수를 설정합니다. 파일 크기 및 최대 기록 수가 저장소 용량을 초과하지 않도록 확인하십시오.</translation>
+        <translation>يضبط الحد الأقصى لعدد ملفات التسجيل. تحقق من حجم الملف والحد الأقصى لعدد التسجيلات حتى لا تتجاوز مساحة التخزين الخاصة بك.</translation>
     </message>
 </context>
 <context>
@@ -1592,32 +1592,32 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1492"/>
         <source>Recording Quality</source>
-        <translation>녹화 품질</translation>
+        <translation>جودة التسجيل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1492"/>
         <source>Set the recording quality. Low/Mid/high definition/high definition/ultra-high definition.</source>
-        <translation>녹화 품질을 설정합니다. 저화질/중화질/고화질/초고화질.</translation>
+        <translation>اضبط جودة التسجيل. منخفضة / متوسطة / عالية الوضوح / فائقة الوضوح.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1550"/>
         <source>Low</source>
-        <translation>저화질</translation>
+        <translation>منخفضة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1552"/>
         <source>Mid</source>
-        <translation>중화질</translation>
+        <translation>متوسطة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1554"/>
         <source>High</source>
-        <translation>고화질</translation>
+        <translation>عالية الوضوح</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1556"/>
         <source>U-High</source>
-        <translation>초고화질</translation>
+        <translation>فائقة الوضوح</translation>
     </message>
 </context>
 <context>
@@ -1625,22 +1625,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1560"/>
         <source>Driver Monitoring Mode</source>
-        <translation>운전자 모니터링 모드</translation>
+        <translation>وضع مراقبة السائق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1560"/>
         <source>Set the monitoring mode. In the case of preference/prevention of sleepiness and sleepiness prevention, you can send a warning message faster by adjusting (lowering) the threshold value below.</source>
-        <translation>모니터링 모드를 설정합니다. 졸음 예방을 선호하는 경우 아래 임계값을 조정(낮춤)하여 경고 메시지를 더 빠르게 보낼 수 있습니다. 화면에서 모니터링 아이콘을 클릭하여 기본모드/졸음방지 모드를 바꿀 수 있습니다. 기본배경:기본모드, 초록배경:졸음방지모드, 졸음방지 모드에서 3회 이상 경고가 울릴경우, 졸음을 쫓기 위한 음악(베타파)이 자동 재생됩니다. 재생은 음악이 끝나면 자동으로 종료되며, 화면을 터치해서도 끌 수 있습니다.</translation>
+        <translation>اضبط وضع المراقبة. في حالة التفضيل / الوقاية من النعاس والوقاية من النعاس ، يمكنك إرسال رسالة تحذير بشكل أسرع عن طريق ضبط (خفض) قيمة الحد الأدنى أدناه. 재생은 음악이 끝나면 자동으로 종료되며, 화면을 터치해서도 끌 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1618"/>
         <source>Default</source>
-        <translation>기본모드</translation>
+        <translation>افتراضي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1620"/>
         <source>UnSleep</source>
-        <translation>졸음방지</translation>
+        <translation>غير نائم</translation>
     </message>
 </context>
 <context>
@@ -1648,12 +1648,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1624"/>
         <source>E2E EYE Threshold</source>
-        <translation>E2E EYE 임계값</translation>
+        <translation>مراقبة تركيز العين</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1624"/>
         <source>Adjust the reference value for the eye detection range. Set the reference value for the value that suits you. When you close your eyes, you should set it lower than the distracted Eyes value. Default: 0.75</source>
-        <translation>눈 감지 범위의 기준 값을 조정합니다. 자신에게 맞는 값의 기준 값을 설정합니다. 눈을 감을 때 Distracted Eyes 값보다 낮게 설정해야 합니다. 기본값: 0.75</translation>
+        <translation>اضبط القيمة المرجعية لنطاق اكتشاف العين. قم بتعيين القيمة المرجعية للقيمة التي تناسبك. عندما تغمض عينيك ، يجب أن تجعلها أقل من قيمة العيون المشتتة. الافتراضي: 0.75</translation>
     </message>
 </context>
 <context>
@@ -1661,12 +1661,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1687"/>
         <source>Normal EYE Threshold</source>
-        <translation>일반 EYE 임계값</translation>
+        <translation>فتحت العين عادية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1687"/>
         <source>Adjust the eye recognition reference value. Lower the value when the recognition rate is low. Default: 0.5</source>
-        <translation>눈 인식 기준 값을 조정합니다. 인식률이 낮을 때 값을 낮춥니다. 기본값: 0.5</translation>
+        <translation>اضبط القيمة المرجعية للتعرف على العين. اخفض القيمة عندما يكون معدل التعرف منخفضًا. الافتراضي: 0.5</translation>
     </message>
 </context>
 <context>
@@ -1674,12 +1674,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1750"/>
         <source>Blink Threshold</source>
-        <translation>눈깜박임 임계값</translation>
+        <translation>رمشة العيون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1750"/>
         <source>Adjust the recognition value for the degree of blinking. When you close your eyes, check BlinkProb and lower the value. Default: 0.5</source>
-        <translation>깜박이는 정도에 대한 인식 값을 조정합니다. 눈을 감은 상태에서 BlinkProb를 확인하고 해당값보다 낮춥니다. 기본값: 0.5</translation>
+        <translation>اضبط قيمة التعرف على درجة الوميض. عندما تغلق عينيك ، تحقق من BlinkProb وقم بخفض القيمة. الافتراضي: 0.5</translation>
     </message>
 </context>
 <context>
@@ -1687,42 +1687,42 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1814"/>
         <source>Cruise Start Mode</source>
-        <translation>크루즈 시작 모드</translation>
+        <translation>وضع مثبت السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1814"/>
         <source>Set the cruise start mode. OP mode/dist+curve/dist only/curve only/one-way 1 lane/safetycam deceleration Only. op mode:no button speed control, dist+curve:use button speed control in the inter-vehicle distance and curve section, dist only:curve only:curve one-way speed only, one-way speed control</source>
-        <translation>크루즈 시작 모드를 설정합니다. OP 기본/차간+커브/차간거리/커브/편도1차/안전구간 감속. OP 기본: 버튼 속도 제어 없음, 차간+커브: 차간 거리와 커브 구간에서 버튼 속도 제어 사용, 차간거리:차간거리에만 버튼속도제어 사용, 커브:커브 구간에서만 버튼속도 제어 사용, 편도1차: 차간+커브 버튼속도제어 및 차량을 우측으로 치우치게 설정, 안전구간 감속: 안전구간에서만 버튼 속도조절 사용</translation>
+        <translation>اضبط وضع بدء الرحلة. وضع القائد الآلي / توزيع + منحنى / توزيع فقط / منحنى فقط / مسار واحد أحادي الاتجاه / تباطؤ كاميرا الأمان فقط. وضع القائد الآلي: لا يوجد تحكم في سرعة الزر ، الوجهة + المنحنى: استخدم التحكم في سرعة الزر في المسافة بين السيارات وقسم المنحنى ، والتوزيع فقط: المنحنى فقط: سرعة المنحنى في اتجاه واحد فقط ، التحكم في السرعة في اتجاه واحد</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1872"/>
         <source>OP Stock</source>
-        <translation>OP 기본</translation>
+        <translation>الإعداد الأصلي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1874"/>
         <source>Dist+Curv</source>
-        <translation>차간+커브</translation>
+        <translation>الوجهة+المنحنى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1876"/>
         <source>DistOnly</source>
-        <translation>차간거리</translation>
+        <translation>الوجهة فقط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1878"/>
         <source>CurvOnly</source>
-        <translation>커브</translation>
+        <translation>المنحنى فقط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1880"/>
         <source>OneWay</source>
-        <translation>편도1차선</translation>
+        <translation>اتجاه واحد</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1882"/>
         <source>CamOnly</source>
-        <translation>안전구간</translation>
+        <translation>الكاميرا فقط</translation>
     </message>
 </context>
 <context>
@@ -1730,17 +1730,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1886"/>
         <source>LaneChange On/Off/Spd</source>
-        <translation>차선변경속도(On/Off/속도)</translation>
+        <translation>تغيير المسار(On/Off/السرعة)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1886"/>
         <source>On/Off lane change(push (-) btn till Off value) and set the lane changeable speed. This value can be kph or mph.</source>
-        <translation>차선 변경 가능 속도를 설정합니다. 이 값은 kph 또는 mph 입니다.</translation>
+        <translation>تغيير حارة التشغيل / الإيقاف (اضغط (-) زر حتى قيمة الإيقاف) واضبط سرعة تغيير المسار. يمكن أن تكون هذه القيمة كم / س أو ميل / س..</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1944"/>
         <source>Off</source>
-        <translation>끄기</translation>
+        <translation>إيقاف</translation>
     </message>
 </context>
 <context>
@@ -1748,42 +1748,42 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1950"/>
         <source>LaneChange Delay</source>
-        <translation>차선 변경 지연시간</translation>
+        <translation>تأخير تغيير المسار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="1950"/>
         <source>Set the delay time after turn signal operation before lane change.</source>
-        <translation>차선 변경 전 방향 지시등 작동 후 지연 시간을 설정합니다.</translation>
+        <translation>اضبط وقت التأخير بعد تشغيل إشارة الانعطاف قبل تغيير الحارة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2008"/>
         <source>Nudge</source>
-        <translation>넛지사용</translation>
+        <translation>بملس الدركسون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2010"/>
         <source>RightNow</source>
-        <translation>바로변경</translation>
+        <translation>فوراً</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2012"/>
         <source>0.5sec</source>
-        <translation>0.5초</translation>
+        <translation>0.5 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2014"/>
         <source>1sec</source>
-        <translation>1초</translation>
+        <translation>1 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2016"/>
         <source>1.5sec</source>
-        <translation>1.5초</translation>
+        <translation>1.5 ثانية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2018"/>
         <source>2secs</source>
-        <translation>2초</translation>
+        <translation>2 ثانية</translation>
     </message>
 </context>
 <context>
@@ -1791,12 +1791,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2022"/>
         <source>LeftCurv Offset</source>
-        <translation>좌측 커브 오프셋</translation>
+        <translation>إزاحة الانحناء الأيسر</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2022"/>
         <source>Adjust the position of the vehicle in the curve section. (-value: move the car to the left, +value: move the car to the right)</source>
-        <translation>커브 구간에서 차량의 위치를 조정합니다(-값: 차량을 왼쪽으로 이동, +값: 차량을 오른쪽으로 이동)</translation>
+        <translation>اضبط موضع السيارة في قسم المنحنى. (-القيمة: حرك السيارة إلى اليسار ، + القيمة: حرك السيارة إلى اليمين)</translation>
     </message>
 </context>
 <context>
@@ -1804,12 +1804,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2081"/>
         <source>RightCurv Offset</source>
-        <translation>우측 커브 오프셋</translation>
+        <translation>إزاحة الانحناء الأيمن</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2081"/>
         <source>Adjust the position of the vehicle in the curve section. (-value: move the car to the left, +value: move the car to the right)</source>
-        <translation>커브 구간에서 차량의 위치를 조정합니다(-값: 차량을 왼쪽으로 이동, +값: 차량을 오른쪽으로 이동)</translation>
+        <translation>اضبط موضع السيارة في قسم المنحنى. (-القيمة: حرك السيارة إلى اليسار ، + القيمة: حرك السيارة إلى اليمين)</translation>
     </message>
 </context>
 <context>
@@ -1817,12 +1817,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2141"/>
         <source>Str Angle Adjust</source>
-        <translation>스티어링 각도 보정</translation>
+        <translation>ضبط الزاوية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2141"/>
         <source>On the straight path, adjust the SteerAngle zero to zero the current steering angle. ex) Set it to 0.5 degrees Celsius for a straight line, and -0.5 degrees Celsius for -0.5 degrees Celsius.</source>
-        <translation>직선 경로에서 스티어링 각도를 조정하여 현재 스티어링 각도를 0으로 설정합니다. ex) 직선 주행시 스티어링 각도가 0.5이면 0.5로 설정하여 0으로 맞추고, -0.5도이면 -0.5도로 설정하여 0으로 맞춥니다. 앵글센서와 스티어링 각도 차이가 많이 나는 경우는 조향각 센서를 초기화 하는게 바람직합니다.</translation>
+        <translation>على المسار المستقيم ، اضبط زاوية الدركسون صفرًا لصفر زاوية التوجيه الحالية. على سبيل المثال) اضبطه على 0.5 درجة مئوية لخط مستقيم ، و -0.5 درجة مئوية لـ -0.5 درجة مئوية..</translation>
     </message>
 </context>
 <context>
@@ -1830,12 +1830,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2204"/>
         <source>SpeedLimit Offset</source>
-        <translation>안전속도 오프셋</translation>
+        <translation>تعيين حد السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2204"/>
         <source>During safetycam deceleration, it decelerates by compensating for the difference between GPS speed and real speed.</source>
-        <translation>안전구간 감속 중 GPS 속도와 실제 속도 사이의 차이를 보상하여 감속합니다.(ex. 10% 시 50구간이면 55까지 크루즈속도를 설정함, +-는 그대로 +-, c는 OSM임의속도제한용)</translation>
+        <translation>أثناء تباطؤ كاميرا الأمان ، تتباطأ عن طريق تعويض الفرق بين سرعة GPS والسرعة الحقيقية</translation>
     </message>
 </context>
 <context>
@@ -1843,27 +1843,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2295"/>
         <source>AutoRES Option</source>
-        <translation>자동RES 옵션</translation>
+        <translation>خيار الدقة التلقائية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2295"/>
         <source>Sets the auto RES option. 1. Adjust the temporary cruise speed, 2. Adjust the set speed itself according to the presence or absence of a preceding car. 3. Adjust the cruise speed if there is a preceding car, and adjust the set speed if there is no preceding car. Please note that the automatic RES may not work well depending on the conditions.</source>
-        <translation>자동 RES 옵션을 설정합니다. 1. 크루즈속도조정: 설정속도는 그대로 두고 크루즈 속도만 현재속도보다 조금 높게 재 설정합니다., 2. 설정속도조정: 설정(MAX)속도를 현재속도로 조정하여 설정합니다., 3. 자동(선행차): 선행차가 있으면 크루즈속도를 조정하고, 선행차가 없으면 설정속도를 조정합니다. 조건에 따라 자동 RES가 잘 작동하지 않을 수 있으니 참고해주세요.(ex. 곡률이 큰 커브 구간에서는 안전상 동작하지 않게 하였음).</translation>
+        <translation>يضبط خيار الدقة تلقائي. 1. اضبط سرعة الانطلاق المؤقتة ، 2. اضبط السرعة المضبوطة نفسها وفقًا لوجود أو عدم وجود سيارة سابقة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2353"/>
         <source>CruiseSet</source>
-        <translation>크루즈속도조정</translation>
+        <translation>مثبت السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2355"/>
         <source>MaxSpeedSet</source>
-        <translation>설정속도조정</translation>
+        <translation>أقصى سرعة للتثبيت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2357"/>
         <source>AUTO(LeadCar)</source>
-        <translation>자동(선행차)</translation>
+        <translation>أقصى (السيارة بالمقدمة )</translation>
     </message>
 </context>
 <context>
@@ -1871,12 +1871,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2361"/>
         <source>AutoRES Condition</source>
-        <translation>자동RES 조건</translation>
+        <translation>الدقة التلقائية حسب الحالة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2361"/>
         <source>Sets the automatic RES condition. When the brake is released/operated when the accelerator pedal is operated.</source>
-        <translation>자동RES 조건을 설정합니다. 가속페달조작시 / 브레이크해제시.</translation>
+        <translation>يضبط حالة الدقة التلقائي. عند تحرير / تشغيل الفرامل عند الضغط على دواسة الوقود.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2419"/>
@@ -1886,7 +1886,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2421"/>
         <source>OnGas</source>
-        <translation>가속페달조작시</translation>
+        <translation>الفرامل المباشرة</translation>
     </message>
 </context>
 <context>
@@ -1894,17 +1894,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2425"/>
         <source>AutoRES Allow(sec)</source>
-        <translation>자동RES 허용시간(초)</translation>
+        <translation>تفعيل الدقة التلقائية(초)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2425"/>
         <source>Adjust the automatic RES allowance time. Automatic RES operates only within the set time after the cruise is released.</source>
-        <translation>자동RES 허용 시간을 설정합니다. 자동RES는 크루즈가 해제된 후 설정된 시간 내에만 작동합니다.</translation>
+        <translation>ضبط وقت بدل الدقة التلقائي. تعمل ميزة الدقة التلقائية فقط في الوقت المحدد بعد تفعيل مثبت السرعة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2481"/>
         <source>NoLimit</source>
-        <translation>제한 없음</translation>
+        <translation>بدون حدود</translation>
     </message>
 </context>
 <context>
@@ -1912,22 +1912,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2489"/>
         <source>Auto Engage Spd(kph)</source>
-        <translation>자동 인게이지 속도(kph)</translation>
+        <translation>التفعيل التلقائي عن التسارع(kph)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2489"/>
         <source>Set the automatic engage speed.</source>
-        <translation>자동 인게이지 속도를 설정합니다.</translation>
+        <translation>ضبط التشغيل تلقائياً عند التسارع.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2545"/>
         <source>atDGear</source>
-        <translation>D기어시</translation>
+        <translation>على ترس القيادة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2547"/>
         <source>atDepart</source>
-        <translation>출발시</translation>
+        <translation>عند المغادرة</translation>
     </message>
 </context>
 <context>
@@ -1935,17 +1935,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2555"/>
         <source>SafetyCamDist Adj(%)</source>
-        <translation>안전구간 감속거리 조정(%)</translation>
+        <translation>معايرة المسافة عن كاميرا السرعة(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2555"/>
         <source>Reduce or increase the deceleration start distance during deceleration of the safety section (+ value: deceleration start from a long distance, -value: deceleration start at a short distance) = interpolation value X interpolation value X reduction/increase ratio according to difference between current speed and cam speed.</source>
-        <translation>안전구간 감속시 감속시작거리를 줄이거나 늘립니다(+값: 원거리부터 감속시작, -값: 단거리부터 감속시작) = 보간값 X 보간값 X 현재속도와 캠속도의 차이에 따른 감속/감속비.</translation>
+        <translation>قم بتقليل أو زيادة مسافة بدء التباطؤ أثناء تباطؤ قسم الأمان (+ القيمة: يبدأ التباطؤ من مسافة طويلة ، - القيمة: بدء التباطؤ على مسافة قصيرة) = قيمة الاستيفاء X قيمة الاستيفاء X نسبة التخفيض / الزيادة وفقًا للاختلاف بين سرعة المركبة وسرعة الكاميرا.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2611"/>
         <source>Default</source>
-        <translation>기본값</translation>
+        <translation>افتراضي</translation>
     </message>
 </context>
 <context>
@@ -1953,12 +1953,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2620"/>
         <source>MAX_STEER</source>
-        <translation>MAX_STEER</translation>
+        <translation>أقصى_التفاف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2620"/>
         <source>Modify the Panda MAX_STEEER value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_STEER 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة أقصى التفاف على الباندا. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -1971,7 +1971,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2679"/>
         <source>Modify the panda RT_DELTA value. Press the Run button below to apply. It might be 7(DeltaDown)X16=112?</source>
-        <translation>판다 RT_DELTA 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오. 7(DeltaDown)X16=112?</translation>
+        <translation>تعديل قيمة RT_DELTA الباندا. اضغط على زر التشغيل أدناه للتطبيق. قد يكون 7 (DeltaDown) X16 = 112؟</translation>
     </message>
 </context>
 <context>
@@ -1984,7 +1984,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2738"/>
         <source>Modify the Panda MAX_RATE_UP value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_RATE_UP 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة الباندا زيادة أقصى معدل. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -1997,7 +1997,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2797"/>
         <source>Modify the Panda MAX_RATE_DOWN value. Press the Run button below to apply.</source>
-        <translation>판다 MAX_RATE_DOWN 값을 수정합니다. 아래 실행 버튼을 눌러 적용하십시오.</translation>
+        <translation>قم بتعديل قيمة الباندا خفض أقصى معدل. اضغط على زر التشغيل أدناه للتطبيق.</translation>
     </message>
 </context>
 <context>
@@ -2005,12 +2005,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2857"/>
         <source>CameraOffset</source>
-        <translation>카메라 오프셋</translation>
+        <translation>معايرة الكاميرا</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2857"/>
         <source>Sets the CameraOffset value. (+value:Move Left, -value:Move Right)</source>
-        <translation>CameraOffset 값을 설정합니다. (+값:왼쪽으로 이동, -값:오른쪽으로 이동)</translation>
+        <translation>يضبط قيمة CameraOffset. (+ value: Move Left، -value: Move Right) (+ القيمة: تحريك لليسار ، -قيمة: تحريك لليمين)</translation>
     </message>
 </context>
 <context>
@@ -2018,12 +2018,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2920"/>
         <source>PathOffset</source>
-        <translation>Path 오프셋</translation>
+        <translation>موازن المسار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2920"/>
         <source>Sets the PathOffset value. (+value:Move left, -value:Move right)</source>
-        <translation>PathOffset 값을 설정합니다. (+값:왼쪽으로 이동, -value:오른쪽으로 이동)</translation>
+        <translation>يضبط قيمة موازنة المسار.. (+ القيمة: التحرك لليسار -القيمة : التحرك لليمين) (+ القيمة: تحريك لليسار ، -القيمة: تحريك لليمين)</translation>
     </message>
 </context>
 <context>
@@ -2031,12 +2031,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2983"/>
         <source>SteerRatio</source>
-        <translation>SteerRatio</translation>
+        <translation>نسبة التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2983"/>
         <source>Sets the SteerRatio default value.</source>
-        <translation>SteerRatio 기본값을 설정합니다.</translation>
+        <translation>يضبط القيمة الافتراضية لنسبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2044,12 +2044,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3081"/>
         <source>SteerRatioMax</source>
-        <translation>SteerRatio최대값</translation>
+        <translation>نسبة التوجيه كحد أقصى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3081"/>
         <source>Sets the SteerRatio maximum value.</source>
-        <translation>SteerRatio 최대값을 설정합니다.</translation>
+        <translation>يضبط الحد الأقصى لقيمة نسبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2057,12 +2057,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3179"/>
         <source>SteerActuatorDelay</source>
-        <translation>SteerActuatorDelay</translation>
+        <translation>تأخير مشغل التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3179"/>
         <source>Adjust the SteerActuatorDelay value.</source>
-        <translation>SteerActuatorDelay 값을 조정합니다.</translation>
+        <translation>يضبط قيمة الدودة الكهربائية.</translation>
     </message>
 </context>
 <context>
@@ -2070,12 +2070,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3242"/>
         <source>SteerRateCost</source>
-        <translation>SteerRateCost</translation>
+        <translation>معدل التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3242"/>
         <source>Adjust the SteerRateCost value.</source>
-        <translation>SteerRateCost 값을 조정합니다.</translation>
+        <translation>يضبط قوة معدل التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2083,12 +2083,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3305"/>
         <source>SteerLimitTimer</source>
-        <translation>SteerLimitTimer</translation>
+        <translation>توقيت حد التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3305"/>
         <source>Adjust the SteerLimitTimer value.</source>
-        <translation>SteerLimitTimer 값을 조정합니다.</translation>
+        <translation>يضبط قيمة توقيت حد التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2101,7 +2101,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3368"/>
         <source>Adjust the TireStiffnessFactor value.</source>
-        <translation>TireStiffnessFactor 값을 조정합니다.</translation>
+        <translation>TireStiffnessFactor يضبط قيمة.</translation>
     </message>
 </context>
 <context>
@@ -2109,22 +2109,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3434"/>
         <source>SMBase: </source>
-        <translation>SM기본: </translation>
+        <translation>SMأساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3461"/>
         <source>SMMax: </source>
-        <translation>SM최대: </translation>
+        <translation>SMأقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3512"/>
         <source>The value cannot exceed SteerMax</source>
-        <translation>값은 SteerMax를 초과할 수 없습니다</translation>
+        <translation>값은 SteerMax لا يمكن أن تتجاوز القيمة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3529"/>
         <source>The value cannot be less than SteerMaxBase</source>
-        <translation>값은 SteerMaxBase보다 작을 수 없습니다</translation>
+        <translation>SteerMaxBase لا يمكن أن تكون القيمة أقل من</translation>
     </message>
 </context>
 <context>
@@ -2132,22 +2132,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3564"/>
         <source>DtUpBase: </source>
-        <translation>DtUp기본: </translation>
+        <translation>DtUp أساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3591"/>
         <source>DtUpMax: </source>
-        <translation>DtUp최대: </translation>
+        <translation>DtUp أقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3642"/>
         <source>The value cannot exceed maximum DeltaUp value</source>
-        <translation>값은 최대 DeltaUp값을 초과할 수 없습니다</translation>
+        <translation>لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة DeltaUp</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3659"/>
         <source>The value cannot be less than DeltaUp default value</source>
-        <translation>값은 DeltaUp 기본값보다 작을 수 없습니다</translation>
+        <translation>لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لـ DeltaUp</translation>
     </message>
 </context>
 <context>
@@ -2155,22 +2155,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3694"/>
         <source>DtDnBase: </source>
-        <translation>DtDn기본: </translation>
+        <translation>DtDn أساسي: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3721"/>
         <source>DtDnMax: </source>
-        <translation>DtDn최대: </translation>
+        <translation>DtDn أقصى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3772"/>
         <source>The value cannot exceed maximum DeltaDown value</source>
-        <translation>값은 최대 DeltaDown 값을 초과할 수 없습니다</translation>
+        <translation>لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة DeltaDown</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3789"/>
         <source>The value cannot be less than DeltaDown default value</source>
-        <translation>값은 DeltaDown 기본값보다 작을 수 없습니다</translation>
+        <translation>لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لـ DeltaDown</translation>
     </message>
 </context>
 <context>
@@ -2178,12 +2178,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3821"/>
         <source>SteerThreshold</source>
-        <translation>SteerThreshold</translation>
+        <translation>عتبة التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3821"/>
         <source>Adjust the SteerThreshold value.</source>
-        <translation>SteerThreshold를 조정합니다.</translation>
+        <translation>اضبط قيمة عتبة التوجيه.</translation>
     </message>
 </context>
 <context>
@@ -2191,12 +2191,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3881"/>
         <source>LatControl(Reboot)</source>
-        <translation>조향제어방법(Reboot)</translation>
+        <translation>طريقة التحكم في التوجيه (Reboot)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3881"/>
         <source>Set the steering control method(PID/INDI/LQR/TORQUE). Reboot Required.</source>
-        <translation>조향제어방법(PID/INDI/LQR/TORQUE)을 설정합니다. 재부팅이 필요합니다.</translation>
+        <translation>اضبط طريقة التحكم في التوجيه(PID/INDI/LQR/TORQUE)إعادة تشغيل المطلوبة.</translation>
     </message>
 </context>
 <context>
@@ -2209,7 +2209,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3952"/>
         <source>Adjust Kp</source>
-        <translation>Kp 조정</translation>
+        <translation>Kp تعديل</translation>
     </message>
 </context>
 <context>
@@ -2222,7 +2222,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4015"/>
         <source>Adjust Ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2235,7 +2235,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4078"/>
         <source>Adjust Kd</source>
-        <translation>Kd 조정</translation>
+        <translation>Kd تعديل</translation>
     </message>
 </context>
 <context>
@@ -2248,7 +2248,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4141"/>
         <source>Adjust Kf</source>
-        <translation>Kf 조정</translation>
+        <translation>Kf تعديل</translation>
     </message>
 </context>
 <context>
@@ -2261,7 +2261,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4204"/>
         <source>Adjust OuterLoopGain</source>
-        <translation>OuterLoopGain 조정</translation>
+        <translation>OuterLoopGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2274,7 +2274,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4267"/>
         <source>Adjust InnerLoopGain</source>
-        <translation>InnerLoopGain 조정</translation>
+        <translation>InnerLoopGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2287,7 +2287,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4330"/>
         <source>Adjust TimeConstant</source>
-        <translation>TimeConstant 조정</translation>
+        <translation>TimeConstant تعديل</translation>
     </message>
 </context>
 <context>
@@ -2300,7 +2300,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4393"/>
         <source>Adjust ActuatorEffectiveness</source>
-        <translation>ActuatorEffectiveness 조정</translation>
+        <translation>ActuatorEffectiveness تعديل</translation>
     </message>
 </context>
 <context>
@@ -2313,7 +2313,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4456"/>
         <source>Adjust Scale</source>
-        <translation>Scale 조정</translation>
+        <translation>Scale تعديل</translation>
     </message>
 </context>
 <context>
@@ -2326,7 +2326,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4515"/>
         <source>Adjust ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2339,7 +2339,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4578"/>
         <source>Adjust DcGain</source>
-        <translation>DcGain 조정</translation>
+        <translation>DcGain تعديل</translation>
     </message>
 </context>
 <context>
@@ -2352,7 +2352,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4641"/>
         <source>Adjust Kp</source>
-        <translation>Kp 조정</translation>
+        <translation>Kp تعديل</translation>
     </message>
 </context>
 <context>
@@ -2365,7 +2365,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4709"/>
         <source>Adjust Kf</source>
-        <translation>Kf 조정</translation>
+        <translation>Kf تعديل</translation>
     </message>
 </context>
 <context>
@@ -2378,7 +2378,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4777"/>
         <source>Adjust Ki</source>
-        <translation>Ki 조정</translation>
+        <translation>Ki تعديل</translation>
     </message>
 </context>
 <context>
@@ -2391,7 +2391,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4845"/>
         <source>Adjust Friction</source>
-        <translation>Friction 조정</translation>
+        <translation>Friction تعديل</translation>
     </message>
 </context>
 <context>
@@ -2404,7 +2404,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4908"/>
         <source>Adjust MaxLatAccel</source>
-        <translation>MaxLatAccel 조정</translation>
+        <translation>MaxLatAccel تعديل</translation>
     </message>
 </context>
 <context>
@@ -2417,7 +2417,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="4971"/>
         <source>Adjust TorqueAngDeadZone</source>
-        <translation>TorqueAngDeadZone 조정</translation>
+        <translation>TorqueAngDeadZone تعديل</translation>
     </message>
 </context>
 <context>
@@ -2425,12 +2425,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5034"/>
         <source>CruiseGap</source>
-        <translation>크루즈갭</translation>
+        <translation>مسافة مثبت السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5034"/>
         <source>Adjust the inter-vehicle distance (TR) according to the cruise gap. TR refers to the time in seconds of collision with the car in front, and the larger it becomes, the farther it is from the car in front.</source>
-        <translation>크루즈 갭에 따라 차량 간 거리(TR)를 조정하십시오. TR은 앞차와 충돌한 시간(초 단위)을 말하며, 크기가 커질수록 앞차와의 거리가 멀어집니다.</translation>
+        <translation>اضبط المسافة بين السيارات (TR) وفقًا لفجوة الرحلات. يشير TR إلى الوقت بالثواني من الاصطدام مع السيارة التي أمامك ، وكلما زاد حجمها ، كلما ابتعدت عن السيارة التي أمامك.</translation>
     </message>
 </context>
 <context>
@@ -2438,17 +2438,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5252"/>
         <source>Use DynamicTR</source>
-        <translation>다이나믹TR 사용</translation>
+        <translation>استخدم TR الديناميكي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5252"/>
         <source>Use DynamicTR and assign it to the corresponding gap and adjust TR by speed below.</source>
-        <translation>다이나믹TR 사용 및 해당 갭에 할당하고 아래 속도로 TR을 조절합니다.</translation>
+        <translation>استخدم DynamicTR وقم بتعيينه للفجوة المقابلة واضبط TR حسب السرعة أدناه.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5310"/>
         <source>UnUse</source>
-        <translation>사용안함</translation>
+        <translation>غير مستعمل</translation>
     </message>
 </context>
 <context>
@@ -2456,12 +2456,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5517"/>
         <source>LaneChange Time (km/h: value)</source>
-        <translation>차선변경 시간(km/h: 값)</translation>
+        <translation>وقت تغيير المسار (km/h: القيمة)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5517"/>
         <source>When changing lanes, adjust the timing of lane change for each speed. If you want a quick lane change, increase the value and lower the value if you want a slow lane change.</source>
-        <translation>차선 변경 시 속도별로 차선 변경 타이밍을 조정합니다. 빠른 차선 변경을 원하는 경우 값을 늘리고 느린 차선 변경을 원하는 경우 값을 낮춥니다.</translation>
+        <translation>عند تغيير الحارة ، اضبط توقيت تغيير الحارة لكل سرعة. إذا كنت تريد تغييرًا سريعًا للحارة ، فقم بزيادة القيمة وخفض القيمة إذا كنت تريد تغييرًا بطيئًا للحارة.</translation>
     </message>
 </context>
 <context>

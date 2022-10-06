@@ -3703,7 +3703,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="664"/>
         <source>Turn this on, if you get an error with forward collision warning.(reboot required)</source>
-        <translation>전방 충돌 경고와 함께 오류가 발생하면 이 옵션을 켜십시오. (재부팅 필요)</translation>
+        <translation>قم بتشغيل هذا ، إذا تلقيت خطأ في تحذير الاصطدام الأمامي. (يلزم إعادة التشغيل)</translation>
     </message>
 </context>
 <context>
@@ -3711,12 +3711,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="676"/>
         <source>Standstill Resume Alternative</source>
-        <translation>정지시 Resume 대안 기능</translation>
+        <translation>بديل عن استئناف العمل بدون توقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="676"/>
         <source>Turn this on, if auto resume doesn&apos;t work at standstill. some cars only(ex. GENESIS). before enable, try to adjust RES message counts above.(reboot required)</source>
-        <translation>자동 Resume 기능이 정지 상태에서 작동하지 않는 경우 이 기능을 켜십시오. 활성화하기 전에 위의 RES 메시지 횟수를 먼저 조정해 보십시오. 그래도 안된다면 이기능을 켜세요.(재부팅 필요)</translation>
+        <translation>قم بتشغيل ميزة الاستئناف التلقائي إذا لم تعمل من حالة توقف تام. حاول ضبط عدد رسائل RES أعلاه أولاً قبل التمكين. إذا لم يفلح ذلك ، فقم بتشغيل هذه الميزة (يلزم إعادة التشغيل).</translation>
     </message>
 </context>
 <context>
@@ -3724,12 +3724,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="688"/>
         <source>Enable Mapbox</source>
-        <translation>맵박스 사용</translation>
+        <translation>تفعيل صندوق الخرائط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="688"/>
         <source>If you want to use Mapbox, turn on and then connect to device using web browser http://(device ip):8082  Mapbox setting will show up and type mapbox pk and sk token(you can created this on mapbox.com website). If you want to search destinations with googlemap, first, you should create google api key and enable Enable GoogleMap for Mapbox</source>
-        <translation>맵박스를 사용하려면 웹 브라우저 http://(device ip):8082 에 접속, 맵박스 설정이 나타나고 맵박스 pk 및 sk 토큰을 입력합니다(mapbox.com 웹 사이트에서 생성할 수 있습니다). 구글맵으로 목적지를 검색하려면 먼저 구글 api 키를 생성하고 토큰에 해당키를 입력합니다.</translation>
+        <translation>لاستخدام Mapbox ، انتقل إلى متصفح الويب http: // (device ip): 8082 ، وستظهر إعدادات mapbox وأدخل الرموز المميزة لـ mapbox pk و sk (يمكنك إنشاء واحدة على موقع الويب mapbox.com). للبحث عن وجهة باستخدام خرائط Google ، قم أولاً بإنشاء مفتاح Google api وأدخل المفتاح في الرمز المميز.</translation>
     </message>
 </context>
 <context>
@@ -3737,12 +3737,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="700"/>
         <source>Use Radar Track</source>
-        <translation>레이더 트랙 사용</translation>
+        <translation>استخدم مسار الرادار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="700"/>
         <source>Some cars have known radar tracks(from comma) for long control. This uses radar track directly instead of scc can message. Before you go, you must need to run hyundai_enable_radar_points.py in /data/openpilot/selfdrive/debug dir to enable your radar track. (Reboot required)</source>
-        <translation>일부 자동차는 롱 제어를 위해 레이더 트랙(쉼표에서) 이것은 스캔 메시지 대신 레이더 트랙을 직접 사용합니다. 활성 전에 /data/openpilot/selfdrive/debug dir에서 hyundai_enable_radar_points.py를 실행하여 레이더 추적을 활성화해야 합니다. (재부팅 필요)</translation>
+        <translation>تستخدم بعض السيارات مسار الرادار (بكوما) للتحكم الطويل ، وهذا يستخدم مسار الرادار مباشرة بدلاً من رسالة المسح. قبل التنشيط ، تحتاج إلى تمكين تتبع الرادار عن طريق تشغيل hyundai_enable_radar_points.py في / data / openpilot / selfdrive / debug dir. (إعادة تشغيل المطلوبة)</translation>
     </message>
 </context>
 <context>
@@ -3755,7 +3755,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="712"/>
         <source>This is pre-requisite for LongControl of HKG. It seems that this affects AEB. So do not use this if you have any concern.</source>
-        <translation>이것은 HKG의 Long Control을 위한 전제 조건입니다. 이것은 AEB에 영향을 미치는 것 같습니다. 해당 부분이 우려가 된다면 이것을 사용하지 마세요.</translation>
+        <translation>هذا شرط أساسي لـ HKG's Long Control. يبدو أن هذا يؤثر على AEB. إذا كان هذا مصدر قلق ، فلا تستخدمه.</translation>
     </message>
 </context>
 <context>
@@ -3763,12 +3763,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="724"/>
         <source>C2 with CommaPower</source>
-        <translation>C2 콤마파워 용</translation>
+        <translation>كوما2 مع منفذ الطاقة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="724"/>
         <source>This is for C2 users with Comma Power.</source>
-        <translation>콤마 파워를 가진 C2 사용자를 위한 것입니다.</translation>
+        <translation>هذا لمستخدمي كوما2 مع كوما للطاقة.</translation>
     </message>
 </context>
 <context>
@@ -3776,12 +3776,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="736"/>
         <source>Custom TR Enable</source>
-        <translation>사용자 지정 TR 사용</translation>
+        <translation>استخدام TR مخصص</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="736"/>
         <source>to use Custom TR not 1.45(comma default).</source>
-        <translation>1.45(콤마 기본값)가 아닌 사용자 지정 TR을 사용합니다.</translation>
+        <translation>استخدم TR مخصص بدلاً من 1.45 (كوما الافتراضي).</translation>
     </message>
 </context>
 <context>
@@ -3789,12 +3789,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="748"/>
         <source>Routine Drive by RoadName</source>
-        <translation>OSM도로명에 따른 루틴 주행</translation>
+        <translation>القيادة الروتينية وفقًا لاسم طريق OSM</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="748"/>
         <source>This will adjust useful things by roadname. If you want to use, edit the file, /data/params/d/RoadList. modify like this RoadName1,offset1(ex:+0.05),RoadName2,offset2(ex:-0.05),... and the second line RoadName3,speedlimit(ex:30),RoadName4,speedlimit(ex:60),...</source>
-        <translation>이렇게 하면 도로 이름에 따라 유용한 것들이 조정됩니다. 사용하려는 경우, 이 /data/params/d/RoadList 파일을 다음과 같이 편집하세요. RoadName1, offset1(ex:+0.05), RoadName2, offset2(ex:-0.05),... 및 두 번째 줄 RoadName3, 속도제한(ex:30), RoadName4, 속도제한(ex:60),...와 같이 파일을 편집합니다.</translation>
+        <translation>سيؤدي هذا إلى ضبط الأشياء المفيدة بناءً على اسم الطريق. إذا كنت تريد استخدامه ، فقم بتحرير ملف / data / params / d / RoadList كما يلي: RoadName1 ، offset1 (على سبيل المثال: +0.05) ، RoadName2 ، offset2 (على سبيل المثال: -0.05) ، ... والخط الثاني RoadName3 ، حد السرعة (على سبيل المثال: 30) ، RoadName4 ، حد السرعة (على سبيل المثال: 60) ، ... تحرير الملف كـ</translation>
     </message>
 </context>
 <context>
@@ -3802,12 +3802,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="760"/>
         <source>Driving Close to RoadEdge</source>
-        <translation>도로 엣지에 근접한 주행</translation>
+        <translation>القيادة بالقرب من حافة الطريق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="760"/>
         <source>This will adjust the camera offset to get close to road edge if the car is on the first or last lane.</source>
-        <translation>이렇게 하면 차량이 첫 번째 또는 마지막 차선에 있는 경우 카메라 오프셋이 로드 엣지에 가까워지거나 멀어지도록 조정됩니다.</translation>
+        <translation>سيؤدي هذا إلى ضبط إزاحة الكاميرا لتكون أقرب إلى حافة الطريق أو بعيدًا عنها إذا كانت السيارة في الحارة الأولى أو الأخيرة.</translation>
     </message>
 </context>
 <context>
@@ -3815,12 +3815,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="772"/>
         <source>To Avoid LKAS Fault</source>
-        <translation>LKAS Fault 방지 기능</translation>
+        <translation>وظيفة منع خطأ LKAS</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="772"/>
         <source>to avoid LKAS fault above max angle limit(car specific). This is live value. Find out your maxframe while driving.</source>
-        <translation>최대 조향각(MaxAngle)을 초과시 LKAS Fault를 방지합니다. 이것은 라이브 밸류입니다. 운전하면서 LKAS Fault가 발생하지 않는 차량의 MaxFrame을 찾아보십시오.</translation>
+        <translation>يمنع خطأ LKAS عند تجاوز الحد الأقصى لزاوية التوجيه (MaxAngle). هذه قيمة حية. ابحث عن MaxFrame لمركبة لا تواجه عطل LKAS أثناء القيادة.</translation>
     </message>
 </context>
 <context>
@@ -3828,12 +3828,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="784"/>
         <source>To Avoid LKAS Fault with More Steer</source>
-        <translation>LKAS Fault 방지와 변경 판다값 적용 </translation>
+        <translation>منع أخطاء LKAS وتطبيق قيم الباندا المتغيرة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="784"/>
         <source>This is just in case you are using other panda setting.(delta updown, maxsteer, rtdelta and etc).</source>
-        <translation>판다 설정을 기본값에서 높여서 쓸경우를 대비해서입니다. (델타 업다운, MAX스티어, RT델다 등)</translation>
+        <translation>هذا في حالة استخدامك لإعداد الباندا عن طريق زيادته من الإعداد الافتراضي. (Delta up-down ، MAX steer ، RT delda ، إلخ.)</translation>
     </message>
 </context>
 <context>
@@ -3841,12 +3841,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="796"/>
         <source>Use Stock Decel on SaftySection</source>
-        <translation>안전 구간에서 순정 감속 사용</translation>
+        <translation>استخدام التباطؤ التام في المنطقة الآمنة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="796"/>
         <source>Use stock deceleration on safety section.(the vehicle equipped with Stock Navigation)</source>
-        <translation>오픈파일럿 롱 컨트롤 사용시 안전구간에서 순정 네비게이션 감속 기능을 사용합니다.(순정 네비게이션이 장착된 차량)</translation>
+        <translation>استخدم تباطؤ المخزون في قسم السلامة (السيارة المجهزة بنظام ملاحة)</translation>
     </message>
 </context>
 <context>
@@ -3854,12 +3854,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="808"/>
         <source>JoyStick Debug Mode</source>
-        <translation>조이스틱 디버그 모드</translation>
+        <translation>وضع التحكم باليد</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="808"/>
         <source>How to use: https://github.com/commaai/openpilot/tree/master/tools/joystick</source>
-        <translation>사용방법: https://github.com/commaai/openpilot/tree/master/tools/joystick</translation>
+        <translation>طريقة الاستخدام: https://github.com/commaai/openpilot/tree/master/tools/joystick</translation>
     </message>
 </context>
 <context>
@@ -3867,12 +3867,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="820"/>
         <source>RPM Animated</source>
-        <translation>RPM 애니메이션</translation>
+        <translation>مقياس الدوران</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="820"/>
         <source>Show Animated RPM</source>
-        <translation>애니메이션 RPM 표시</translation>
+        <translation>إظهار عدد الدورات في الدقيقة المتحركة</translation>
     </message>
 </context>
 <context>
@@ -3880,12 +3880,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="832"/>
         <source>Show Stop Line</source>
-        <translation>정지선 표시</translation>
+        <translation>إظهار خط التوقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="832"/>
         <source>Show stop line on the screen.</source>
-        <translation>화면에 정지선을 표시합니다.</translation>
+        <translation>إظهار خط التوقف على الشاشة.</translation>
     </message>
 </context>
 <context>
@@ -3893,12 +3893,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="844"/>
         <source>No Smart MDPS</source>
-        <translation>비 스마트 MDPS 차량</translation>
+        <translation>لا يوجد دودة ذكية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="844"/>
         <source>Turn on, if you have no smartmdps or no mdps harness to avoid sending can under certain speed that is not able to use lane keeping.</source>
-        <translation>스마트 mdps가 없거나 mdps 하네스가 없는 경우 차선 유지를 사용할 수 없는 특정 속도 미만에서 캔신호를 보내지 않도록 이 기능을 켜십시오.</translation>
+        <translation>قم بالتشغيل ، إذا لم يكن لديك نظام الدودة الذكية أو لم يكن لديك أداة الدودة لتجنب إرسال العلبة في ظل سرعة معينة غير قادرة على استخدام حفظ المسار.</translation>
     </message>
 </context>
 <context>
@@ -3906,12 +3906,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="856"/>
         <source>Speed CameraOffset</source>
-        <translation>속도 카메라 오프셋</translation>
+        <translation>كاميرا السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="856"/>
         <source>This increase offset at low speed and decrease offset at low speed. If you feel car moves to right at low speed.</source>
-        <translation>이 기능은 저속에서는 카메라오프셋을 증가시키고 고속에서는 카메라오프셋을 원래대로 만듭니다. 만약 차량이 낮은 속도에서 오른쪽으로 치우치는 것을 느낀다면 이기능을 켜는것을 추천합니다.</translation>
+        <translation>هذه الزيادة تقابلها سرعة منخفضة وتقليل الإزاحة عند السرعة المنخفضة. إذا شعرت أن السيارة تتحرك إلى اليمين بسرعة منخفضة.</translation>
     </message>
 </context>
 <context>
@@ -3919,12 +3919,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="868"/>
         <source>Hold Button for Setting Menu</source>
-        <translation>설정메뉴 진입 지연 사용</translation>
+        <translation>اضغط مع الاستمرار على زر إعداد القائمة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="868"/>
         <source>Use 0.3 sec delay to enter setting menu. This is to prevent being touched in setting menu when you use external program(Mixplorer, etc)</source>
-        <translation>0.3초 지연을 사용하여 설정 메뉴로 들어갑니다. 외부 프로그램(Mixplor 등)을 사용할 때 설정 메뉴에서 터치되는 것을 방지하기 위한 것입니다.</translation>
+        <translation>استخدم تأخير 0.3 ثانية للدخول إلى قائمة الإعداد. هذا لمنع التعرض للمس في قائمة الإعداد عند استخدام برنامج خارجي (Mixplorer ، إلخ)</translation>
     </message>
 </context>
 <context>
@@ -3932,12 +3932,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="880"/>
         <source>Enable RTShield Process</source>
-        <translation>RTShield 프로세스 사용</translation>
+        <translation>تفعيل عملية RTShield</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="880"/>
         <source>Seems regarding process stability. This uses resource.</source>
-        <translation>장치 프로세스 안정성에 관한 것 같습니다. 이 기능은 리소스를 사용합니다.</translation>
+        <translation>يبدو بخصوص استقرار العملية. هذا يستخدم الموارد.</translation>
     </message>
 </context>
 <context>
@@ -3945,12 +3945,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="892"/>
         <source>Offline OSM(64G storage only)</source>
-        <translation>오프라인 OSM(64G 스토리지만 해당)</translation>
+        <translation>OSM غير متصل (سعة تخزين 64 جيجا فقط)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="892"/>
         <source>Local only OSM. This will download DBs from online. Much storage is required. If your storage is not enough, Compiling occurs every boot time.</source>
-        <translation>로컬 전용 OSM. 온라인에서 DB를 다운로드합니다. 많은 스토리지가 필요합니다. 저장 공간이 충분하지 않으면 부팅 시마다 컴파일이 발생합니다. 이경우 기능을 끄십시오.</translation>
+        <translation>مدير الكشافة على الإنترنت المحلي فقط. سيؤدي هذا إلى تنزيل قواعد البيانات من الإنترنت. مطلوب مساحة تخزين كبيرة. إذا لم تكن سعة التخزين لديك كافية ، فسيتم التحويل البرمجي كلما يقلع النظام.</translation>
     </message>
 </context>
 </TS>

@@ -134,10 +134,10 @@ static void draw_lead(UIState *s, const cereal::RadarState::LeadData::Reader &le
 
   if (s->scene.radarDistance < 149) {
     draw_chevron(s, x, y, sz, nvgRGBA(201, 34, 49, fillAlpha), COLOR_YELLOW);
-    ui_draw_text(s, x, y + sz/1.5f, "ق", 60, COLOR_BLUE, "sans-bold"); //neokii
+    ui_draw_text(s, x, y + sz/1.5f, "R", 60, COLOR_BLUE, "sans-bold"); //neokii
   } else {
     draw_chevron(s, x, y, sz, nvgRGBA(165, 255, 135, fillAlpha), COLOR_GREEN);
-    ui_draw_text(s, x, y + sz/1.5f, "ب", 60, COLOR_BLACK, "sans-bold"); //hoya, vision
+    ui_draw_text(s, x, y + sz/1.5f, "V", 60, COLOR_BLACK, "sans-bold"); //hoya, vision
   }
 }
 
@@ -289,7 +289,7 @@ static void ui_draw_standstill(UIState *s) {
       nvgFontSize(s->vg, 170);
     }
     nvgFillColor(s->vg, COLOR_ORANGE_ALPHA(240));
-    ui_print(s, scene.mapbox_running ? viz_standstill_x + 250 : viz_standstill_x, viz_standstill_y, "توقف");
+    ui_print(s, scene.mapbox_running ? viz_standstill_x + 250 : viz_standstill_x, viz_standstill_y, "STOP");
     if (scene.mapbox_running) {
       nvgFontSize(s->vg, 150);
     } else {
@@ -565,7 +565,7 @@ static void ui_draw_vision_cruise_speed(UIState *s) {
 
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_BASELINE);
   if (s->scene.limitSpeedCamera > 19 && s->scene.limitSpeedCamera <= round(maxspeed)) {
-    ui_draw_text(s, rect.centerX(), bdr_s+65, "الحد", 26 * 2.5, COLOR_WHITE_ALPHA(s->scene.cruiseAccStatus ? 200 : 100), "sans-regular");
+    ui_draw_text(s, rect.centerX(), bdr_s+65, "LIMIT", 26 * 2.5, COLOR_WHITE_ALPHA(s->scene.cruiseAccStatus ? 200 : 100), "sans-regular");
   } else if (is_cruise_set) {
     const std::string maxspeed_str = std::to_string((int)std::nearbyint(maxspeed));
     ui_draw_text(s, rect.centerX(), bdr_s+65, maxspeed_str.c_str(), 26 * 3.3, COLOR_WHITE, "sans-bold");
@@ -682,7 +682,7 @@ static void ui_draw_vision_speed(UIState *s) {
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_BASELINE);
   ui_draw_text(s, s->fb_w/2, 210+(s->scene.animated_rpm?35:0), speed_str.c_str(), 96 * 2.5, val_color, "sans-bold");
   if (!s->scene.animated_rpm) {
-    ui_draw_text(s, s->fb_w/2, 290, s->scene.is_metric ? "كلم/س" : "ميل", 36 * 2.5, scene.brakeLights?nvgRGBA(201, 34, 49, 100):COLOR_WHITE_ALPHA(200), "sans-regular");
+    ui_draw_text(s, s->fb_w/2, 290, s->scene.is_metric ? "km/h" : "mph", 36 * 2.5, scene.brakeLights?nvgRGBA(201, 34, 49, 100):COLOR_WHITE_ALPHA(200), "sans-regular");
   }
 }
 
@@ -827,7 +827,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
   if (true) {
     //char val_str[16];
     char uom_str[6];
-    std::string cpu_temp_val = std::to_string(int(scene.cpuTemp)) + "°د";
+    std::string cpu_temp_val = std::to_string(int(scene.cpuTemp)) + "°C";
     NVGcolor val_color = COLOR_WHITE_ALPHA(200);
     if(scene.cpuTemp > 75) {
       val_color = nvgRGBA(255, 188, 3, 200);
@@ -841,7 +841,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
     } else {
       snprintf(uom_str, sizeof(uom_str), "%.0f°C", (scene.ambientTemp));
     }
-    bb_ry +=bb_ui_draw_measure(s, cpu_temp_val.c_str(), uom_str, "حرارة المعالج",
+    bb_ry +=bb_ui_draw_measure(s, cpu_temp_val.c_str(), uom_str, "CPU TEMP",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize, 0);
@@ -869,7 +869,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
   //BAT STAT
   if (!scene.batt_less) {
     //char val_str[16];
-    std::string bat_temp_val = std::to_string(int(scene.batTemp)) + "°د";
+    std::string bat_temp_val = std::to_string(int(scene.batTemp)) + "°C";
     std::string bat_level_val = "";
     NVGcolor val_color = COLOR_WHITE_ALPHA(200);
     if (scene.batTemp > 40) {
@@ -878,7 +878,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
     if (scene.batTemp > 50) {
       val_color = nvgRGBA(255, 0, 0, 200);
     }
-    if (scene.deviceState.getBatteryStatus() == "يتم السحن") {
+    if (scene.deviceState.getBatteryStatus() == "Charging") {
       bat_level_val = std::to_string(int(scene.batPercent)) + "%++";
     } else {
       bat_level_val = std::to_string(int(scene.batPercent)) + "%--";
@@ -893,7 +893,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
     }
     // temp is alway in C * 1000
     //snprintf(val_str, sizeof(val_str), "%.0fC", batteryTemp);
-    bb_ry +=bb_ui_draw_measure(s, bat_temp_val.c_str(), bat_level_val.c_str(), "حالة البطاريات",
+    bb_ry +=bb_ui_draw_measure(s, bat_temp_val.c_str(), bat_level_val.c_str(), "BAT STAT",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color2,
         value_fontSize, label_fontSize, uom_fontSize, 0);
@@ -931,8 +931,8 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
     char uom_str[6];
     NVGcolor val_color = COLOR_WHITE_ALPHA(200);
     snprintf(val_str, sizeof(val_str), "%.0f", (scene.altitudeUblox));
-    snprintf(uom_str, sizeof(uom_str), "م");
-    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "الارتفاع",
+    snprintf(uom_str, sizeof(uom_str), "m");
+    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "ALTITUDE",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize, 0);
@@ -1097,11 +1097,11 @@ static void bb_ui_draw_measures_left(UIState *s, int bb_x, int bb_y, int bb_w ) 
        snprintf(val_str, sizeof(val_str), "-");
     }
     if (scene.is_metric) {
-      snprintf(uom_str, sizeof(uom_str), "كلم/س");;
+      snprintf(uom_str, sizeof(uom_str), "km/h");;
     } else {
-      snprintf(uom_str, sizeof(uom_str), "ميل/س");
+      snprintf(uom_str, sizeof(uom_str), "mi/h");
     }
-    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "السرعة الحقيقية",
+    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "REL SPD",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize, 0);
@@ -1124,7 +1124,7 @@ static void bb_ui_draw_measures_left(UIState *s, int bb_x, int bb_y, int bb_w ) 
     snprintf(val_str, sizeof(val_str), "%.1f",(scene.angleSteers));
     snprintf(uom_str, sizeof(uom_str), "%.1f",(scene.desired_angle_steers));
 
-    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "زاوية الدركسون",
+    bb_ry +=bb_ui_draw_measure(s, val_str, uom_str, "STR ANG",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize, 0);
@@ -1305,8 +1305,8 @@ static void draw_safetysign(UIState *s) {
       ui_fill_rect(s->vg, rect_si, COLOR_WHITE_ALPHA(200/sl_opacity), 16.);
       ui_draw_rect(s->vg, rect_s, COLOR_BLACK_ALPHA(200/sl_opacity), 9, 17.);
       ui_draw_rect(s->vg, rect_so, COLOR_WHITE_ALPHA(200/sl_opacity), 6, 20.);
-      ui_draw_text(s, rect_s.centerX(), rect_s.centerY()-55, "السرعة", 55, COLOR_BLACK_ALPHA(200/sl_opacity), "sans-bold");
-      ui_draw_text(s, rect_s.centerX(), rect_s.centerY()-20, "الحد", 55, COLOR_BLACK_ALPHA(200/sl_opacity), "sans-bold");
+      ui_draw_text(s, rect_s.centerX(), rect_s.centerY()-55, "SPEED", 55, COLOR_BLACK_ALPHA(200/sl_opacity), "sans-bold");
+      ui_draw_text(s, rect_s.centerX(), rect_s.centerY()-20, "LIMIT", 55, COLOR_BLACK_ALPHA(200/sl_opacity), "sans-bold");
     } else {
       ui_fill_rect(s->vg, rect_si, COLOR_WHITE_ALPHA(200/sl_opacity), diameter2/2);
       ui_draw_rect(s->vg, rect_s, COLOR_RED_ALPHA(200/sl_opacity), 20, diameter/2);
@@ -1413,11 +1413,11 @@ static void draw_navi_button(UIState *s) {
   nvgFillColor(s->vg, nvgRGBA(255,255,255,200));
   if (s->scene.mapbox_running) {
     nvgFontSize(s->vg, 50);
-    nvgText(s->vg,btn_xc1,btn_yc-17,"الخريطة",NULL);
+    nvgText(s->vg,btn_xc1,btn_yc-17,"MAP",NULL);
     nvgFontSize(s->vg, 48);
-    nvgText(s->vg,btn_xc1,btn_yc+17,"البحث",NULL);
+    nvgText(s->vg,btn_xc1,btn_yc+17,"Search",NULL);
   } else {
-    nvgText(s->vg,btn_xc1,btn_yc,"الخرائط",NULL);
+    nvgText(s->vg,btn_xc1,btn_yc,"NAVI",NULL);
   }
 }
 
@@ -1479,8 +1479,8 @@ static void draw_laneless_button(UIState *s) {
     nvgText(s->vg,btn_xc1,btn_yc+41,"E",NULL);
   } else if (s->scene.laneless_mode == 1) {
     nvgFontSize(s->vg, 50);
-    nvgText(s->vg,btn_xc1,btn_yc-17,"الخطوط",NULL);
-    nvgText(s->vg,btn_xc1,btn_yc+17,"أقل",NULL);
+    nvgText(s->vg,btn_xc1,btn_yc-17,"LANE",NULL);
+    nvgText(s->vg,btn_xc1,btn_yc+17,"LESS",NULL);
   } else if (s->scene.laneless_mode == 2) {
     if (!s->scene.lateralPlan.lanelessModeStatus) {
       nvgFillColor(s->vg, nvgRGBA(0,255,0,150));
@@ -1596,19 +1596,19 @@ void draw_datetime_osm_info_text(UIState *s) {
   struct tm tm = *localtime(&t);
   char now[50];
   if (tm.tm_wday == 0) {
-    strcpy(dayofweek, "الأحد");
+    strcpy(dayofweek, "SUN");
   } else if (tm.tm_wday == 1) {
-    strcpy(dayofweek, "الإثنين");
+    strcpy(dayofweek, "MON");
   } else if (tm.tm_wday == 2) {
-    strcpy(dayofweek, "الثلاثاء");
+    strcpy(dayofweek, "TUE");
   } else if (tm.tm_wday == 3) {
-    strcpy(dayofweek, "الأربعاء");
+    strcpy(dayofweek, "WED");
   } else if (tm.tm_wday == 4) {
-    strcpy(dayofweek, "الخميس");
+    strcpy(dayofweek, "THU");
   } else if (tm.tm_wday == 5) {
-    strcpy(dayofweek, "الجمعة");
+    strcpy(dayofweek, "FRI");
   } else if (tm.tm_wday == 6) {
-    strcpy(dayofweek, "السبت");
+    strcpy(dayofweek, "SAT");
   }
 
   const std::string road_name = s->scene.liveMapData.ocurrentRoadName;
@@ -1853,7 +1853,7 @@ static void ui_draw_auto_hold(UIState *s) {
   ui_fill_rect(s->vg, rect, color, 30.);
   ui_draw_rect(s->vg, rect, COLOR_WHITE_ALPHA(50), 10, 20.);
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_MIDDLE);
-  ui_draw_text(s, rect.centerX(), rect.centerY(), "التوقف التلقائي", 100, COLOR_GREEN_ALPHA(150), "sans-bold");
+  ui_draw_text(s, rect.centerX(), rect.centerY(), "AUTO HOLD", 100, COLOR_GREEN_ALPHA(150), "sans-bold");
 }
 
 // rpm animation by opkr
@@ -1898,7 +1898,7 @@ static void ui_draw_rpm_animation(UIState *s) {
     target2 = (float)(NVG_PI/12.0f)*((float)count+2.0f);
   }
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_MIDDLE);
-  ui_draw_text(s, center_x, center_y+110, s->scene.is_metric?"كلم/س":"ميل/س", 65, s->scene.brakeLights?COLOR_RED_ALPHA(200):COLOR_WHITE_ALPHA(200), "sans-semibold");
+  ui_draw_text(s, center_x, center_y+110, s->scene.is_metric?"KPH":"MPH", 65, s->scene.brakeLights?COLOR_RED_ALPHA(200):COLOR_WHITE_ALPHA(200), "sans-semibold");
   snprintf(rpm_str, sizeof(rpm_str), "%.0f", s->scene.engine_rpm);
   ui_draw_text(s, center_x, center_y-110, s->scene.engine_rpm>1?rpm_str:"", 55, COLOR_WHITE_ALPHA(200), "sans-semibold");
 }

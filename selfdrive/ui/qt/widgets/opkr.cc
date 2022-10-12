@@ -2486,7 +2486,7 @@ void AutoResLimitTime::refresh() {
   btnplus.setText("+");
 }
 
-AutoEnableSpeed::AutoEnableSpeed() : AbstractControl(tr("Auto Engage Spd(kph)"), tr("Set the automatic engage speed."), "../assets/offroad/icon_shell.png") {
+AutoEnableSpeed::AutoEnableSpeed() : AbstractControl(tr("Auto Engage Spd(كلم/س)"), tr("Set the automatic engage speed."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");

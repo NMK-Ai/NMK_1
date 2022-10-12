@@ -316,7 +316,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") )
   presettwoload_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presettwo_layout->addWidget(presettwoload_btn);
   QObject::connect(presettwoload_btn, &QPushButton::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Do you want to load Preset2?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل تريد تحميل الملف2؟"), this)) {
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/load_preset2.sh");
     }
   });
@@ -578,11 +578,11 @@ void OpenpilotView::refresh() {
   bool param = params.getBool("IsOpenpilotViewEnabled");
   QString car_param = QString::fromStdString(params.get("CarParams"));
   if (param) {
-    btn.setText(tr("UNVIEW"));
-    btnc.setText(tr("UNVIEW"));
+    btn.setText(tr("الغاء عرض"));
+    btnc.setText(tr("الغاء عرض"));
   } else {
-    btn.setText(tr("PREVIEW"));
-    btnc.setText(tr("CALVIEW"));
+    btn.setText(tr("عرض"));
+    btnc.setText(tr("عرض"));
   }
   if (car_param.length()) {
     btn.setEnabled(false);
@@ -608,7 +608,7 @@ CarSelectCombo::CarSelectCombo() : AbstractControl("", "", "")
     width: 100px;
   )");
 
-  combobox.addItem(tr("Select Your Car"));
+  combobox.addItem(tr("قم باختيار المركبة"));
   QFile carlistfile("/data/params/d/CarList");
   if (carlistfile.open(QIODevice::ReadOnly)) {
     QTextStream carname(&carlistfile);
@@ -633,8 +633,8 @@ CarSelectCombo::CarSelectCombo() : AbstractControl("", "", "")
   btn.setFixedSize(150, 100);
 
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
-    if (btn.text() == "UNSET") {
-      if (ConfirmationDialog::confirm(tr("Do you want to unset?"), this)) {
+    if (btn.text() == "إلغاء تعيين") {
+      if (ConfirmationDialog::confirm(tr("هل تريد عدم ضبطها؟"), this)) {
         params.remove("CarModel");
         combobox.setCurrentIndex(0);
         refresh();
@@ -652,7 +652,7 @@ CarSelectCombo::CarSelectCombo() : AbstractControl("", "", "")
     combobox.itemData(combobox.currentIndex());
     QString str = combobox.currentText();
     if (combobox.currentIndex() != 0) {
-      if (ConfirmationDialog::confirm(tr("Press OK to set your car as") + "\n" + str, this)) {
+      if (ConfirmationDialog::confirm(tr("اضغط على "موافق" لتعيين سيارتك كـ") + "\n" + str, this)) {
         params.put("CarModel", str.toStdString());
         int indi_cars[] = {8, 32, 39, 40, 41, 42, 43, 44, 45}; //R-MDPS type such as Genesis, Sonata Turbo, Sorento, Mohave
         int selected_car = combobox.currentIndex();
@@ -673,10 +673,10 @@ void CarSelectCombo::refresh() {
   if (index >= 0) combobox.setCurrentIndex(index);
   if (selected_carname.length()) {
     btn.setEnabled(true);
-    btn.setText(tr("UNSET"));
+    btn.setText(tr("إلغاء تعيين"));
   } else {
     btn.setEnabled(false);
-    btn.setText(tr("SET"));
+    btn.setText(tr("تعيين"));
   }
 }
 
@@ -708,7 +708,7 @@ BranchSelectCombo::BranchSelectCombo() : AbstractControl("", "", "")
   )");
 
   btn.setFixedSize(150, 100);
-  btn.setText(tr("RELOAD"));
+  btn.setText(tr("إعادة تحميل"));
 
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     refresh();
@@ -721,9 +721,9 @@ BranchSelectCombo::BranchSelectCombo() : AbstractControl("", "", "")
   {
     combobox.itemData(combobox.currentIndex());
     branch_name1 = combobox.currentText();
-    QString current_branch1 = QString::fromStdString(params.get("GitBranch"));
+    QString current_branch1 = QString::fromStdString(params.get("فرع جيت"));
     if (combobox.currentIndex() != 0 && branch_name1 != current_branch1) {
-      if (ConfirmationDialog::confirm(tr("Now will checkout the branch") +", <" + branch_name1 + ">. " + tr("The device will be rebooted if completed."), this)) {
+      if (ConfirmationDialog::confirm(tr("الآن سوف تحقق من الفرع") +", <" + branch_name1 + ">. " + tr("سيتم إعادة تشغيل الجهاز إذا اكتمل."), this)) {
         QString cmd1 = "git -C /data/openpilot remote set-branches --add origin " + branch_name1;
         QString tcmd1 = "git -C /data/openpilot fetch --progress origin";
         QProcess::execute("pkill -f thermald");
@@ -739,7 +739,7 @@ BranchSelectCombo::BranchSelectCombo() : AbstractControl("", "", "")
         executeProgram1(tcmd1);
       }
     } else if (combobox.currentIndex() != 0 && branch_name1 == current_branch1) {
-      if (ConfirmationDialog::alert(tr("Your branch is already") + " <" + current_branch1 + ">.", this)) {combobox.setCurrentIndex(0);}
+      if (ConfirmationDialog::alert(tr("فرعك البرمجي جاهز") + " <" + current_branch1 + ">.", this)) {combobox.setCurrentIndex(0);}
     }
   });
 }
@@ -776,7 +776,7 @@ void BranchSelectCombo::refresh() {
   QProcess::execute("git -C /data/openpilot remote prune origin");
   QProcess::execute("git -C /data/openpilot fetch origin");
   combobox.clear();
-  combobox.addItem(tr("Select Branch you want to change"));
+  combobox.addItem(tr("حدد الفرع الذي تريد تغييره"));
   std::system("git -C /data/openpilot ls-remote --refs | grep refs/heads | awk -F '/' '{print $3}' > /data/branches");
   QFile branchlistfile("/data/branches");
   if (branchlistfile.open(QIODevice::ReadOnly)) {
@@ -804,7 +804,7 @@ TimeZoneSelectCombo::TimeZoneSelectCombo() : AbstractControl("", "", "")
     width: 100px;
   )");
 
-  combobox.addItem(tr("Select Your TimeZone"));
+  combobox.addItem(tr("حدد المنطقة الزمنية الخاصة بك"));
   QFile timezonelistfile("/data/openpilot/selfdrive/assets/addon/param/TimeZone");
   if (timezonelistfile.open(QIODevice::ReadOnly)) {
     QTextStream timezonename(&timezonelistfile);
@@ -830,7 +830,7 @@ TimeZoneSelectCombo::TimeZoneSelectCombo() : AbstractControl("", "", "")
 
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     if (btn.text() == tr("UNSET")) {
-      if (ConfirmationDialog::confirm(tr("Do you want to set default?"), this)) {
+      if (ConfirmationDialog::confirm(tr("هل تريد تعيين الافتراضي?"), this)) {
         params.put("OPKRTimeZone", "UTC");
         combobox.setCurrentIndex(0);
         refresh();
@@ -848,7 +848,7 @@ TimeZoneSelectCombo::TimeZoneSelectCombo() : AbstractControl("", "", "")
     combobox.itemData(combobox.currentIndex());
     QString str = combobox.currentText();
     if (combobox.currentIndex() != 0) {
-      if (ConfirmationDialog::confirm(tr("Press OK to set your timezone as") + "\n" + str, this)) {
+      if (ConfirmationDialog::confirm(tr("اضغط على "موافق" لتعيين المنطقة الزمنية الخاصة بك على أنها") + "\n" + str, this)) {
         params.put("OPKRTimeZone", str.toStdString());
       }
     }
@@ -863,15 +863,15 @@ void TimeZoneSelectCombo::refresh() {
   if (index >= 0) combobox.setCurrentIndex(index);
   if (selected_timezonename.length()) {
     btn.setEnabled(true);
-    btn.setText(tr("UNSET"));
+    btn.setText(tr("إلغاء تعيين"));
   } else {
     btn.setEnabled(false);
-    btn.setText(tr("SET"));
+    btn.setText(tr("تعيين"));
   }
 }
 
 //UI
-AutoShutdown::AutoShutdown() : AbstractControl(tr("EON AutoShutdown"), tr("EON is automatically turned off after the set time while the engine is turned off (offload) after driving (onload)."), "../assets/offroad/icon_shell.png") {
+AutoShutdown::AutoShutdown() : AbstractControl(tr("الإغلاق التلقائي للأيون"), tr("يتم إيقاف تشغيل الأيون تلقائيًا بعد الوقت المحدد أثناء إيقاف تشغيل المحرك (التفريغ) بعد القيادة (التحميل)."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -929,27 +929,27 @@ AutoShutdown::AutoShutdown() : AbstractControl(tr("EON AutoShutdown"), tr("EON i
 void AutoShutdown::refresh() {
   QString option = QString::fromStdString(params.get("OpkrAutoShutdown"));
   if (option == "0") {
-    label.setText(tr("AlwaysOn"));
+    label.setText(tr("دائما متاح"));
   } else if (option == "1") {
-    label.setText(tr("RightOff"));
+    label.setText(tr("حالا"));
   } else if (option == "2") {
-    label.setText(tr("30sec"));
+    label.setText(tr("30ثانية"));
   } else if (option == "3") {
-    label.setText(tr("1min"));
+    label.setText(tr("1دقيقة"));
   } else if (option == "4") {
-    label.setText(tr("3mins"));
+    label.setText(tr("3دقيقة"));
   } else if (option == "5") {
-    label.setText(tr("5mins"));
+    label.setText(tr("5دقيقة"));
   } else if (option == "6") {
-    label.setText(tr("10mins"));
+    label.setText(tr("10دقائق"));
   } else if (option == "7") {
-    label.setText(tr("30mins"));
+    label.setText(tr("30دقيقة"));
   } else if (option == "8") {
-    label.setText(tr("1hour"));
+    label.setText(tr("3ساعة"));
   } else if (option == "9") {
-    label.setText(tr("3hours"));
+    label.setText(tr("3ساعة"));
   } else if (option == "10") {
-    label.setText(tr("5hours"));
+    label.setText(tr("5ساعة"));
   }
 }
 

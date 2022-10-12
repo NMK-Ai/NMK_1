@@ -21,7 +21,7 @@
 #include "selfdrive/ui/qt/widgets/opkr.h"
 
 
-CLateralControlGroup::CLateralControlGroup() : CGroupWidget( tr("Lateral Control(Reboot)") ) 
+CLateralControlGroup::CLateralControlGroup() : CGroupWidget( tr("التحكم الجانبي(إعادة التشغيل)") ) 
 {
   QString str_param = "LateralControlMethod";
 
@@ -31,7 +31,7 @@ CLateralControlGroup::CLateralControlGroup() : CGroupWidget( tr("Lateral Control
 
 
   // label
-  method_label = new QPushButton("method"); // .setAlignment(Qt::AlignVCenter|Qt::AlignHCenter);
+  method_label = new QPushButton("الطريقة"); // .setAlignment(Qt::AlignVCenter|Qt::AlignHCenter);
   method_label->setStyleSheet(R"(
     padding: 0;
     border-radius: 50px;
@@ -146,7 +146,7 @@ void CLateralControlGroup::refresh( int nID )
 }
 
 
-CLongControlGroup::CLongControlGroup() : CGroupWidget( tr("Long Control") ) 
+CLongControlGroup::CLongControlGroup() : CGroupWidget( tr("التحكم الطويل") ) 
 {
    QVBoxLayout *pBoxLayout = CreateBoxLayout();
 
@@ -294,7 +294,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") )
   presetoneload_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presetone_layout->addWidget(presetoneload_btn);
   QObject::connect(presetoneload_btn, &QPushButton::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Do you want to load Preset1?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل تريد تحميل الملف1؟"), this)) {
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/load_preset1.sh");
     }
   });
@@ -303,7 +303,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") )
   presetonesave_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presetone_layout->addWidget(presetonesave_btn);
   QObject::connect(presetonesave_btn, &QPushButton::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Do you want to save Preset1?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل تريد حفظ الملف1؟"), this)) {
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/save_preset1.sh");
     }
   });
@@ -325,14 +325,14 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") )
   presettwosave_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presettwo_layout->addWidget(presettwosave_btn);
   QObject::connect(presettwosave_btn, &QPushButton::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Do you want to save Preset2?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل تريد حفظ الملف2؟"), this)) {
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/save_preset2.sh");
     }
   });
 
-  auto paraminit_btn = new ButtonControl(tr("Parameters Init"), tr("RUN"));
+  auto paraminit_btn = new ButtonControl(tr("الملفات الذكية"), tr("تشغيل"));
   QObject::connect(paraminit_btn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Initialize parameters. Changes in the EON menu are changed to the initial set value. Do you want to proceed?"), this)){
+    if (ConfirmationDialog::confirm(tr("تهيئة المعلمات. يتم تغيير التغييرات في قائمة EON إلى القيمة المحددة الأولية. هل تريد المتابعة؟"), this)){
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/init_param.sh");
     }
   });
@@ -355,22 +355,22 @@ void CPresetWidget::refresh( int nID )
 
 
 
-SwitchOpenpilot::SwitchOpenpilot() : ButtonControl(tr("Change Repo/Branch"), "", tr("Change to another open pilot code. You can change it by entering ID/repository/branch.")) {
+SwitchOpenpilot::SwitchOpenpilot() : ButtonControl(tr("تغيير الملف/الفرع"), "", tr("التغيير إلى كود آخر للقائد الآلي. يمكنك تغييره عن طريق إدخال المعرف / المستودع / الفرع.")) {
   QObject::connect(this, &ButtonControl::clicked, [=]() {
     if (text() == tr("CHANGE")) {
-      QString userid = InputDialog::getText(tr("First: Input the Git ID."), this, "github.com/<ID>/<Repository>.git -b <Branch>", false, 1, "openpilotkr");
+      QString userid = InputDialog::getText(tr("أولاً: أدخل معرف Git."), this, "github.com/<ID>/<Repository>.git -b <Branch>", false, 1, "openpilotkr");
       if (userid.length() > 0) {
         getUserID(userid);
-        QString repoid = InputDialog::getText(tr("Second: Input the repository."), this, "github.com/"+userid+"/<Repository>.git -b <Branch>", false, 1, "openpilot");
+        QString repoid = InputDialog::getText(tr("ثانيًا: إدخال الملف."), this, "github.com/"+userid+"/<Repository>.git -b <Branch>", false, 1, "القائد اللآلي");
         if (repoid.length() > 0) {
           getRepoID(repoid);
-          QString branchid = InputDialog::getText(tr("Last: Input the branch name."), this, "github.com/"+userid+"/"+repoid+".git -b <Branch>", false, 1, "OPKR");
+          QString branchid = InputDialog::getText(tr("أخيرًا: أدخل اسم الفرع."), this, "github.com/"+userid+"/"+repoid+".git -b <Branch>", false, 1, "ناصر");
           if (branchid.length() > 0) {
             getBranchID(branchid);
             githubbranch = branchid;
-            QString cmd0 = tr("This will download the branch and takes a little time.") + "\n" + QString::fromStdString("https://github.com/") + githubid + QString::fromStdString("/") + githubrepo + QString::fromStdString(".git\n") + tr("Branch: ") + githubbranch;
+            QString cmd0 = tr("سيؤدي هذا إلى تنزيل الفرع ويستغرق بعض الوقت.") + "\n" + QString::fromStdString("https://github.com/") + githubid + QString::fromStdString("/") + githubrepo + QString::fromStdString(".git\n") + tr("Branch: ") + githubbranch;
             if (ConfirmationDialog::confirm(cmd0, this)) {
-              setText(tr("DONE"));
+              setText(tr("تم"));
               setEnabled(true);
               QString time_format = "yyyyMMddHHmmss";
               QDateTime a = QDateTime::currentDateTime();
@@ -428,7 +428,7 @@ void SwitchOpenpilot::processFinished(int exitCode, QProcess::ExitStatus exitSta
 }
 
 void SwitchOpenpilot::refresh() {
-  setText(tr("CHANGE"));
+  setText(tr("تغيير"));
   setEnabled(true);
 }
 
@@ -439,13 +439,13 @@ void SwitchOpenpilot::getUserID(const QString &userid) {
       if (!resp.isEmpty()) {
         githubid = userid;
       } else {
-        ConfirmationDialog::alert(userid + tr(" The ID does not exist. Return to the input window, press the cancel button, and try again from the beginning."), this);
+        ConfirmationDialog::alert(userid + tr(" المعرف غير موجود. ارجع إلى نافذة الإدخال ، واضغط على زر الإلغاء ، وحاول مرة أخرى من البداية."), this);
       }
     } else {
       if (request->timeout()) {
-        ConfirmationDialog::alert(tr("The requested time has exceeded."), this);
+        ConfirmationDialog::alert(tr("تم تجاوز الوقت المطلوب."), this);
       } else {
-        ConfirmationDialog::alert(tr("The ID does not exist. Return to the input window, press the cancel button, and try again from the beginning."), this);
+        ConfirmationDialog::alert(tr("المعرف غير موجود. ارجع إلى نافذة الإدخال ، واضغط على زر الإلغاء ، وحاول مرة أخرى من البداية."), this);
       }
     }
 
@@ -462,13 +462,13 @@ void SwitchOpenpilot::getRepoID(const QString &repoid) {
       if (!resp.isEmpty()) {
         githubrepo = repoid;
       } else {
-        ConfirmationDialog::alert(repoid + tr(" The repository does not exist. Return to the input window, press the cancel button, and try again from the beginning."), this);
+        ConfirmationDialog::alert(repoid + tr(" الملف غير موجود. ارجع إلى نافذة الإدخال ، واضغط على زر الإلغاء ، وحاول مرة أخرى من البداية."), this);
       }
     } else {
       if (request->timeout()) {
-        ConfirmationDialog::alert(tr("The requested time has exceeded."), this);
+        ConfirmationDialog::alert(tr("تم تجاوز الوقت المطلوب."), this);
       } else {
-        ConfirmationDialog::alert(tr("The Repository does not exist. Return to the input window, press the cancel button, and try again from the beginning."), this);
+        ConfirmationDialog::alert(tr("الملف غير موجود. ارجع إلى نافذة الإدخال ، واضغط على زر الإلغاء ، وحاول مرة أخرى من البداية."), this);
       }
     }
 
@@ -485,13 +485,13 @@ void SwitchOpenpilot::getBranchID(const QString &branchid) {
       if (!resp.isEmpty()) {
         githubbranch = branchid;
       } else {
-        ConfirmationDialog::alert(branchid + tr(" The branch does not exist. Press the cancel button and try again from the beginning."), this);
+        ConfirmationDialog::alert(branchid + tr(" الفرع غير موجود. اضغط على زر إلغاء وحاول مرة أخرى من البداية."), this);
       }
     } else {
       if (request->timeout()) {
-        ConfirmationDialog::alert(tr("The requested time has exceeded."), this);
+        ConfirmationDialog::alert(tr("تم تجاوز الوقت المطلوب."), this);
       } else {
-        ConfirmationDialog::alert(tr("The Branch does not exist. Return to the input window, press the cancel button, and try again from the beginning."), this);
+        ConfirmationDialog::alert(tr("الفرع غير موجود. ارجع إلى نافذة الإدخال ، واضغط على زر الإلغاء ، وحاول مرة أخرى من البداية."), this);
       }
     }
 
@@ -501,7 +501,7 @@ void SwitchOpenpilot::getBranchID(const QString &branchid) {
   request->sendRequest("https://github.com/" + githubid + "/" + githubrepo + "/tree/" + branchid);
 }
 
-GitHash::GitHash() : AbstractControl(tr("Commit (Local/Remote)"), "", "") {
+GitHash::GitHash() : AbstractControl(tr("التعديل (محلي/عن بعد)"), "", "") {
 
   QString lhash = QString::fromStdString(params.get("GitCommit").substr(0, 10));
   QString rhash = QString::fromStdString(params.get("GitCommitRemote").substr(0, 10));
@@ -521,7 +521,7 @@ GitHash::GitHash() : AbstractControl(tr("Commit (Local/Remote)"), "", "") {
   hlayout->addWidget(&remote_hash);
 }
 
-OpenpilotView::OpenpilotView() : AbstractControl(tr("Driving Camera"), tr("Preview the open pilot driving screen."), "") {
+OpenpilotView::OpenpilotView() : AbstractControl(tr("كاميرا القيادة"), tr("معاينة شاشة القيادة التجريبية المفتوحة."), "") {
 
   // setup widget
   hlayout->addStretch(1);

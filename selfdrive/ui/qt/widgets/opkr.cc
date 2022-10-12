@@ -167,7 +167,7 @@ CLongControlGroup::CLongControlGroup() : CGroupWidget( tr("Long Control") )
 }
 
 
-CPandaGroup::CPandaGroup() : CGroupWidget( tr("Panda Values") ) 
+CPandaGroup::CPandaGroup() : CGroupWidget( tr("قيم الباندا") ) 
 {
    QVBoxLayout *pBoxLayout = CreateBoxLayout();
 
@@ -178,9 +178,9 @@ CPandaGroup::CPandaGroup() : CGroupWidget( tr("Panda Values") )
 
 
   const char* p_edit_go = "/data/openpilot/selfdrive/assets/addon/script/p_edit.sh ''";
-  auto peditbtn = new ButtonControl(tr("Change Panda Values"), tr("RUN"));
+  auto peditbtn = new ButtonControl(tr("تغيير قيم الباندا"), tr("تشغيل"));
   QObject::connect(peditbtn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Apply the changed panda value. Do you want to proceed? It automatically reboots."), this)){
+    if (ConfirmationDialog::confirm(tr("تطبيق قيمة الباندا المتغيرة. هل تريد المتابعة؟ يتم إعادة التشغيل تلقائيًا."), this)){
       std::system(p_edit_go);
     }
   });
@@ -188,23 +188,23 @@ CPandaGroup::CPandaGroup() : CGroupWidget( tr("Panda Values") )
 }  
 
 
-CGitGroup::CGitGroup(void *p) : CGroupWidget( tr("Git Branch Change") ) 
+CGitGroup::CGitGroup(void *p) : CGroupWidget( tr("أمر تغيير الفرع") ) 
 {
    QVBoxLayout *pBoxLayout = CreateBoxLayout();
 
 
 
   const char* git_reset = "/data/openpilot/selfdrive/assets/addon/script/git_reset.sh ''";
-  auto gitresetbtn = new ButtonControl(tr("Git Reset"), tr("RUN"));
+  auto gitresetbtn = new ButtonControl(tr("إعادة ضبط"), tr("تشغيل"));
   QObject::connect(gitresetbtn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Apply the latest commitment details of Remote Git after forced initialization of local changes. Do you want to proceed?"), this)){
+    if (ConfirmationDialog::confirm(tr("قم بتطبيق أحدث تفاصيل الالتزام لـ التحكم عن بعد بعد التهيئة الإجبارية للتغييرات المحلية. هل تريد المتابعة؟"), this)){
       std::system(git_reset);
     }
   });
 
 
   const char* gitpull_cancel = "/data/openpilot/selfdrive/assets/addon/script/gitpull_cancel.sh ''";
-  auto gitpullcanceltbtn = new ButtonControl(tr("GitPull Restore"), tr("RUN"));
+  auto gitpullcanceltbtn = new ButtonControl(tr("تحديث وإعادة تشغيل"), tr("تشغيل"));
   QObject::connect(gitpullcanceltbtn, &ButtonControl::clicked, [=]() {
     std::system(gitpull_cancel);
     GitPullCancel::confirm(this);
@@ -223,43 +223,43 @@ CGitGroup::CGitGroup(void *p) : CGroupWidget( tr("Git Branch Change") )
   pBoxLayout->addWidget( gitpullcanceltbtn );  
 }
 
-CUtilWidget::CUtilWidget( void *p ) : CGroupWidget( tr("Util Program") ) 
+CUtilWidget::CUtilWidget( void *p ) : CGroupWidget( tr("تطبيقات إضافية") ) 
 {
    QVBoxLayout *pBoxLayout = CreateBoxLayout();
 
    SoftwarePanel *parent = (SoftwarePanel*)p;
 
   const char* panda_flashing = "/data/openpilot/selfdrive/assets/addon/script/panda_flashing.sh";
-  auto pandaflashingtbtn = new ButtonControl(tr("Panda Flashing(OLD)"), tr("RUN"));
+  auto pandaflashingtbtn = new ButtonControl(tr("تثبيت الباندا(القديمة)"), tr("تشغيل"));
   QObject::connect(pandaflashingtbtn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Panda's green LED blinks quickly during panda flashing. Never turn off or disconnect the device arbitrarily. Do you want to proceed?"), this)) {
+    if (ConfirmationDialog::confirm(tr("يومض مؤشر LED الأخضر الخاص بالباندا بسرعة أثناء وميض الباندا. لا تقم أبدًا بإيقاف تشغيل الجهاز أو فصله بشكل تعسفي. هل تريد المتابعة؟"), this)) {
       std::system(panda_flashing);
     }
   });
 
   const char* panda_flashing_new = "/data/openpilot/panda/board/recover.sh";
-  auto pandaflashingtbtn_new = new ButtonControl(tr("Panda Flashing(NEW)"), tr("RUN"));
+  auto pandaflashingtbtn_new = new ButtonControl(tr("تثبيت الباندا(جديد)"), tr("تشغيل"));
   QObject::connect(pandaflashingtbtn_new, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Panda's green LED blinks quickly during panda flashing. Never turn off or disconnect the device arbitrarily. Do you want to proceed?"), this)) {
+    if (ConfirmationDialog::confirm(tr("يومض مؤشر LED الأخضر الخاص بالباندا بسرعة أثناء وميض الباندا. لا تقم أبدًا بإيقاف تشغيل الجهاز أو فصله بشكل تعسفي. هل تريد المتابعة؟"), this)) {
       std::system(panda_flashing_new);
     }
   });
 
   const char* open_settings = "am start -a android.intent.action.MAIN -n com.android.settings/.Settings";
-  auto open_settings_btn = new ButtonControl(tr("Open Android Settings"), tr("RUN"));
+  auto open_settings_btn = new ButtonControl(tr("افتح إعدادات الأندرويد"), tr("تشفيل"));
   QObject::connect(open_settings_btn, &ButtonControl::clicked, [=]() {
     emit parent->closeSettings();
     std::system(open_settings);
   });
 
   const char* softkey = "am start com.gmd.hidesoftkeys/com.gmd.hidesoftkeys.MainActivity";
-  auto softkey_btn = new ButtonControl(tr("SoftKey RUN/SET"), tr("RUN"));
+  auto softkey_btn = new ButtonControl(tr("المفتاح الناعم تشغيل/تثبيت"), tr("تشغيل"));
   QObject::connect(softkey_btn, &ButtonControl::clicked, [=]() {
     emit parent->closeSettings();
     std::system(softkey);
   });
 
-  auto mixplorer_btn = new ButtonControl(tr("RUN Mixplorer"), tr("RUN"));
+  auto mixplorer_btn = new ButtonControl(tr("برنامج مدير الملفات"), tr("تشغيل"));
   QObject::connect(mixplorer_btn, &ButtonControl::clicked, [=]() {
 	  emit parent->closeSettings();
     std::system("/data/openpilot/selfdrive/assets/addon/script/run_mixplorer.sh");
@@ -273,7 +273,7 @@ CUtilWidget::CUtilWidget( void *p ) : CGroupWidget( tr("Util Program") )
   pBoxLayout->addWidget( mixplorer_btn );  
 }
 
-CPresetWidget::CPresetWidget() : CGroupWidget( tr("Parameter Preset") ) 
+CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") ) 
 {
   QVBoxLayout *pBoxLayout = CreateBoxLayout();
 /*
@@ -290,7 +290,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("Parameter Preset") )
   QHBoxLayout *presetone_layout = new QHBoxLayout();
   presetone_layout->setSpacing(50);
 
-  QPushButton *presetoneload_btn = new QPushButton(tr("Load Preset1"));
+  QPushButton *presetoneload_btn = new QPushButton(tr("إعادة ملف1"));
   presetoneload_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presetone_layout->addWidget(presetoneload_btn);
   QObject::connect(presetoneload_btn, &QPushButton::clicked, [=]() {
@@ -299,7 +299,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("Parameter Preset") )
     }
   });
 
-  QPushButton *presetonesave_btn = new QPushButton(tr("Save Preset1"));
+  QPushButton *presetonesave_btn = new QPushButton(tr("حفظ ملف1"));
   presetonesave_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presetone_layout->addWidget(presetonesave_btn);
   QObject::connect(presetonesave_btn, &QPushButton::clicked, [=]() {
@@ -312,7 +312,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("Parameter Preset") )
   QHBoxLayout *presettwo_layout = new QHBoxLayout();
   presettwo_layout->setSpacing(50);
 
-  QPushButton *presettwoload_btn = new QPushButton(tr("Load Preset2"));
+  QPushButton *presettwoload_btn = new QPushButton(tr("إعادة ملف2"));
   presettwoload_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presettwo_layout->addWidget(presettwoload_btn);
   QObject::connect(presettwoload_btn, &QPushButton::clicked, [=]() {
@@ -321,7 +321,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("Parameter Preset") )
     }
   });
 
-  QPushButton *presettwosave_btn = new QPushButton(tr("Save Preset2"));
+  QPushButton *presettwosave_btn = new QPushButton(tr("حفظ ملف2"));
   presettwosave_btn->setStyleSheet("height: 120px;border-radius: 15px;background-color: #393939;");
   presettwo_layout->addWidget(presettwosave_btn);
   QObject::connect(presettwosave_btn, &QPushButton::clicked, [=]() {

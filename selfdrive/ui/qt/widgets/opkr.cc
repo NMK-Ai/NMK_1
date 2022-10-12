@@ -953,7 +953,7 @@ void AutoShutdown::refresh() {
   }
 }
 
-ForceShutdown::ForceShutdown() : AbstractControl(tr("EON ForceShutdown"), tr("If the screen is turned off while off-road without driving (on-road X), force it to turn off after a certain period of time. When a touch event occurs, the off time is reset."), "../assets/offroad/icon_shell.png") {
+ForceShutdown::ForceShutdown() : AbstractControl(tr("إغلاق الايون بالقوة"), tr("إذا تم إيقاف تشغيل الشاشة أثناء القيادة على الطرق الوعرة دون القيادة ، فاجبرها على الانطفاء بعد فترة زمنية معينة. عند حدوث حدث يعمل باللمس ، تتم إعادة ضبط وقت الإيقاف."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1011,22 +1011,22 @@ ForceShutdown::ForceShutdown() : AbstractControl(tr("EON ForceShutdown"), tr("If
 void ForceShutdown::refresh() {
   QString option = QString::fromStdString(params.get("OpkrForceShutdown"));
   if (option == "0") {
-    label.setText(tr("AlwaysOn"));
+    label.setText(tr("دائما متاح"));
   } else if (option == "1") {
-    label.setText(tr("1min"));
+    label.setText(tr("1دقيقة"));
   } else if (option == "2") {
-    label.setText(tr("3mins"));
+    label.setText(tr("3دقيقة"));
   } else if (option == "3") {
-    label.setText(tr("5mins"));
+    label.setText(tr("5دقيقة"));
   } else if (option == "4") {
-    label.setText(tr("10mins"));
+    label.setText(tr("10دقيقة"));
   } else if (option == "5") {
-    label.setText(tr("30mins"));
+    label.setText(tr("30دقيقة"));
   }
 }
 
 
-VolumeControl::VolumeControl() : AbstractControl(tr("EON Volume Control(%)"), tr("Adjust the volume of EON. Android Default/Manual Settings"), "../assets/offroad/icon_shell.png") {
+VolumeControl::VolumeControl() : AbstractControl(tr("التحكم بحجم الصوت للايون(%)"), tr("اضبط مستوى صوت الايون. إعدادات الاندرويد الافتراضية / اليدوية"), "../assets/offroad/icon_shell.png") {
 
   effect.setSource(QUrl::fromLocalFile("/data/openpilot/selfdrive/assets/addon/sound/ding.wav"));
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
@@ -1089,9 +1089,9 @@ VolumeControl::VolumeControl() : AbstractControl(tr("EON Volume Control(%)"), tr
 void VolumeControl::refresh() {
   QString option = QString::fromStdString(params.get("OpkrUIVolumeBoost"));
   if (option == "0") {
-    label.setText(tr("Default"));
+    label.setText(tr("افتراضي"));
   } else if (option == "-5") {
-    label.setText(tr("Mute"));
+    label.setText(tr("كتم"));
   } else {
     label.setText(QString::fromStdString(params.get("OpkrUIVolumeBoost")));
   }
@@ -1108,7 +1108,7 @@ void VolumeControl::playsound() {
   }
 }
 
-BrightnessControl::BrightnessControl() : AbstractControl(tr("EON Brightness Control(%)"), tr("Manually adjust the brightness of the EON screen."), "../assets/offroad/icon_shell.png") {
+BrightnessControl::BrightnessControl() : AbstractControl(tr("التحكم في سطوع الايون(%)"), tr("اضبط سطوع شاشة الايون يدويًا."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1168,13 +1168,13 @@ BrightnessControl::BrightnessControl() : AbstractControl(tr("EON Brightness Cont
 void BrightnessControl::refresh() {
   QString option = QString::fromStdString(params.get("OpkrUIBrightness"));
   if (option == "0") {
-    label.setText(tr("Auto"));
+    label.setText(tr("تلقائي"));
   } else {
     label.setText(QString::fromStdString(params.get("OpkrUIBrightness")));
   }
 }
 
-BrightnessOffControl::BrightnessOffControl() : AbstractControl(tr("Brightness at SCR Off(%)"), tr("When using the EON screen off function, the brightness is reduced according to the automatic brightness ratio."), "../assets/offroad/icon_shell.png") {
+BrightnessOffControl::BrightnessOffControl() : AbstractControl(tr("السطوع عند إيقاف تشغيل SCR(%)"), tr("عند استخدام وظيفة إيقاف تشغيل شاشة الايون ، يتم تقليل السطوع وفقًا لنسبة السطوع التلقائية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1234,13 +1234,13 @@ BrightnessOffControl::BrightnessOffControl() : AbstractControl(tr("Brightness at
 void BrightnessOffControl::refresh() {
   QString option = QString::fromStdString(params.get("OpkrUIBrightnessOff"));
   if (option == "0") {
-    label.setText(tr("Dark"));
+    label.setText(tr("مظلم"));
   } else {
     label.setText(QString::fromStdString(params.get("OpkrUIBrightnessOff")));
   }
 }
 
-AutoScreenOff::AutoScreenOff() : AbstractControl(tr("EON SCR Off Timer"), tr("Turn off the EON screen or reduce brightness to protect the screen after driving starts. It automatically brightens or turns on when a touch or event occurs."), "../assets/offroad/icon_shell.png") 
+AutoScreenOff::AutoScreenOff() : AbstractControl(tr("للايون SCR إيقاف توقيت"), tr("قم بإيقاف تشغيل شاشة الايون أو تقليل السطوع لحماية الشاشة بعد بدء القيادة. يضيء تلقائيًا أو يتم تشغيله عند حدوث لمسة أو حدث."), "../assets/offroad/icon_shell.png") 
 {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
@@ -1302,17 +1302,17 @@ void AutoScreenOff::refresh()
 {
   QString option = QString::fromStdString(params.get("OpkrAutoScreenOff"));
   if (option == "-2") {
-    label.setText(tr("AlwaysOn"));
+    label.setText(tr("دائما متاح"));
   } else if (option == "-1") {
-    label.setText(tr("15secs"));
+    label.setText(tr("15ثانية"));
   } else if (option == "0") {
-    label.setText(tr("30secs"));
+    label.setText(tr("30ثانية"));
   } else {
     label.setText(QString::fromStdString(params.get("OpkrAutoScreenOff")) + tr("min(s)"));
   }
 }
 
-ChargingMin::ChargingMin() : AbstractControl(tr("BAT MinCharging Value"), tr("Sets the minimum battery charge value."), "../assets/offroad/icon_shell.png") {
+ChargingMin::ChargingMin() : AbstractControl(tr("الحد الأدنى لشحن البطاريات"), tr("يضبط الحد الأدنى لقيمة شحن البطارية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1371,7 +1371,7 @@ void ChargingMin::refresh() {
   label.setText(QString::fromStdString(params.get("OpkrBatteryChargingMin")));
 }
 
-ChargingMax::ChargingMax() : AbstractControl(tr("BAT MaxCharging Value"), tr("Sets the maximum battery charge value."), "../assets/offroad/icon_shell.png") {
+ChargingMax::ChargingMax() : AbstractControl(tr("الحد الأعلى لشحن البطاريات"), tr("يضبط الحد الأقصى لقيمة شحن البطارية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1430,7 +1430,7 @@ void ChargingMax::refresh() {
   label.setText(QString::fromStdString(params.get("OpkrBatteryChargingMax")));
 }
 
-RecordCount::RecordCount() : AbstractControl(tr("Number of Recorded Files"), tr("Sets the maximum number of recording files. Check file size and max recording count to not exceed your storage."), "../assets/offroad/icon_shell.png") {
+RecordCount::RecordCount() : AbstractControl(tr("عدد ملفات التسجيل"), tr("يضبط الحد الأقصى لعدد ملفات التسجيل. تحقق من حجم الملف والحد الأقصى لعدد التسجيلات حتى لا تتجاوز مساحة التخزين الخاصة بك."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1489,7 +1489,7 @@ void RecordCount::refresh() {
   label.setText(QString::fromStdString(params.get("RecordingCount")));
 }
 
-RecordQuality::RecordQuality() : AbstractControl(tr("Recording Quality"), tr("Set the recording quality. Low/Mid/high definition/high definition/ultra-high definition."), "../assets/offroad/icon_shell.png") {
+RecordQuality::RecordQuality() : AbstractControl(tr("جودة التسجيل"), tr("اضبط جودة التسجيل. منخفضة / متوسطة / عالية الوضوح / عالية الوضوح / فائقة الوضوح."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1547,17 +1547,17 @@ RecordQuality::RecordQuality() : AbstractControl(tr("Recording Quality"), tr("Se
 void RecordQuality::refresh() {
   QString option = QString::fromStdString(params.get("RecordingQuality"));
   if (option == "0") {
-    label.setText(tr("Low"));
+    label.setText(tr("منحفضة"));
   } else if (option == "1") {
-    label.setText(tr("Mid"));
+    label.setText(tr("متوسطة"));
   } else if (option == "2") {
-    label.setText(tr("High"));
+    label.setText(tr("عالية"));
   } else {
-    label.setText(tr("U-High"));
+    label.setText(tr("فائقة"));
   }
 }
 
-MonitoringMode::MonitoringMode() : AbstractControl(tr("Driver Monitoring Mode"), tr("Set the monitoring mode. In the case of preference/prevention of sleepiness and sleepiness prevention, you can send a warning message faster by adjusting (lowering) the threshold value below."), "../assets/offroad/icon_shell.png") {
+MonitoringMode::MonitoringMode() : AbstractControl(tr("وضع مراقبة السائق"), tr("اضبط وضع المراقبة. في حالة التفضيل / الوقاية من النعاس والوقاية من النعاس ، يمكنك إرسال رسالة تحذير بشكل أسرع عن طريق ضبط (خفض) قيمة قتحة العين أدناه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1615,13 +1615,13 @@ MonitoringMode::MonitoringMode() : AbstractControl(tr("Driver Monitoring Mode"),
 void MonitoringMode::refresh() {
   QString option = QString::fromStdString(params.get("OpkrMonitoringMode"));
   if (option == "0") {
-    label.setText(tr("Default"));
+    label.setText(tr("افتراضي"));
   } else if (option == "1") {
-    label.setText(tr("UnSleep"));
+    label.setText(tr("غير نائم"));
   }
 }
 
-MonitorEyesThreshold::MonitorEyesThreshold() : AbstractControl(tr("E2E EYE Threshold"), tr("Adjust the reference value for the eye detection range. Set the reference value for the value that suits you. When you close your eyes, you should set it lower than the distracted Eyes value. Default: 0.75"), "../assets/offroad/icon_shell.png") {
+MonitorEyesThreshold::MonitorEyesThreshold() : AbstractControl(tr("مراقبة العيون الى العيون"), tr("اضبط القيمة المرجعية لنطاق اكتشاف العين. قم بتعيين القيمة المرجعية للقيمة التي تناسبك. عندما تغمض عينيك ، يجب أن تجعلها أقل من قيمة العيون المشتتة. الافتراضي: 0.75"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1684,7 +1684,7 @@ void MonitorEyesThreshold::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-NormalEyesThreshold::NormalEyesThreshold() : AbstractControl(tr("Normal EYE Threshold"), tr("Adjust the eye recognition reference value. Lower the value when the recognition rate is low. Default: 0.5"), "../assets/offroad/icon_shell.png") {
+NormalEyesThreshold::NormalEyesThreshold() : AbstractControl(tr("مراقبة العيون العادية"), tr("اضبط القيمة المرجعية للتعرف على العين. اخفض القيمة عندما يكون معدل التعرف منخفضًا. الافتراضي: 0.5"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1747,7 +1747,7 @@ void NormalEyesThreshold::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-BlinkThreshold::BlinkThreshold() : AbstractControl(tr("Blink Threshold"), tr("Adjust the recognition value for the degree of blinking. When you close your eyes, check BlinkProb and lower the value. Default: 0.5"), "../assets/offroad/icon_shell.png") {
+BlinkThreshold::BlinkThreshold() : AbstractControl(tr("حدود الوميض"), tr("اضبط قيمة التعرف على درجة الوميض. عندما تغمض عينيك ، تحقق من المنطقة المحجوبة وخفض القيمة. الافتراضي: 0.5"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1811,7 +1811,7 @@ void BlinkThreshold::refresh() {
 }
 
 //Driving
-CruisemodeSelInit::CruisemodeSelInit() : AbstractControl(tr("Cruise Start Mode"), tr("Set the cruise start mode. OP mode/dist+curve/dist only/curve only/one-way 1 lane/safetycam deceleration Only. op mode:no button speed control, dist+curve:use button speed control in the inter-vehicle distance and curve section, dist only:curve only:curve one-way speed only, one-way speed control"), "../assets/offroad/icon_shell.png") {
+CruisemodeSelInit::CruisemodeSelInit() : AbstractControl(tr("وضع بدء مثبت السرعة"), tr("اضبط وضع بدء الرحلة. وضع القائد الآلي / توزيع + منحنى / توزيع فقط / منحنى فقط / مسار واحد أحادي الاتجاه / تباطؤ كاميرا الأمان فقط. وضع op: لا يوجد تحكم في سرعة الزر ، المسافة + المنحنى: استخدم التحكم في سرعة الزر في المسافة بين السيارات وقسم المنحنى ، التوزيع فقط: المنحنى فقط: سرعة المنحنى باتجاه واحد فقط ، التحكم في السرعة في اتجاه واحد"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1869,21 +1869,21 @@ CruisemodeSelInit::CruisemodeSelInit() : AbstractControl(tr("Cruise Start Mode")
 void CruisemodeSelInit::refresh() {
   QString option = QString::fromStdString(params.get("CruiseStatemodeSelInit"));
   if (option == "0") {
-    label.setText(tr("OP Stock"));
+    label.setText(tr("النظام الأصلي"));
   } else if (option == "1") {
-    label.setText(tr("Dist+Curv"));
+    label.setText(tr("المسافة+المنحنى"));
   } else if (option == "2") {
-    label.setText(tr("DistOnly"));
+    label.setText(tr("المسافة فقط"));
   } else if (option == "3") {
-    label.setText(tr("CurvOnly"));
+    label.setText(tr("المنحنى فقط"));
   } else if (option == "4") {
-    label.setText(tr("OneWay"));
+    label.setText(tr("اتجاه واحد"));
   } else {
-    label.setText(tr("CamOnly"));
+    label.setText(tr("الكاميرا فقط"));
   }
 }
 
-LaneChangeSpeed::LaneChangeSpeed() : AbstractControl(tr("LaneChange On/Off/Spd"), tr("On/Off lane change(push (-) btn till Off value) and set the lane changeable speed. This value can be kph or mph."), "../assets/offroad/icon_shell.png") {
+LaneChangeSpeed::LaneChangeSpeed() : AbstractControl(tr("تغيير المسار تشغيل/إطفاء/السرعى"), tr("تغيير حارة التشغيل / الإيقاف (اضغط (-) زر حتى قيمة الإيقاف) واضبط سرعة تغيير المسار. يمكن أن تكون هذه القيمة كم / س أو ميل / س."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");

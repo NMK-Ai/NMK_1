@@ -652,7 +652,7 @@ CarSelectCombo::CarSelectCombo() : AbstractControl("", "", "")
     combobox.itemData(combobox.currentIndex());
     QString str = combobox.currentText();
     if (combobox.currentIndex() != 0) {
-      if (ConfirmationDialog::confirm(tr("اضغط على "موافق" لتعيين سيارتك كـ") + "\n" + str, this)) {
+      if (ConfirmationDialog::confirm(tr("اضغط على موافق لتعيين سيارتك كـ") + "\n" + str, this)) {
         params.put("CarModel", str.toStdString());
         int indi_cars[] = {8, 32, 39, 40, 41, 42, 43, 44, 45}; //R-MDPS type such as Genesis, Sonata Turbo, Sorento, Mohave
         int selected_car = combobox.currentIndex();
@@ -848,7 +848,7 @@ TimeZoneSelectCombo::TimeZoneSelectCombo() : AbstractControl("", "", "")
     combobox.itemData(combobox.currentIndex());
     QString str = combobox.currentText();
     if (combobox.currentIndex() != 0) {
-      if (ConfirmationDialog::confirm(tr("اضغط على "موافق" لتعيين المنطقة الزمنية الخاصة بك على أنها") + "\n" + str, this)) {
+      if (ConfirmationDialog::confirm(tr("اضغط على موافق لتعيين المنطقة الزمنية الخاصة بك على أنها") + "\n" + str, this)) {
         params.put("OPKRTimeZone", str.toStdString());
       }
     }

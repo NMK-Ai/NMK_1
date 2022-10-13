@@ -39,65 +39,65 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
   std::vector<std::tuple<QString, QString, QString, QString>> toggles{
     {
       "OpenpilotEnabledToggle",
-      tr("Enable openpilot"),
-      tr("Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."),
+      tr("تمكين القائد الآلي"),
+      tr("استخدم نظام القائد الآلي للتحكم التكيفي في ثبات السرعة والحفاظ على مساعدة السائق. انتباهك مطلوب في جميع الأوقات لاستخدام هذه الميزة. يسري تغيير هذا الإعداد عند إيقاف تشغيل السيارة."),
       "../assets/offroad/icon_openpilot.png",
     },
     {
       "IsLdwEnabled",
-      tr("Enable Lane Departure Warnings"),
-      tr("Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31 mph (50 km/h)."),
+      tr("تفعيل تحذيرات مغادرة حارة السير"),
+      tr("تلقي تنبيهات للتوجيه مرة أخرى إلى الحارة عندما تنجرف سيارتك فوق خط المسار المكتشف دون تنشيط إشارة الانعطاف أثناء القيادة لمسافة تزيد عن 31 ميلاً في الساعة (50 كم / ساعة)."),
       "../assets/offroad/icon_warning.png",
     },
     {
       "IsRHD",
-      tr("Enable Right-Hand Drive"),
-      tr("Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."),
+      tr("تمكين القيادة باليد اليمنى"),
+      tr("اسمح للقائد الآلي بالانصياع لاتفاقيات المرور اليسرى وإجراء مراقبة للسائق على مقعد السائق الأيمن."),
       "../assets/offroad/icon_openpilot_mirrored.png",
     },
     {
       "IsMetric",
-      tr("Use Metric System"),
-      tr("Display speed in km/h instead of mph."),
+      tr("استخدم النظام المتري"),
+      tr("عرض السرعة بالكيلو متر في الساعة بدلا من ميلا في الساعة."),
       "../assets/offroad/icon_metric.png",
     },
     {
       "RecordFront",
-      tr("Record and Upload Driver Camera"),
-      tr("Upload data from the driver facing camera and help improve the driver monitoring algorithm."),
+      tr("تسجيل وتحميل كاميرا السائق"),
+      tr("قم بتحميل البيانات من الكاميرا المواجهة للسائق وساعد في تحسين خوارزمية مراقبة السائق."),
       "../assets/offroad/icon_monitoring.png",
     },
     {
       "EndToEndToggle",
-      "\U0001f96c"+tr("Enable Lane selector Mode")+"\U0001f96c",
-      tr("Activate lane selection mode. Lane Mode, Lane Less, AUTO can be selected and switched on the screen."),
+      "\U0001f96c"+tr("قم بتمكين وضع محدد المسار")+"\U0001f96c",
+      tr("قم بتنشيط وضع اختيار الحارة. يمكن تحديد "وضع المسار" و "لين أقل" و "تلقائي" وتشغيله على الشاشة."),
       "../assets/offroad/icon_road.png",
     },
 #ifdef ENABLE_MAPS
     {
       "NavSettingTime24h",
-      tr("Show ETA in 24h format"),
-      tr("Use 24h format instead of am/pm"),
+      tr("إظهار الوقت المقدر للوصول بتنسيق 24 ساعة"),
+      tr("استخدم تنسيق 24 ساعة بدلاً من صباحًا / مساءً"),
       "../assets/offroad/icon_metric.png",
     },
 #endif
 
     {
       "OpkrEnableDriverMonitoring",
-      tr("Enable Driver Monitoring"),
-      tr("Use the driver monitoring function."),
+      tr("تمكين مراقبة السائق"),
+      tr("استخدم وظيفة مراقبة السائق."),
       "../assets/offroad/icon_shell.png",
     },
     {
       "OpkrEnableLogger",
-      tr("Enable Driving Log Record"),
-      tr("Record the driving log locally for data analysis. Only loggers are activated and not uploaded to the server."),
+      tr("تفعيل سجل القيادة"),
+      tr("سجل سجل القيادة محليًا لتحليل البيانات. يتم تنشيط المسجلين فقط ولا يتم تحميلهم على الخادم."),
       "../assets/offroad/icon_shell.png",
     },
     {
       "OpkrEnableUploader",
-      tr("Enable Sending Log to Server"),
-      tr("Activate the upload process to transmit system logs and other driving data to the server. Upload it only off-road."),
+      tr("قم بتمكين إرسال السجل إلى الخادم"),
+      tr("قم بتنشيط عملية التحميل لإرسال سجلات النظام وبيانات القيادة الأخرى إلى الخادم. قم بتحميله فقط على الطرق الوعرة."),
       "../assets/offroad/icon_shell.png",
     },
   };
@@ -107,8 +107,8 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
   if (params.getBool("DisableRadar_Allow")) {
     toggles.push_back({
       "DisableRadar",
-      tr("openpilot Longitudinal Control"),
-      tr("openpilot will disable the car's radar and will take over control of gas and brakes. Warning: this disables AEB!"),
+      tr("القائد الآلي التحكم الطولي"),
+      tr("سوف يقوم برنامج القائد الآلي بتعطيل رادار السيارة وسيتولى التحكم في الغاز والمكابح. تحذير: يؤدي هذا إلى تعطيل نظام التحذير من الاصدام الأمامي!"),
       "../assets/offroad/icon_speed_limit.png",
     });
   }
@@ -124,22 +124,22 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
 
 DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   setSpacing(50);
-  addItem(new LabelControl(tr("Dongle ID"), getDongleId().value_or(tr("N/A"))));
-  addItem(new LabelControl(tr("Serial"), params.get("HardwareSerial").c_str()));
+  addItem(new LabelControl(tr("معرف الجهاز"), getDongleId().value_or(tr("410148"))));
+  addItem(new LabelControl(tr("الرقم التسلسلي"), params.get("HardwareSerial").c_str()));
 
   addItem(new OpenpilotView());
 
   // offroad-only buttons
 
-  auto dcamBtn = new ButtonControl(tr("Driver Camera"), tr("PREVIEW"),
-                                   tr("Preview the driver facing camera to ensure that driver monitoring has good visibility. (vehicle must be off)"));
+  auto dcamBtn = new ButtonControl(tr("كاميرا السائق"), tr("عرض"),
+                                   tr("قم بمعاينة الكاميرا المواجهة للسائق للتأكد من أن مراقبة السائق تتمتع برؤية جيدة. (vehicle must be off)"));
   connect(dcamBtn, &ButtonControl::clicked, [=]() { emit showDriverView(); });
   addItem(dcamBtn);
 
   if (!params.getBool("Passive")) {
-    auto retrainingBtn = new ButtonControl(tr("Review Training Guide"), tr("REVIEW"), tr("Review the rules, features, and limitations of openpilot"));
+    auto retrainingBtn = new ButtonControl(tr("مراجعة دليل التدريب"), tr("عرض"), tr("راجع القواعد والميزات والقيود الخاصة بالقائد الآلي"));
     connect(retrainingBtn, &ButtonControl::clicked, [=]() {
-      if (ConfirmationDialog::confirm(tr("Are you sure you want to review the training guide?"), this)) {
+      if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد مراجعة دليل التدريب؟"), this)) {
         emit reviewTrainingGuide();
       }
     });
@@ -147,7 +147,7 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   }
 
   if (Hardware::TICI()) {
-    auto regulatoryBtn = new ButtonControl(tr("Regulatory"), tr("VIEW"), "");
+    auto regulatoryBtn = new ButtonControl(tr("تنظيمية"), tr("معاينة"), "");
     connect(regulatoryBtn, &ButtonControl::clicked, [=]() {
       const std::string txt = util::read_file("../assets/offroad/fcc.html");
       RichTextDialog::alert(QString::fromStdString(txt), this);
@@ -155,10 +155,10 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
     addItem(regulatoryBtn);
   }
 
-  auto resetCalibBtn = new ButtonControl(tr("Reset Calibration"), tr("RESET"), " ");
+  auto resetCalibBtn = new ButtonControl(tr("إعادة ضبط المعايرة"), tr("إعادة تعيين"), " ");
   connect(resetCalibBtn, &ButtonControl::showDescription, this, &DevicePanel::updateCalibDescription);
   connect(resetCalibBtn, &ButtonControl::clicked, [&]() {
-    if (ConfirmationDialog::confirm(tr("Are you sure you want to reset calibration?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد إعادة ضبط المعايرة؟"), this)) {
       params.remove("CalibrationParams");
       params.remove("LiveParameters");
       params.putBool("OnRoadRefresh", true);
@@ -169,11 +169,11 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   });
   addItem(resetCalibBtn);
 
-  auto translateBtn = new ButtonControl(tr("Change Language"), tr("CHANGE"), "");
+  auto translateBtn = new ButtonControl(tr("تغيير اللغة"), tr("تغيير"), "");
   connect(translateBtn, &ButtonControl::clicked, [=]() {
     QMap<QString, QString> langs = getSupportedLanguages();
     QString currentLang = QString::fromStdString(Params().get("LanguageSetting"));
-    QString selection = MultiOptionDialog::getSelection(tr("Select a language"), langs.keys(), langs.key(currentLang), this);
+    QString selection = MultiOptionDialog::getSelection(tr("اختر لغة"), langs.keys(), langs.key(currentLang), this);
     if (!selection.isEmpty()) {
       // put language setting, exit Qt UI, and trigger fast restart
       Params().put("LanguageSetting", langs[selection].toStdString());
@@ -192,17 +192,17 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   QHBoxLayout *power_layout = new QHBoxLayout();
   power_layout->setSpacing(30);
 
-  QPushButton *refresh_btn = new QPushButton(tr("Refresh"));
+  QPushButton *refresh_btn = new QPushButton(tr("تحديث"));
   refresh_btn->setObjectName("refresh_btn");
   power_layout->addWidget(refresh_btn);
   QObject::connect(refresh_btn, &QPushButton::clicked, this, &DevicePanel::refresh);
 
-  QPushButton *reboot_btn = new QPushButton(tr("Reboot"));
+  QPushButton *reboot_btn = new QPushButton(tr("اعادة التشغيل"));
   reboot_btn->setObjectName("reboot_btn");
   power_layout->addWidget(reboot_btn);
   QObject::connect(reboot_btn, &QPushButton::clicked, this, &DevicePanel::reboot);
 
-  QPushButton *poweroff_btn = new QPushButton(tr("Power Off"));
+  QPushButton *poweroff_btn = new QPushButton(tr("إيقاف التشغيل"));
   poweroff_btn->setObjectName("poweroff_btn");
   power_layout->addWidget(poweroff_btn);
   QObject::connect(poweroff_btn, &QPushButton::clicked, this, &DevicePanel::poweroff);
@@ -224,8 +224,8 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
 
 void DevicePanel::updateCalibDescription() {
   QString desc =
-      tr("openpilot requires the device to be mounted within 4° left or right and "
-         "within 5° up or 8° down. openpilot is continuously calibrating, resetting is rarely required.");
+      tr("يتطلب برنامج القائد الآلي أن يتم تركيب الجهاز في حدود 4 درجات يسارًا أو يمينًا و "
+          "في غضون 5 درجات لأعلى أو 8 درجات لأسفل. يقوم الطيار المفتوح بالمعايرة باستمرار ، ونادراً ما تكون هناك حاجة لإعادة الضبط.");
   std::string calib_bytes = Params().get("CalibrationParams");
   if (!calib_bytes.empty()) {
     try {
@@ -236,8 +236,8 @@ void DevicePanel::updateCalibDescription() {
         double pitch = calib.getRpyCalib()[1] * (180 / M_PI);
         double yaw = calib.getRpyCalib()[2] * (180 / M_PI);
         desc += tr(" Your device is pointed %1° %2 and %3° %4.")
-                    .arg(QString::number(std::abs(pitch), 'g', 1), pitch > 0 ? tr("down") : tr("up"),
-                         QString::number(std::abs(yaw), 'g', 1), yaw > 0 ? tr("left") : tr("right"));
+                    .arg(QString::number(std::abs(pitch), 'g', 1), pitch > 0 ? tr("أسفل") : tr("أعلى"),
+                         QString::number(std::abs(yaw), 'g', 1), yaw > 0 ? tr("يسار") : tr("يمين"));
       }
     } catch (kj::Exception) {
       qInfo() << "invalid CalibrationParams";
@@ -248,7 +248,7 @@ void DevicePanel::updateCalibDescription() {
 
 void DevicePanel::refresh() {
   if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
-    if (ConfirmationDialog::confirm(tr("Are you sure you want to refresh?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد التحديث؟"), this)) {
       // Check engaged again in case it changed while the dialog was open
       if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
         Params().putBool("OnRoadRefresh", true);
@@ -258,43 +258,43 @@ void DevicePanel::refresh() {
       }
     }
   } else {
-    ConfirmationDialog::alert(tr("Disengage to Refresh"), this);
+    ConfirmationDialog::alert(tr("فك الارتباط للتحديث"), this);
   }
 }
 
 void DevicePanel::reboot() {
   if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
-    if (ConfirmationDialog::confirm(tr("Are you sure you want to reboot?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد إعادة التشغيل؟"), this)) {
       // Check engaged again in case it changed while the dialog was open
       if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
         Params().putBool("DoReboot", true);
       }
     }
   } else {
-    ConfirmationDialog::alert(tr("Disengage to Reboot"), this);
+    ConfirmationDialog::alert(tr("فك الارتباط لإعادة التشغيل"), this);
   }
 }
 
 void DevicePanel::poweroff() {
   if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
-    if (ConfirmationDialog::confirm(tr("Are you sure you want to power off?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد إيقاف التشغيل؟"), this)) {
       // Check engaged again in case it changed while the dialog was open
       if (QUIState::ui_state.status == UIStatus::STATUS_DISENGAGED) {
         Params().putBool("DoShutdown", true);
       }
     }
   } else {
-    ConfirmationDialog::alert(tr("Disengage to Power Off"), this);
+    ConfirmationDialog::alert(tr("فك الارتباط لإيقاف التشغيل"), this);
   }
 }
 
 SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
-  gitRemoteLbl = new LabelControl(tr("Git Remote"));
-  gitBranchLbl = new LabelControl(tr("Git Branch"));
-  gitCommitLbl = new LabelControl(tr("Git Commit"));
-  osVersionLbl = new LabelControl(tr("OS Version"));
-  versionLbl = new LabelControl(tr("Fork"));
-  lastUpdateLbl = new LabelControl(tr("Last Update Check"), "", "");
+  gitRemoteLbl = new LabelControl(tr("بوابة التحكم عن بعد"));
+  gitBranchLbl = new LabelControl(tr("فرع جيت"));
+  gitCommitLbl = new LabelControl(tr("آخر تعديل"));
+  osVersionLbl = new LabelControl(tr("إصدار نظام التشغيل"));
+  versionLbl = new LabelControl(tr("فرع"));
+  lastUpdateLbl = new LabelControl(tr("التحقق من آخر تحديث"), "", "");
   updateBtn = new ButtonControl(tr("Check for Updates"), "");
   connect(updateBtn, &ButtonControl::clicked, [=]() {
     if (params.getBool("IsOffroad")) {
@@ -308,13 +308,13 @@ SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
     QString commit_local = QString::fromStdString(Params().get("GitCommit").substr(0, 10));
     QString commit_remote = QString::fromStdString(Params().get("GitCommitRemote").substr(0, 10));
     QString empty = "";
-    desc += tr("LOCAL: %1  REMOTE: %2%3%4 ").arg(commit_local, commit_remote, empty, empty);
+    desc += tr("محلي:٪ 1 وحدة تحكم عن بعد:٪ 2٪ 3٪ 4 ").arg(commit_local, commit_remote, empty, empty);
     
     if (!last_ping.length()) {
-      desc += tr("Network connection is missing or unstable. Check the connection.");
+      desc += tr("اتصال الشبكة مفقود أو غير مستقر. تحقق من الاتصال.");
       ConfirmationDialog::alert(desc, this);
     } else if (commit_local == commit_remote) {
-      desc += tr("Local and remote match. No update required.");
+      desc += tr("مطابق محلية وعن بعد. لا حاجة للتحديث.");
       ConfirmationDialog::alert(desc, this);
     } else {
       if (QFileInfo::exists("/data/OPKR_Updates.txt")) {
@@ -341,9 +341,9 @@ SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
   });
 
 
-  auto uninstallBtn = new ButtonControl(tr("Uninstall %1").arg(getBrand()), tr("UNINSTALL"));
+  auto uninstallBtn = new ButtonControl(tr("الغاء التثبيت %1").arg(getBrand()), tr("الغاء التثبيت"));
   connect(uninstallBtn, &ButtonControl::clicked, [&]() {
-    if (ConfirmationDialog::confirm(tr("Are you sure you want to uninstall?"), this)) {
+    if (ConfirmationDialog::confirm(tr("هل أنت متأكد أنك تريد إلغاء التثبيت؟"), this)) {
       params.putBool("DoUninstall", true);
     }
   });
@@ -370,8 +370,8 @@ SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
   fs_watch = new QFileSystemWatcher(this);
   QObject::connect(fs_watch, &QFileSystemWatcher::fileChanged, [=](const QString path) {
     if (path.contains("UpdateFailedCount") && std::atoi(params.get("UpdateFailedCount").c_str()) > 0) {
-      lastUpdateLbl->setText(tr("failed to fetch update"));
-      updateBtn->setText(tr("CHECK"));
+      lastUpdateLbl->setText(tr("فشل في جلب التحديث"));
+      updateBtn->setText(tr("تحقق"));
       updateBtn->setEnabled(true);
     } else if (path.contains("LastUpdateTime")) {
       updateLabels();
@@ -390,9 +390,9 @@ void SoftwarePanel::updateLabels() {
     lastUpdate = timeAgo(QDateTime::fromString(tm, "yyyy-MM-dd HH:mm:ss"));
   }
 
-  versionLbl->setText("OPKR");
+  versionLbl->setText("القائد الآلي");
   lastUpdateLbl->setText(lastUpdate);
-  updateBtn->setText(tr("CHECK"));
+  updateBtn->setText(tr("فحص"));
   updateBtn->setEnabled(true);
   gitRemoteLbl->setText(QString::fromStdString(params.get("GitRemote").substr(19)));
   gitBranchLbl->setText(QString::fromStdString(params.get("GitBranch")));
@@ -408,15 +408,15 @@ C2NetworkPanel::C2NetworkPanel(QWidget *parent) : QWidget(parent) {
   list->setSpacing(30);
   // wifi + tethering buttons
 #ifdef QCOM
-  auto wifiBtn = new ButtonControl(tr("Wi-Fi Settings"), tr("OPEN"));
+  auto wifiBtn = new ButtonControl(tr("اعدادات الواي فاي"), tr("افتح"));
   QObject::connect(wifiBtn, &ButtonControl::clicked, [=]() { HardwareEon::launch_wifi(); });
   list->addItem(wifiBtn);
 
-  auto tetheringBtn = new ButtonControl(tr("Tethering Settings"), tr("OPEN"));
+  auto tetheringBtn = new ButtonControl(tr("إعدادات الربط"), tr("افتح"));
   QObject::connect(tetheringBtn, &ButtonControl::clicked, [=]() { HardwareEon::launch_tethering(); });
   list->addItem(tetheringBtn);
 #endif
-  ipaddress = new LabelControl(tr("IP Address"), "");
+  ipaddress = new LabelControl(tr("عنوان IP"), "");
   list->addItem(ipaddress);
 
   list->addItem(new HotspotOnBootToggle());
@@ -478,17 +478,17 @@ UIPanel::UIPanel(QWidget *parent) : QFrame(parent) {
   layout->addWidget(new RecordCount());
   layout->addWidget(new RecordQuality());
   const char* record_del = "rm -f /storage/emulated/0/videos/*";
-  auto recorddelbtn = new ButtonControl(tr("Delete All Recorded Files"), tr("RUN"));
+  auto recorddelbtn = new ButtonControl(tr("حذف كافة الملفات المسجلة"), tr("شغل"));
   QObject::connect(recorddelbtn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Delete all saved recorded files. Do you want to proceed?"), this)){
+    if (ConfirmationDialog::confirm(tr("احذف جميع الملفات المسجلة المحفوظة. هل تريد المتابعة؟"), this)){
       std::system(record_del);
     }
   });
   layout->addWidget(recorddelbtn);
   const char* realdata_del = "rm -rf /data/media/0/realdata/*";
-  auto realdatadelbtn = new ButtonControl(tr("Delete All Driving Logs"), tr("RUN"));
+  auto realdatadelbtn = new ButtonControl(tr("حذف كافة سجلات القيادة"), tr("شغل"));
   QObject::connect(realdatadelbtn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("Delete all saved driving logs. Do you want to proceed?"), this)){
+    if (ConfirmationDialog::confirm(tr("احذف جميع سجلات القيادة المحفوظة. هل تريد المتابعة؟"), this)){
       std::system(realdata_del);
     }
   });
@@ -619,7 +619,7 @@ TuningPanel::TuningPanel(QWidget *parent) : QFrame(parent) {
   layout->setSpacing(30);
 
   // OPKR
-  layout->addWidget(new LabelControl(tr("〓〓〓〓〓〓〓〓【 TUNING 】〓〓〓〓〓〓〓〓"), ""));
+  layout->addWidget(new LabelControl(tr("〓〓〓〓〓〓〓〓【 ضبط 】〓〓〓〓〓〓〓〓"), ""));
   layout->addWidget(new CameraOffset());
   layout->addWidget(new PathOffset());
   layout->addWidget(horizontal_line());
@@ -648,7 +648,7 @@ TuningPanel::TuningPanel(QWidget *parent) : QFrame(parent) {
 
   layout->addWidget(horizontal_line());
 
-  //layout->addWidget(new LabelControl("〓〓〓〓〓〓〓〓【 CONTROL 】〓〓〓〓〓〓〓〓", ""));
+  //layout->addWidget(new LabelControl("〓〓〓〓〓〓〓〓【 تحكم 】〓〓〓〓〓〓〓〓", ""));
  // layout->addWidget(new LateralControl());
   layout->addWidget(new LiveTunePanelToggle());
 
@@ -704,21 +704,21 @@ SettingsWindow::SettingsWindow(QWidget *parent) : QFrame(parent) {
   QObject::connect(software, &SoftwarePanel::closeSettings, this, &SettingsWindow::closeSettings);
 
   QList<QPair<QString, QWidget *>> panels = {
-    {tr("Device"), device},
-    {tr("Network"), network_panel(this)},
-    {tr("Toggles"), new TogglesPanel(this)},
-    {tr("Software"), software},
-    {tr("UIMenu"), new UIPanel(this)},
-    {tr("Driving"), new DrivingPanel(this)},
-    {tr("Developer"), new DeveloperPanel(this)},
-    {tr("Tuning"), new TuningPanel(this)},
+    {tr("جهاز"), device},
+    {tr("الشبكة"), network_panel(this)},
+    {tr("تبديل "), new TogglesPanel(this)},
+    {tr("البرنامج"), software},
+    {tr("الواجهة"), new UIPanel(this)},
+    {tr("القيادة"), new DrivingPanel(this)},
+    {tr("التطوير"), new DeveloperPanel(this)},
+    {tr("التعديل"), new TuningPanel(this)},
   };
 
   sidebar_layout->addSpacing(45);
 
 #ifdef ENABLE_MAPS
   auto map_panel = new MapPanel(this);
-  panels.push_back({tr("Navigation"), map_panel});
+  panels.push_back({tr("الملاحة"), map_panel});
   QObject::connect(map_panel, &MapPanel::closeSettings, this, &SettingsWindow::closeSettings);
 #endif
 
@@ -750,7 +750,7 @@ SettingsWindow::SettingsWindow(QWidget *parent) : QFrame(parent) {
     nav_btns->addButton(btn);
     sidebar_layout->addWidget(btn, 0, Qt::AlignRight);
 
-    const int lr_margin = name != tr("Network") ? 50 : 0;  // Network panel handles its own margins
+    const int lr_margin = name != tr("الشبكة") ? 50 : 0;  // Network panel handles its own margins
     panel->setContentsMargins(lr_margin, 25, lr_margin, 25);
 
     ScrollView *panel_frame = new ScrollView(panel, this);

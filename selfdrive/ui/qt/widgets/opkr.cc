@@ -1947,7 +1947,7 @@ void LaneChangeSpeed::refresh() {
   }
 }
 
-LaneChangeDelay::LaneChangeDelay() : AbstractControl(tr("LaneChange Delay"), tr("Set the delay time after turn signal operation before lane change."), "../assets/offroad/icon_shell.png") {
+LaneChangeDelay::LaneChangeDelay() : AbstractControl(tr("تأخير تغيير المسار"), tr("اضبط وقت التأخير بعد تشغيل إشارة الانعطاف قبل تغيير الحارة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2005,21 +2005,21 @@ LaneChangeDelay::LaneChangeDelay() : AbstractControl(tr("LaneChange Delay"), tr(
 void LaneChangeDelay::refresh() {
   QString option = QString::fromStdString(params.get("OpkrAutoLaneChangeDelay"));
   if (option == "0") {
-    label.setText(tr("Nudge"));
+    label.setText(tr("بعد التنبيه"));
   } else if (option == "1") {
-    label.setText(tr("RightNow"));
+    label.setText(tr("فى الحال"));
   } else if (option == "2") {
-    label.setText(tr("0.5sec"));
+    label.setText(tr("0.5 ثانية"));
   } else if (option == "3") {
-    label.setText(tr("1sec"));
+    label.setText(tr("1 ثانية"));
   } else if (option == "4") {
-    label.setText(tr("1.5sec"));
+    label.setText(tr("1.5 ثانية"));
   } else {
-    label.setText(tr("2secs"));
+    label.setText(tr("2 ثانية"));
   }
 }
 
-LeftCurvOffset::LeftCurvOffset() : AbstractControl(tr("LeftCurv Offset"), tr("Adjust the position of the vehicle in the curve section. (-value: move the car to the left, +value: move the car to the right)"), "../assets/offroad/icon_shell.png") {
+LeftCurvOffset::LeftCurvOffset() : AbstractControl(tr("تعديل الانحناء الأيسر"), tr("اضبط موضع السيارة في قسم المنحنى. (-القيمة: حرك السيارة إلى اليسار, +القيمة: حرك السيارة إلى اليمين)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2078,7 +2078,7 @@ void LeftCurvOffset::refresh() {
   label.setText(QString::fromStdString(params.get("LeftCurvOffsetAdj")));
 }
 
-RightCurvOffset::RightCurvOffset() : AbstractControl(tr("RightCurv Offset"), tr("Adjust the position of the vehicle in the curve section. (-value: move the car to the left, +value: move the car to the right)"), "../assets/offroad/icon_shell.png") {
+RightCurvOffset::RightCurvOffset() : AbstractControl(tr("تعديل الانحناء الأيمن"), tr("اضبط موضع السيارة في قسم المنحنى. (-القيمة: حرك السيارة إلى اليسار, +القيمة: حرك السيارة إلى اليمين)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2138,7 +2138,7 @@ void RightCurvOffset::refresh() {
 }
 
 
-SteerAngleCorrection::SteerAngleCorrection() : AbstractControl(tr("Str Angle Adjust"), tr("On the straight path, adjust the SteerAngle zero to zero the current steering angle. ex) Set it to 0.5 degrees Celsius for a straight line, and -0.5 degrees Celsius for -0.5 degrees Celsius."), "../assets/offroad/icon_shell.png") {
+SteerAngleCorrection::SteerAngleCorrection() : AbstractControl(tr("ضبط زاوية الدركسون"), tr("على المسار المستقيم ، اضبط زاوية الدركسون 0 على صفر زاوية التوجيه الحالية. السابق) Set it to 0.5 degrees Celsius for a straight line, and -0.5 degrees Celsius for -0.5 degrees Celsius."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2201,7 +2201,7 @@ void SteerAngleCorrection::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SpeedLimitOffset::SpeedLimitOffset() : AbstractControl(tr("SpeedLimit Offset"), tr("During safetycam deceleration, it decelerates by compensating for the difference between GPS speed and real speed."), "../assets/offroad/icon_shell.png") {
+SpeedLimitOffset::SpeedLimitOffset() : AbstractControl(tr("تعديل حد السرعة"), tr("عند وجود كاميرا السرعة يتم التباطؤ بشكل تلقائي ويتم التعويض عن طريق نظام تحديد المواقع العالمية جي بي أس والسرعة الحقيقية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2292,7 +2292,7 @@ void SpeedLimitOffset::refresh() {
   label.setText(QString::fromStdString(params.get("OpkrSpeedLimitOffset")));
 }
 
-RESChoice::RESChoice() : AbstractControl(tr("AutoRES Option"), tr("Sets the auto RES option. 1. Adjust the temporary cruise speed, 2. Adjust the set speed itself according to the presence or absence of a preceding car. 3. Adjust the cruise speed if there is a preceding car, and adjust the set speed if there is no preceding car. Please note that the automatic RES may not work well depending on the conditions."), "../assets/offroad/icon_shell.png") {
+RESChoice::RESChoice() : AbstractControl(tr("خيار AutoRES"), tr("يضبط خيار RES تلقائي. 1. اضبط سرعة الانطلاق المؤقتة ، 2. اضبط السرعة المضبوطة نفسها وفقًا لوجود أو عدم وجود سيارة سابقة. 3. اضبط سرعة الرحلة إذا كانت هناك سيارة سابقة ، واضبط السرعة المضبوطة إذا لم تكن هناك سيارة سابقة. يرجى ملاحظة أن RES التلقائي قد لا يعمل بشكل جيد حسب الظروف."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2350,15 +2350,15 @@ RESChoice::RESChoice() : AbstractControl(tr("AutoRES Option"), tr("Sets the auto
 void RESChoice::refresh() {
   QString option = QString::fromStdString(params.get("AutoResOption"));
   if (option == "0") {
-    label.setText(tr("CruiseSet"));
+    label.setText(tr("مثبت السرعة"));
   } else if (option == "1") {
-    label.setText(tr("MaxSpeedSet"));
+    label.setText(tr("أقصى حد لليرعة"));
   } else {
-    label.setText(tr("AUTO(LeadCar)"));
+    label.setText(tr("تلقائي(المركبات بالأمام)"));
   }
 }
 
-AutoResCondition::AutoResCondition() : AbstractControl(tr("AutoRES Condition"), tr("Sets the automatic RES condition. When the brake is released/operated when the accelerator pedal is operated."), "../assets/offroad/icon_shell.png") {
+AutoResCondition::AutoResCondition() : AbstractControl(tr("حالة AutoRES"), tr("يضبط حالة RES التلقائي. عند تحرير / تشغيل الفرامل عند الضغط على دواسة الوقود."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2416,13 +2416,13 @@ AutoResCondition::AutoResCondition() : AbstractControl(tr("AutoRES Condition"), 
 void AutoResCondition::refresh() {
   QString option = QString::fromStdString(params.get("AutoResCondition"));
   if (option == "0") {
-    label.setText(tr("RelBrake"));
+    label.setText(tr("بالفرامل"));
   } else {
-    label.setText(tr("OnGas"));
+    label.setText(tr("بالبنزين"));
   }
 }
 
-AutoResLimitTime::AutoResLimitTime() : AbstractControl(tr("AutoRES Allow(sec)"), tr("Adjust the automatic RES allowance time. Automatic RES operates only within the set time after the cruise is released."), "../assets/offroad/icon_shell.png") {
+AutoResLimitTime::AutoResLimitTime() : AbstractControl(tr("السماح التلقائي (بالثانية)"), tr("ضبط وقت بدل RES التلقائي. تعمل ميزة RES التلقائية فقط خلال الوقت المحدد بعد إطلاق مثبت السرعة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2478,7 +2478,7 @@ AutoResLimitTime::AutoResLimitTime() : AbstractControl(tr("AutoRES Allow(sec)"),
 void AutoResLimitTime::refresh() {
   QString option = QString::fromStdString(params.get("AutoResLimitTime"));
   if (option == "0") {
-    label.setText(tr("NoLimit"));
+    label.setText(tr("بدون حدود"));
   } else {
     label.setText(QString::fromStdString(params.get("AutoResLimitTime")));
   }
@@ -2486,7 +2486,7 @@ void AutoResLimitTime::refresh() {
   btnplus.setText("+");
 }
 
-AutoEnableSpeed::AutoEnableSpeed() : AbstractControl(tr("Auto Engage Spd(كلم/س)"), tr("Set the automatic engage speed."), "../assets/offroad/icon_shell.png") {
+AutoEnableSpeed::AutoEnableSpeed() : AbstractControl(tr("التفعيل التلقائي بالسرعة(كلم/س)"), tr("ضبط سرعة التفعيل التلقائي."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2552,7 +2552,7 @@ void AutoEnableSpeed::refresh() {
   btnplus.setText("+");
 }
 
-CamDecelDistAdd::CamDecelDistAdd() : AbstractControl(tr("SafetyCamDist Adj(%)"), tr("Reduce or increase the deceleration start distance during deceleration of the safety section (+ value: deceleration start from a long distance, -value: deceleration start at a short distance) = interpolation value X interpolation value X reduction/increase ratio according to difference between current speed and cam speed."), "../assets/offroad/icon_shell.png") {
+CamDecelDistAdd::CamDecelDistAdd() : AbstractControl(tr("عدسات كاميرا السلامة(%)"), tr("قم بتقليل أو زيادة مسافة بدء التباطؤ أثناء تباطؤ قسم الأمان (+ القيمة: يبدأ التباطؤ من مسافة طويلة ، - القيمة: بدء التباطؤ على مسافة قصيرة) = قيمة الاستيفاء X قيمة الاستيفاء X نسبة التخفيض / الزيادة وفقًا للاختلاف بين التيار السرعة وسرعة الكاميرا."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2608,7 +2608,7 @@ CamDecelDistAdd::CamDecelDistAdd() : AbstractControl(tr("SafetyCamDist Adj(%)"),
 void CamDecelDistAdd::refresh() {
   QString option = QString::fromStdString(params.get("SafetyCamDecelDistGain"));
   if (option == "0") {
-    label.setText(tr("Default"));
+    label.setText(tr("إفتراضي"));
   } else {
     label.setText(QString::fromStdString(params.get("SafetyCamDecelDistGain")));
   }
@@ -2617,7 +2617,7 @@ void CamDecelDistAdd::refresh() {
 }
 
 //Panda
-MaxSteer::MaxSteer() : AbstractControl(tr("MAX_STEER"), tr("Modify the Panda MAX_STEEER value. Press the Run button below to apply."), "../assets/offroad/icon_shell.png") {
+MaxSteer::MaxSteer() : AbstractControl(tr("أقصى_إلتفاف"), tr("قم بتعديل قيمة أقصى إلتفاف للباندا. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");

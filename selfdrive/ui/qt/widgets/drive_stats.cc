@@ -34,16 +34,16 @@ DriveStats::DriveStats(QWidget* parent) : QFrame(parent) {
     grid_layout->addWidget(labels.distance = newLabel("0", "number"), row, 1, Qt::AlignLeft);
     grid_layout->addWidget(labels.hours = newLabel("0", "number"), row, 2, Qt::AlignLeft);
 
-    grid_layout->addWidget(newLabel((tr("Drives")), "unit"), row + 1, 0, Qt::AlignLeft);
+    grid_layout->addWidget(newLabel((tr("القيادة")), "unit"), row + 1, 0, Qt::AlignLeft);
     grid_layout->addWidget(labels.distance_unit = newLabel(getDistanceUnit(), "unit"), row + 1, 1, Qt::AlignLeft);
-    grid_layout->addWidget(newLabel(tr("Hours"), "unit"), row + 1, 2, Qt::AlignLeft);
+    grid_layout->addWidget(newLabel(tr("الساعات"), "unit"), row + 1, 2, Qt::AlignLeft);
 
     main_layout->addLayout(grid_layout);
   };
 
-  add_stats_layouts(tr("ALL TIME"), all_);
+  add_stats_layouts(tr("جميع الأوقات"), all_);
   main_layout->addStretch();
-  add_stats_layouts(tr("PAST WEEK"), week_);
+  add_stats_layouts(tr("الاسبوع الماضي"), week_);
 
   QString OPKR_SERVER = QString::fromStdString(Params().get("OPKRServer"));
   QString TARGET_SERVER = "";

@@ -2352,7 +2352,7 @@ void RESChoice::refresh() {
   if (option == "0") {
     label.setText(tr("مثبت السرعة"));
   } else if (option == "1") {
-    label.setText(tr("أقصى حد لليرعة"));
+    label.setText(tr("أقصى حد للسرعة"));
   } else {
     label.setText(tr("تلقائي(المركبات بالأمام)"));
   }
@@ -2676,7 +2676,7 @@ void MaxSteer::refresh() {
   label.setText(QString::fromStdString(params.get("MaxSteer")));
 }
 
-MaxRTDelta::MaxRTDelta() : AbstractControl(tr("RT_DELTA"), tr("Modify the panda RT_DELTA value. Press the Run button below to apply. It might be 7(DeltaDown)X16=112?"), "../assets/offroad/icon_shell.png") {
+MaxRTDelta::MaxRTDelta() : AbstractControl(tr("RT_DELTA"), tr("تعديل قيمة RT_DELTA الباندا. اضغط على زر التشغيل أدناه للتطبيق. قد يكون 7 (DeltaDown) X16 = 112؟"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2735,7 +2735,7 @@ void MaxRTDelta::refresh() {
   label.setText(QString::fromStdString(params.get("MaxRTDelta")));
 }
 
-MaxRateUp::MaxRateUp() : AbstractControl(tr("MAX_RATE_UP"), tr("Modify the Panda MAX_RATE_UP value. Press the Run button below to apply."), "../assets/offroad/icon_shell.png") {
+MaxRateUp::MaxRateUp() : AbstractControl(tr("MAX_RATE_UP"), tr("قم بتعديل قيمة Panda MAX_RATE_UP. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2794,7 +2794,7 @@ void MaxRateUp::refresh() {
   label.setText(QString::fromStdString(params.get("MaxRateUp")));
 }
 
-MaxRateDown::MaxRateDown() : AbstractControl(tr("MAX_RATE_DOWN"), tr("Modify the Panda MAX_RATE_DOWN value. Press the Run button below to apply."), "../assets/offroad/icon_shell.png") {
+MaxRateDown::MaxRateDown() : AbstractControl(tr("MAX_RATE_DOWN"), tr("قم بتعديل قيمة Panda MAX_RATE_DOWN. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2853,8 +2853,8 @@ void MaxRateDown::refresh() {
   label.setText(QString::fromStdString(params.get("MaxRateDown")));
 }
 
-//튜닝
-CameraOffset::CameraOffset() : AbstractControl(tr("CameraOffset"), tr("Sets the CameraOffset value. (+value:Move Left, -value:Move Right)"), "../assets/offroad/icon_shell.png") {
+//ضبط
+CameraOffset::CameraOffset() : AbstractControl(tr("وزن الكاميرا"), tr("يضبط قيمة زاوية الكاميرا. (+القيمة:التحرك لليسار, -القيمة:التحرك لليمين)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2917,7 +2917,7 @@ void CameraOffset::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-PathOffset::PathOffset() : AbstractControl(tr("PathOffset"), tr("Sets the PathOffset value. (+value:Move left, -value:Move right)"), "../assets/offroad/icon_shell.png") {
+PathOffset::PathOffset() : AbstractControl(tr("إزاحة المسار"), tr("يضبط قيمة إزاحة المسار. (+القيمة:التحرك لليسار, -القيمة:التحرك لليمين)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2980,7 +2980,7 @@ void PathOffset::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SRBaseControl::SRBaseControl() : AbstractControl(tr("SteerRatio"), tr("Sets the SteerRatio default value."), "../assets/offroad/icon_shell.png") {
+SRBaseControl::SRBaseControl() : AbstractControl(tr("نسبة التوجيه"), tr("يضبط القيمة الافتراضية لنسبة التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3078,7 +3078,7 @@ void SRBaseControl::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SRMaxControl::SRMaxControl() : AbstractControl(tr("SteerRatioMax"), tr("Sets the SteerRatio maximum value."), "../assets/offroad/icon_shell.png") {
+SRMaxControl::SRMaxControl() : AbstractControl(tr("نسبة التوجيه كحد أقصى"), tr("يضبط الحد الأقصى لقيمة نسبة التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3176,7 +3176,7 @@ void SRMaxControl::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SteerActuatorDelay::SteerActuatorDelay() : AbstractControl(tr("SteerActuatorDelay"), tr("Adjust the SteerActuatorDelay value."), "../assets/offroad/icon_shell.png") {
+SteerActuatorDelay::SteerActuatorDelay() : AbstractControl(tr("تأخير مشغل التوجيه"), tr("اضبط قيمة مشغل التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3239,7 +3239,7 @@ void SteerActuatorDelay::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SteerRateCost::SteerRateCost() : AbstractControl(tr("SteerRateCost"), tr("Adjust the SteerRateCost value."), "../assets/offroad/icon_shell.png") {
+SteerRateCost::SteerRateCost() : AbstractControl(tr("مقدار معدل التوجيه"), tr("اضبط قيمة تكلفة معدل التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3302,7 +3302,7 @@ void SteerRateCost::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SteerLimitTimer::SteerLimitTimer() : AbstractControl(tr("SteerLimitTimer"), tr("Adjust the SteerLimitTimer value."), "../assets/offroad/icon_shell.png") {
+SteerLimitTimer::SteerLimitTimer() : AbstractControl(tr("مؤقت حد التوجيه"), tr("ضبط قيمة مؤقت حد التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3509,7 +3509,7 @@ SteerMax::SteerMax() : AbstractControl("", "", "") {
     value = value + 1;
     if (value > value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot exceed SteerMax") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تتجاوز القيمة أقصى توجيه") + "(" + str1 + ")", this);
     } else if (value >= 512) {
       value = 512;
     }

@@ -70,7 +70,7 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
     {
       "EndToEndToggle",
       "\U0001f96c"+tr("قم بتمكين وضع محدد المسار")+"\U0001f96c",
-      tr("قم بتنشيط وضع اختيار الحارة. يمكن تحديد "وضع المسار" و "لين أقل" و "تلقائي" وتشغيله على الشاشة."),
+      tr("قم بتنشيط وضع اختيار الحارة. يمكن تحديد وضع المسار و لين أقل و تلقائي وتشغيله على الشاشة."),
       "../assets/offroad/icon_road.png",
     },
 #ifdef ENABLE_MAPS

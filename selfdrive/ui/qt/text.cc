@@ -52,10 +52,10 @@ int main(int argc, char *argv[]) {
   label2->setText(device_ip);
   label2->setStyleSheet("color: #e0e879");
   main_layout->addWidget(label2, 0, 0, 1, 4, Qt::AlignRight | Qt::AlignTop);
-  btn->setText(QObject::tr("Update"));
+  btn->setText(QObject::tr("تحديث"));
   btn2->setText(QObject::tr("MixPlorer"));
-  btn3->setText(QObject::tr("Restore"));
-  btn4->setText(QObject::tr("Reset"));
+  btn3->setText(QObject::tr("إستعادة"));
+  btn4->setText(QObject::tr("إعادة ضبط"));
   QObject::connect(btn, &QPushButton::clicked, [=]() {
     QProcess::execute("pkill -f thermald");
     QProcess::execute("rm -f /data/openpilot/prebuilt");

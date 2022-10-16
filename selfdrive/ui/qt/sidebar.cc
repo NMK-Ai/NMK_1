@@ -76,7 +76,7 @@ void Sidebar::mouseReleaseEvent(QMouseEvent *event) {
   } else if ( pressTime > MY_LONG_PRESS_THRESHOLD && trig_settings) {
     emit openSettings();
   } else if ( pressTime < 300 && trig_settings) {
-    ConfirmationDialog::alert(tr("Hold 0.3 sec on the button to enter Setting Menu."), this);
+    ConfirmationDialog::alert(tr("اضغط على الزر 0.3 ثانية للدخول إلى قائمة الإعداد."), this);
   }
 }
 
@@ -91,30 +91,30 @@ void Sidebar::updateState(const UIState &s) {
   ItemStatus connectStatus;
   auto last_ping = deviceState.getLastAthenaPingTime();
   if (last_ping == 0) {
-    connectStatus = ItemStatus{{tr("NETWORK"), tr("OFFLINE")}, warning_color};
+    connectStatus = ItemStatus{{tr("الشبكة"), tr("غير متصل")}, warning_color};
   } else {
-    connectStatus = nanos_since_boot() - last_ping < 80e9 ? ItemStatus{{tr("NETWORK"), tr("ONLINE")}, good_color} : ItemStatus{{tr("NETWORK"), tr("ERROR")}, danger_color};
+    connectStatus = nanos_since_boot() - last_ping < 80e9 ? ItemStatus{{tr("الشبكة"), tr("متصل")}, good_color} : ItemStatus{{tr("NETWORK"), tr("ERROR")}, danger_color};
   }
   setProperty("connectStatus", QVariant::fromValue(connectStatus));
 
-  ItemStatus tempStatus = {{tr("TEMP"), tr("HIGH")}, danger_color};
+  ItemStatus tempStatus = {{tr("الحرارة"), tr("ساخن")}, danger_color};
   auto ts = deviceState.getThermalStatus();
   if (ts == cereal::DeviceState::ThermalStatus::GREEN) {
-    tempStatus = {{tr("TEMP"), tr("GOOD")}, good_color};
+    tempStatus = {{tr("الحرارة"), tr("مرتفع")}, good_color};
   } else if (ts == cereal::DeviceState::ThermalStatus::YELLOW) {
-    tempStatus = {{tr("TEMP"), tr("OK")}, warning_color};
+    tempStatus = {{tr("الحرارة"), tr("جيد")}, warning_color};
   }
   setProperty("tempStatus", QVariant::fromValue(tempStatus));
 
-  ItemStatus pandaStatus = {{tr("VEHICLE"), tr("ONLINE")}, good_color};
+  ItemStatus pandaStatus = {{tr("المركبة"), tr("متصلة")}, good_color};
   if (s.scene.pandaType == cereal::PandaState::PandaType::UNKNOWN) {
-    pandaStatus = {{tr("PANDA"), tr("OFFLINE")}, danger_color};
+    pandaStatus = {{tr("الباندا"), tr("غير متصلة")}, danger_color};
   } else if (!s.scene.ignition) {
   	pandaStatus = {{tr("VEHICLE"), tr("OFFROAD")}, warning_color};
   } else if (s.scene.started && s.scene.gpsAccuracyUblox != 0.00 && (s.scene.gpsAccuracyUblox > 99 || s.scene.gpsAccuracyUblox == 0)) {
-    pandaStatus = {{tr("ONLINE"), tr("GPS Search")}, warning_color};
+    pandaStatus = {{tr("متصل"), tr("GPS البحث عن")}, warning_color};
   } else if (s.scene.satelliteCount > 0) {
-  	pandaStatus = {{tr("ONLINE"), tr("SAT : ")+QString("%1").arg(s.scene.satelliteCount)}, good_color};
+  	pandaStatus = {{tr("متصلة"), tr("الأقمار : ")+QString("%1").arg(s.scene.satelliteCount)}, good_color};
   }
   setProperty("pandaStatus", QVariant::fromValue(pandaStatus));
 
@@ -122,7 +122,7 @@ void Sidebar::updateState(const UIState &s) {
   QString iPAddress = "--";
   QString connectName = "---";
   QString rSRP = "--";
-  if (network_type[deviceState.getNetworkType()] == "WiFi") {
+  if (network_type[deviceState.getNetworkType()] == "الواي فاي") {
     std::string m_strip = s.scene.deviceState.getWifiIpAddress();
     std::string m_connectname = s.scene.deviceState.getConnectName();
     iPAddress = QString::fromUtf8(m_strip.c_str());
@@ -133,16 +133,16 @@ void Sidebar::updateState(const UIState &s) {
     rSRP = QString::fromUtf8(m_rsrp.c_str()) + " dBm";
     connectName = QString::fromUtf8(m_connectname.c_str());
   }
-  QString bATStatus = "DisCharging";
+  QString bATStatus = "التفريغ";
   std::string m_battery_stat = s.scene.deviceState.getBatteryStatus();
   bATStatus = QString::fromUtf8(m_battery_stat.c_str());
 
-  setProperty("iPAddress", iPAddress);
-  setProperty("connectName", connectName);
-  setProperty("bATStatus", bATStatus);
-  setProperty("bATPercent", (int)deviceState.getBatteryPercent());
-  setProperty("bATLess", (bool)s.scene.batt_less);
-  setProperty("rSRP", rSRP);
+  setProperty("عنوان IP", iPAddress);
+  setProperty("اسم الاتصال", connectName);
+  setProperty("حالة البطاريات", bATStatus);
+  setProperty("نسبة البطاريات", (int)deviceState.getBatteryPercent());
+  setProperty("البطاريات فارغة", (bool)s.scene.batt_less);
+  setProperty("متوسط الشحن", rSRP);
 }
 
 void Sidebar::paintEvent(QPaintEvent *event) {

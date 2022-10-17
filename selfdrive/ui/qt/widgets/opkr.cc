@@ -332,7 +332,7 @@ CPresetWidget::CPresetWidget() : CGroupWidget( tr("حفظ الإعدادات") )
 
   auto paraminit_btn = new ButtonControl(tr("الملفات الذكية"), tr("تشغيل"));
   QObject::connect(paraminit_btn, &ButtonControl::clicked, [=]() {
-    if (ConfirmationDialog::confirm(tr("تهيئة المعلمات. يتم تغيير التغييرات في قائمة EON إلى القيمة المحددة الأولية. هل تريد المتابعة؟"), this)){
+    if (ConfirmationDialog::confirm(tr("تهيئة المعلمات. يتم تغيير التغييرات في قائمة الأيون إلى القيمة المحددة الأولية. هل تريد المتابعة؟"), this)){
       QProcess::execute("/data/openpilot/selfdrive/assets/addon/script/init_param.sh");
     }
   });
@@ -1174,7 +1174,7 @@ void BrightnessControl::refresh() {
   }
 }
 
-BrightnessOffControl::BrightnessOffControl() : AbstractControl(tr("السطوع عند إيقاف تشغيل SCR(%)"), tr("عند استخدام وظيفة إيقاف تشغيل شاشة الايون ، يتم تقليل السطوع وفقًا لنسبة السطوع التلقائية."), "../assets/offroad/icon_shell.png") {
+BrightnessOffControl::BrightnessOffControl() : AbstractControl(tr("السطوع عند إيقاف تشغيل (%)"), tr("عند استخدام وظيفة إيقاف تشغيل شاشة الايون ، يتم تقليل السطوع وفقًا لنسبة السطوع التلقائية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -1240,7 +1240,7 @@ void BrightnessOffControl::refresh() {
   }
 }
 
-AutoScreenOff::AutoScreenOff() : AbstractControl(tr("للايون SCR إيقاف توقيت"), tr("قم بإيقاف تشغيل شاشة الايون أو تقليل السطوع لحماية الشاشة بعد بدء القيادة. يضيء تلقائيًا أو يتم تشغيله عند حدوث لمسة أو حدث."), "../assets/offroad/icon_shell.png") 
+AutoScreenOff::AutoScreenOff() : AbstractControl(tr("للايون إيقاف توقيت"), tr("قم بإيقاف تشغيل شاشة الايون أو تقليل السطوع لحماية الشاشة بعد بدء القيادة. يضيء تلقائيًا أو يتم تشغيله عند حدوث لمسة أو حدث."), "../assets/offroad/icon_shell.png") 
 {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
@@ -2292,7 +2292,7 @@ void SpeedLimitOffset::refresh() {
   label.setText(QString::fromStdString(params.get("OpkrSpeedLimitOffset")));
 }
 
-RESChoice::RESChoice() : AbstractControl(tr("خيار AutoRES"), tr("يضبط خيار RES تلقائي. 1. اضبط سرعة الانطلاق المؤقتة ، 2. اضبط السرعة المضبوطة نفسها وفقًا لوجود أو عدم وجود سيارة سابقة. 3. اضبط سرعة الرحلة إذا كانت هناك سيارة سابقة ، واضبط السرعة المضبوطة إذا لم تكن هناك سيارة سابقة. يرجى ملاحظة أن RES التلقائي قد لا يعمل بشكل جيد حسب الظروف."), "../assets/offroad/icon_shell.png") {
+RESChoice::RESChoice() : AbstractControl(tr("خيار المتابعة التلقائية"), tr("يضبط خيار المتابعة تلقائي. 1. اضبط سرعة الانطلاق المؤقتة ، 2. اضبط السرعة المضبوطة نفسها وفقًا لوجود أو عدم وجود سيارة سابقة. 3. اضبط سرعة الرحلة إذا كانت هناك سيارة سابقة ، واضبط السرعة المضبوطة إذا لم تكن هناك سيارة سابقة. يرجى ملاحظة أن RES التلقائي قد لا يعمل بشكل جيد حسب الظروف."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2358,7 +2358,7 @@ void RESChoice::refresh() {
   }
 }
 
-AutoResCondition::AutoResCondition() : AbstractControl(tr("حالة AutoRES"), tr("يضبط حالة RES التلقائي. عند تحرير / تشغيل الفرامل عند الضغط على دواسة الوقود."), "../assets/offroad/icon_shell.png") {
+AutoResCondition::AutoResCondition() : AbstractControl(tr("حالة المتابعة التلقائية"), tr("يضبط حالة المتابعة التلقائي. عند تحرير / تشغيل الفرامل عند الضغط على دواسة الوقود."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2422,7 +2422,7 @@ void AutoResCondition::refresh() {
   }
 }
 
-AutoResLimitTime::AutoResLimitTime() : AbstractControl(tr("السماح التلقائي (بالثانية)"), tr("ضبط وقت بدل RES التلقائي. تعمل ميزة RES التلقائية فقط خلال الوقت المحدد بعد إطلاق مثبت السرعة."), "../assets/offroad/icon_shell.png") {
+AutoResLimitTime::AutoResLimitTime() : AbstractControl(tr("السماح التلقائي (بالثانية)"), tr("ضبط وقت بدل المتابعة التلقائي. تعمل ميزة RES التلقائية فقط خلال الوقت المحدد بعد إطلاق مثبت السرعة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2617,7 +2617,7 @@ void CamDecelDistAdd::refresh() {
 }
 
 //Panda
-MaxSteer::MaxSteer() : AbstractControl(tr("أقصى_إلتفاف"), tr("قم بتعديل قيمة أقصى إلتفاف للباندا. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
+MaxSteer::MaxSteer() : AbstractControl(tr("أقصى إلتفاف"), tr("قم بتعديل قيمة أقصى إلتفاف للباندا. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2735,7 +2735,7 @@ void MaxRTDelta::refresh() {
   label.setText(QString::fromStdString(params.get("MaxRTDelta")));
 }
 
-MaxRateUp::MaxRateUp() : AbstractControl(tr("MAX_RATE_UP"), tr("قم بتعديل قيمة Panda MAX_RATE_UP. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
+MaxRateUp::MaxRateUp() : AbstractControl(tr("أقصى معدل للوصول"), tr("قم بتعديل قيمة الباندا أقصى معدل للوصول. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -2794,7 +2794,7 @@ void MaxRateUp::refresh() {
   label.setText(QString::fromStdString(params.get("MaxRateUp")));
 }
 
-MaxRateDown::MaxRateDown() : AbstractControl(tr("MAX_RATE_DOWN"), tr("قم بتعديل قيمة Panda MAX_RATE_DOWN. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
+MaxRateDown::MaxRateDown() : AbstractControl(tr("أقل معدل للوصول"), tr("قم بتعديل قيمة الباندا أقل معدل للوصول. اضغط على زر التشغيل أدناه للتطبيق."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3365,7 +3365,7 @@ void SteerLimitTimer::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TireStiffnessFactor::TireStiffnessFactor() : AbstractControl(tr("TireStiffnessFactor"), tr("Adjust the TireStiffnessFactor value."), "../assets/offroad/icon_shell.png") {
+TireStiffnessFactor::TireStiffnessFactor() : AbstractControl(tr("عامل صلابة الإطارات"), tr("اضبط قيمة عامل صلابة الإطارات."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3526,7 +3526,7 @@ SteerMax::SteerMax() : AbstractControl("", "", "") {
     value = value - 1;
     if (value < value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot be less than SteerMaxBase") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تكون القيمة أقل من أقصى قيمة لثبات الدركسون") + "(" + str1 + ")", this);
     } else if (value <= 254) {
       value = 254;
     }
@@ -3639,7 +3639,7 @@ SteerDeltaUp::SteerDeltaUp() : AbstractControl("", "", "") {
     value = value + 1;
     if (value > value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot exceed maximum DeltaUp value") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة دلتا للأعلى") + "(" + str1 + ")", this);
     } else if (value >= 7) {
       value = 7;
     }
@@ -3656,7 +3656,7 @@ SteerDeltaUp::SteerDeltaUp() : AbstractControl("", "", "") {
     value = value - 1;
     if (value < value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot be less than DeltaUp default value") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لـ دلتا للأعلى") + "(" + str1 + ")", this);
     } else if (value <= 3) {
       value = 3;
     }
@@ -3769,7 +3769,7 @@ SteerDeltaDown::SteerDeltaDown() : AbstractControl("", "", "") {
     value = value + 1;
     if (value > value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot exceed maximum DeltaDown value") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تتجاوز القيمة الحد الأقصى لقيمة دلتا أسفل") + "(" + str1 + ")", this);
     } else if (value >= 15) {
       value = 15;
     }
@@ -3786,7 +3786,7 @@ SteerDeltaDown::SteerDeltaDown() : AbstractControl("", "", "") {
     value = value - 1;
     if (value < value1) {
       value = value1;
-      ConfirmationDialog::alert(tr("The value cannot be less than DeltaDown default value") + "(" + str1 + ")", this);
+      ConfirmationDialog::alert(tr("لا يمكن أن تكون القيمة أقل من القيمة الافتراضية لدلتا للأسفل") + "(" + str1 + ")", this);
     } else if (value <= 7) {
       value = 7;
     }
@@ -3818,7 +3818,7 @@ void SteerDeltaDown::refreshr() {
   labelr.setText(QString::fromStdString(params.get("SteerDeltaDownAdj")));
 }
 
-SteerThreshold::SteerThreshold() : AbstractControl(tr("SteerThreshold"), tr("Adjust the SteerThreshold value."), "../assets/offroad/icon_shell.png") {
+SteerThreshold::SteerThreshold() : AbstractControl(tr("عتبة التوجيه"), tr("اضبط قيمة عتبة التوجيه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3878,7 +3878,7 @@ void SteerThreshold::refresh() {
 }
 
 //제어
-LateralControl::LateralControl() : AbstractControl(tr("LatControl(Reboot)"), tr("Set the steering control method(PID/INDI/LQR/TORQUE). Reboot Required."), "../assets/offroad/icon_shell.png") {
+LateralControl::LateralControl() : AbstractControl(tr("التحكم في خط الطول(إعادة التشغيل)"), tr("اضبط طريقة التحكم في التوجيه(PID/INDI/LQR/TORQUE). إعادة تشغيل المطلوبة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -3949,7 +3949,7 @@ void LateralControl::refresh()
   label.setText( str );
 }
 
-PidKp::PidKp() : AbstractControl(tr("Kp"), tr("Adjust Kp"), "../assets/offroad/icon_shell.png") {
+PidKp::PidKp() : AbstractControl(tr("Kp"), tr("ضبط Kp"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4012,7 +4012,7 @@ void PidKp::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-PidKi::PidKi() : AbstractControl(tr("Ki"), tr("Adjust Ki"), "../assets/offroad/icon_shell.png") {
+PidKi::PidKi() : AbstractControl(tr("Ki"), tr("ضبط Ki"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4075,7 +4075,7 @@ void PidKi::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-PidKd::PidKd() : AbstractControl(tr("Kd"), tr("Adjust Kd"), "../assets/offroad/icon_shell.png") {
+PidKd::PidKd() : AbstractControl(tr("Kd"), tr("ضبط Kd"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4138,7 +4138,7 @@ void PidKd::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-PidKf::PidKf() : AbstractControl(tr("Kf"), tr("Adjust Kf"), "../assets/offroad/icon_shell.png") {
+PidKf::PidKf() : AbstractControl(tr("Kf"), tr("ضبط Kf"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4201,7 +4201,7 @@ void PidKf::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-OuterLoopGain::OuterLoopGain() : AbstractControl(tr("OuterLoopGain"), tr("Adjust OuterLoopGain"), "../assets/offroad/icon_shell.png") {
+OuterLoopGain::OuterLoopGain() : AbstractControl(tr("كسب الحلقة الخارجية"), tr("ضبط كسب الحلقة الخارجية"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4264,7 +4264,7 @@ void OuterLoopGain::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-InnerLoopGain::InnerLoopGain() : AbstractControl(tr("InnerLoopGain"), tr("Adjust InnerLoopGain"), "../assets/offroad/icon_shell.png") {
+InnerLoopGain::InnerLoopGain() : AbstractControl(tr("كسب الحلقة الداخلية"), tr("ضبط كسب الحلقة الداخلية"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4327,7 +4327,7 @@ void InnerLoopGain::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TimeConstant::TimeConstant() : AbstractControl(tr("TimeConstant"), tr("Adjust TimeConstant"), "../assets/offroad/icon_shell.png") {
+TimeConstant::TimeConstant() : AbstractControl(tr("ثابت الزمن"), tr("ضبط ثابت الوقت"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4390,7 +4390,7 @@ void TimeConstant::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-ActuatorEffectiveness::ActuatorEffectiveness() : AbstractControl(tr("ActuatorEffectiveness"), tr("Adjust ActuatorEffectiveness"), "../assets/offroad/icon_shell.png") {
+ActuatorEffectiveness::ActuatorEffectiveness() : AbstractControl(tr("فعالية المشغل"), tr("ضبط فعالية المشغل"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4453,7 +4453,7 @@ void ActuatorEffectiveness::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-Scale::Scale() : AbstractControl(tr("Scale"), tr("Adjust Scale"), "../assets/offroad/icon_shell.png") {
+Scale::Scale() : AbstractControl(tr("مقياس"), tr("ضبط المقياس"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4512,7 +4512,7 @@ void Scale::refresh() {
   label.setText(QString::fromStdString(params.get("Scale")));
 }
 
-LqrKi::LqrKi() : AbstractControl(tr("LqrKi"), tr("Adjust ki"), "../assets/offroad/icon_shell.png") {
+LqrKi::LqrKi() : AbstractControl(tr("LqrKi"), tr("ضبط ki"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4575,7 +4575,7 @@ void LqrKi::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-DcGain::DcGain() : AbstractControl(tr("DcGain"), tr("Adjust DcGain"), "../assets/offroad/icon_shell.png") {
+DcGain::DcGain() : AbstractControl(tr("DcGain"), tr("ضبط DcGain"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4638,7 +4638,7 @@ void DcGain::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueKp::TorqueKp() : AbstractControl(tr("Kp"), tr("Adjust Kp"), "../assets/offroad/icon_shell.png") {
+TorqueKp::TorqueKp() : AbstractControl(tr("Kp"), tr("ضبط Kp"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4706,7 +4706,7 @@ void TorqueKp::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueKf::TorqueKf() : AbstractControl(tr("Kf"), tr("Adjust Kf"), "../assets/offroad/icon_shell.png") {
+TorqueKf::TorqueKf() : AbstractControl(tr("Kf"), tr("ضبط Kf"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4774,7 +4774,7 @@ void TorqueKf::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueKi::TorqueKi() : AbstractControl(tr("Ki"), tr("Adjust Ki"), "../assets/offroad/icon_shell.png") {
+TorqueKi::TorqueKi() : AbstractControl(tr("Ki"), tr("ضبط Ki"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4842,7 +4842,7 @@ void TorqueKi::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueFriction::TorqueFriction() : AbstractControl(tr("Friction"), tr("Adjust Friction"), "../assets/offroad/icon_shell.png") {
+TorqueFriction::TorqueFriction() : AbstractControl(tr("احتكاك"), tr("ضبط الاحتكاك"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4905,7 +4905,7 @@ void TorqueFriction::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueMaxLatAccel::TorqueMaxLatAccel() : AbstractControl(tr("MaxLatAccel"), tr("Adjust MaxLatAccel"), "../assets/offroad/icon_shell.png") {
+TorqueMaxLatAccel::TorqueMaxLatAccel() : AbstractControl(tr("MaxLatAccel"), tr("تعديل MaxLatAccel"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -4968,7 +4968,7 @@ void TorqueMaxLatAccel::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-TorqueAngDeadZone::TorqueAngDeadZone() : AbstractControl(tr("AngleDeadZone"), tr("Adjust TorqueAngDeadZone"), "../assets/offroad/icon_shell.png") {
+TorqueAngDeadZone::TorqueAngDeadZone() : AbstractControl(tr("زاوية المنطقة المحجوبة"), tr("تعديل زاوية المنطقة المحجوبة"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -5031,7 +5031,7 @@ void TorqueAngDeadZone::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-CruiseGapTR::CruiseGapTR() : AbstractControl(tr("CruiseGap"), tr("Adjust the inter-vehicle distance (TR) according to the cruise gap. TR refers to the time in seconds of collision with the car in front, and the larger it becomes, the farther it is from the car in front."), "") {
+CruiseGapTR::CruiseGapTR() : AbstractControl(tr("فجوة مثبت السرعة"), tr("اضبط المسافة بين السيارات (TR) وفقًا لمثبت السرعة. يشير TR إلى الوقت بالثواني من الاصطدام مع السيارة التي أمامك ، وكلما زاد حجمها ، كلما ابتعدت عن السيارة التي أمامك."), "") {
   QString dtr = QString::fromStdString(params.get("DynamicTRGap"));
   if (dtr == "0") {
     btn1.setStyleSheet(R"(
@@ -5249,7 +5249,7 @@ void CruiseGapTR::refresh4() {
   btn4.setText("▲");
 }
 
-DynamicTRGap::DynamicTRGap() : AbstractControl(tr("Use DynamicTR"), tr("Use DynamicTR and assign it to the corresponding gap and adjust TR by speed below."), "../assets/offroad/icon_shell.png") {
+DynamicTRGap::DynamicTRGap() : AbstractControl(tr("استخدام التعقب الديناميكي"), tr("استخدم الديناميكية التعقب وقم بتعيينه للفجوة المقابلة واضبط TR حسب السرعة أدناه."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -5307,7 +5307,7 @@ DynamicTRGap::DynamicTRGap() : AbstractControl(tr("Use DynamicTR"), tr("Use Dyna
 void DynamicTRGap::refresh() {
   QString option = QString::fromStdString(params.get("DynamicTRGap"));
   if (option == "0") {
-    label.setText(tr("UnUse"));
+    label.setText(tr("غير مستخدم"));
   } else if (option == "1") {
     label.setText(QString::fromStdString("■"));
   } else if (option == "2") {
@@ -5514,7 +5514,7 @@ void LCTimingFactor::refresh4() {
   btn4.setText("↕");
 }
 
-LCTimingFactorUD::LCTimingFactorUD() : AbstractControl(tr("LaneChange Time (km/h: value)"), tr("When changing lanes, adjust the timing of lane change for each speed. If you want a quick lane change, increase the value and lower the value if you want a slow lane change."), "../assets/offroad/icon_shell.png") {
+LCTimingFactorUD::LCTimingFactorUD() : AbstractControl(tr("وقت تغيير المسار (كم / ساعة: القيمة)"), tr("عند تغيير الحارة ، اضبط توقيت تغيير الحارة لكل سرعة. إذا كنت تريد تغييرًا سريعًا للحارة ، فقم بزيادة القيمة وخفض القيمة إذا كنت تريد تغييرًا بطيئًا للحارة."), "../assets/offroad/icon_shell.png") {
 
   btn.setStyleSheet(R"(
     padding: 0;
@@ -5596,7 +5596,7 @@ void LCTimingFactorUD::refresh2() {
   }
 }
 
-LiveSRPercent::LiveSRPercent() : AbstractControl(tr("LiveSR Adjust(%)"), tr("When using LiveSR, the learned value is arbitrarily adjusted (%) and used. -Value:Lower from learned value, +Value:Lower from learned value"), "../assets/offroad/icon_shell.png") {
+LiveSRPercent::LiveSRPercent() : AbstractControl(tr("LiveSR Adjust(%)"), tr("عند استخدام LiveSR ، يتم ضبط القيمة التي تم تعلمها عشوائيًا (٪) واستخدامها. - القيمة: أقل من القيمة المكتسبة ، + القيمة: أقل من القيمة المكتسبة"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -5660,7 +5660,7 @@ void LiveSRPercent::refresh() {
   btnplus.setText("+");
 }
 
-VCurvSpeedUD::VCurvSpeedUD() : AbstractControl(tr("VisionCurvDecel([CV] [TargetSpeed])"), tr("Adjust the curve deceleration speed according to the model speed(curvature). (interpolation and list value)"), "../assets/offroad/icon_shell.png") {
+VCurvSpeedUD::VCurvSpeedUD() : AbstractControl(tr("VisionCurvDecel([CV] [TargetSpeed])"), tr("اضبط سرعة تباطؤ المنحنى وفقًا لسرعة النموذج (الانحناء). (الاستيفاء وقائمة القيمة)"), "../assets/offroad/icon_shell.png") {
 }
 
 VCurvSpeed::VCurvSpeed() : AbstractControl("", "", "") {
@@ -5695,7 +5695,7 @@ VCurvSpeed::VCurvSpeed() : AbstractControl("", "", "") {
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     int list_count1 = 0;
     int list_count2 = 0;
-    QString targetvalue1 = InputDialog::getText(tr("Set CV values with comma"), this, tr("Values are kph or mph"), false, 1, QString::fromStdString(params.get("VCurvSpeedC")));
+    QString targetvalue1 = InputDialog::getText(tr("قم بتعيين قيم السيرة الذاتية بكوما"), this, tr("القيم كم / س أو ميل / س"), false, 1, QString::fromStdString(params.get("VCurvSpeedC")));
     if (targetvalue1.length() > 0 && targetvalue1 != QString::fromStdString(params.get("VCurvSpeedC"))) {
       QStringList list1 = targetvalue1.split(",");
       list_count1 = list1.size();
@@ -5705,7 +5705,7 @@ VCurvSpeed::VCurvSpeed() : AbstractControl("", "", "") {
       QStringList list1 = QString::fromStdString(params.get("VCurvSpeedC")).split(",");
       list_count1 = list1.size();
     }
-    QString targetvalue2 = InputDialog::getText(tr("Set TS values with comma"), this, "CV: " + QString::fromStdString(params.get("VCurvSpeedC")), false, 1, QString::fromStdString(params.get("VCurvSpeedT")));
+    QString targetvalue2 = InputDialog::getText(tr("قم بتعيين قيم TS بكوما"), this, "CV: " + QString::fromStdString(params.get("VCurvSpeedC")), false, 1, QString::fromStdString(params.get("VCurvSpeedT")));
     if (targetvalue2.length() > 0 && targetvalue2 != QString::fromStdString(params.get("VCurvSpeedT"))) {
       QStringList list2 = targetvalue2.split(",");
       list_count2 = list2.size();
@@ -5716,7 +5716,7 @@ VCurvSpeed::VCurvSpeed() : AbstractControl("", "", "") {
       list_count2 = list2.size();
     }
     if (list_count1 != list_count2) {
-      ConfirmationDialog::alert(tr("Index count does not match. Check your input again."), this);
+      ConfirmationDialog::alert(tr("عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى."), this);
     }
   });
   refresh();
@@ -5727,10 +5727,10 @@ void VCurvSpeed::refresh() {
   auto strs2 = QString::fromStdString(params.get("VCurvSpeedT"));
   edit1.setText(QString::fromStdString(strs1.toStdString()));
   edit2.setText(QString::fromStdString(strs2.toStdString()));
-  btn.setText(tr("EDIT"));
+  btn.setText(tr("تحرير"));
 }
 
-OCurvSpeedUD::OCurvSpeedUD() : AbstractControl(tr("OSMCurvDecel([TSL] [TargetSpeed])"), tr("Adjust the curve deceleration speed according to turn speed limit of OSM. (interpolation value)"), "../assets/offroad/icon_shell.png") {
+OCurvSpeedUD::OCurvSpeedUD() : AbstractControl(tr("OSMCurvDecel([TSL] [TargetSpeed])"), tr("اضبط سرعة تباطؤ المنحنى وفقًا لحد سرعة الدوران لـ OSM. (قيمة الاستيفاء)"), "../assets/offroad/icon_shell.png") {
 }
 
 OCurvSpeed::OCurvSpeed() : AbstractControl("", "", "") {
@@ -5765,7 +5765,7 @@ OCurvSpeed::OCurvSpeed() : AbstractControl("", "", "") {
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     int list_count1 = 0;
     int list_count2 = 0;
-    QString targetvalue1 = InputDialog::getText(tr("Set TSL values with comma"), this, tr("Valus are TSL"), false, 1, QString::fromStdString(params.get("OCurvSpeedC")));
+    QString targetvalue1 = InputDialog::getText(tr("قم بتعيين قيم TSL بكوما"), this, tr("القيمة هي TSL"), false, 1, QString::fromStdString(params.get("OCurvSpeedC")));
     if (targetvalue1.length() > 0 && targetvalue1 != QString::fromStdString(params.get("OCurvSpeedC"))) {
       QStringList list1 = targetvalue1.split(",");
       list_count1 = list1.size();
@@ -5775,7 +5775,7 @@ OCurvSpeed::OCurvSpeed() : AbstractControl("", "", "") {
       QStringList list1 = QString::fromStdString(params.get("OCurvSpeedC")).split(",");
       list_count1 = list1.size();
     }
-    QString targetvalue2 = InputDialog::getText(tr("Set TS values with comma"), this, "TSL: " + QString::fromStdString(params.get("OCurvSpeedC")), false, 1, QString::fromStdString(params.get("OCurvSpeedT")));
+    QString targetvalue2 = InputDialog::getText(tr("قم بتعيين قيم TS بكوما"), this, "TSL: " + QString::fromStdString(params.get("OCurvSpeedC")), false, 1, QString::fromStdString(params.get("OCurvSpeedT")));
     if (targetvalue2.length() > 0 && targetvalue2 != QString::fromStdString(params.get("OCurvSpeedT"))) {
       QStringList list2 = targetvalue2.split(",");
       list_count2 = list2.size();
@@ -5786,7 +5786,7 @@ OCurvSpeed::OCurvSpeed() : AbstractControl("", "", "") {
       list_count2 = list2.size();
     }
     if (list_count1 != list_count2) {
-      ConfirmationDialog::alert(tr("Index count does not match. Check your input again."), this);
+      ConfirmationDialog::alert(tr("عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى."), this);
     }
   });
   refresh();
@@ -5797,10 +5797,10 @@ void OCurvSpeed::refresh() {
   auto strs2 = QString::fromStdString(params.get("OCurvSpeedT"));
   edit1.setText(QString::fromStdString(strs1.toStdString()));
   edit2.setText(QString::fromStdString(strs2.toStdString()));
-  btn.setText(tr("EDIT"));
+  btn.setText(tr("تحرير"));
 }
 
-GetOffAlert::GetOffAlert() : AbstractControl(tr("EON Detach Alert Sound"), tr("Device alert you a alarm to detach the EON when ignition off.(NO Alert/KOR/ENG)"), "../assets/offroad/icon_shell.png") {
+GetOffAlert::GetOffAlert() : AbstractControl(tr(" فصل صوت التنبيه بالأيون"), tr("يقوم الجهاز بتنبيهك منبه لفصل الأيون عند إطفاء الاشتعال (لا يوجد تنبيه / كوري / انجليزي / عربي)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -5858,15 +5858,15 @@ GetOffAlert::GetOffAlert() : AbstractControl(tr("EON Detach Alert Sound"), tr("D
 void GetOffAlert::refresh() {
   QString option = QString::fromStdString(params.get("OpkrEnableGetoffAlert"));
   if (option == "0") {
-    label.setText(tr("None"));
+    label.setText(tr("بدون"));
   } else if (option == "1") {
-    label.setText(tr("KOR"));
+    label.setText(tr("كوري"));
   } else {
-    label.setText(tr("ENG"));
+    label.setText(tr("انجبيزي"));
   }
 }
 
-OPKRNaviSelect::OPKRNaviSelect() : AbstractControl(tr("Navigation Select"), tr("Select the navigation you want to use.(Mappy/Waze/None)"), "../assets/offroad/icon_shell.png") {
+OPKRNaviSelect::OPKRNaviSelect() : AbstractControl(tr("تحديد الملاحة"), tr("حدد التنقل الذي تريد استخدامه. (موبي / ويز / بدون)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -5924,15 +5924,15 @@ OPKRNaviSelect::OPKRNaviSelect() : AbstractControl(tr("Navigation Select"), tr("
 void OPKRNaviSelect::refresh() {
   QString option = QString::fromStdString(params.get("OPKRNaviSelect"));
   if (option == "0") {
-    label.setText(tr("Mappy"));
+    label.setText(tr("موبي"));
   } else if (option == "1") {
-    label.setText(tr("Waze"));
+    label.setText(tr("ويز"));
   } else {
-    label.setText(tr("None"));
+    label.setText(tr("بدون"));
   }
 }
 
-OPKRServerSelect::OPKRServerSelect() : AbstractControl(tr("API Server"), tr("Set API server to Retropilot/Comma/User's"), "../assets/offroad/icon_shell.png") {
+OPKRServerSelect::OPKRServerSelect() : AbstractControl(tr("API سيرفر"), tr("اضبط خادة الآي بي آي على Retropilot/Comma/User's"), "../assets/offroad/icon_shell.png") {
   btn1.setStyleSheet(R"(
     padding: 0;
     border-radius: 50px;
@@ -5963,9 +5963,9 @@ OPKRServerSelect::OPKRServerSelect() : AbstractControl(tr("API Server"), tr("Set
   hlayout->addWidget(&btn1);
   hlayout->addWidget(&btn2);
   hlayout->addWidget(&btn3);
-  btn1.setText(tr("Retropilot"));
-  btn2.setText(tr("Comma"));
-  btn3.setText(tr("User's"));
+  btn1.setText(tr("ريتبايلوت"));
+  btn2.setText(tr("كوما"));
+  btn3.setText(tr("المستخدم"));
 
   QObject::connect(&btn1, &QPushButton::clicked, [=]() {
     params.put("OPKRServer", "0");
@@ -6064,7 +6064,7 @@ void OPKRServerSelect::refresh() {
   }
 }
 
-OPKRServerAPI::OPKRServerAPI() : AbstractControl(tr("User's API"), tr("Set Your API server URL or IP"), "") {
+OPKRServerAPI::OPKRServerAPI() : AbstractControl(tr("واجهة برمجة تطبيقات المستخدم"), tr("قم بتعيين عنوان URL لخادم API أو IP"), "") {
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
   hlayout->addWidget(&label);
@@ -6080,10 +6080,10 @@ OPKRServerAPI::OPKRServerAPI() : AbstractControl(tr("User's API"), tr("Set Your 
   hlayout->addWidget(&btn);
 
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
-    if (btn.text() == tr("SET")) {
-      QString users_api_host = InputDialog::getText(tr("Input Your API(url or ip):"), this);
+    if (btn.text() == tr("تعيين")) {
+      QString users_api_host = InputDialog::getText(tr("أدخل واجهة برمجة التطبيقات الخاصة بك (عنوان url أو IP):"), this);
       if (users_api_host.length() > 0) {
-        QString cmd0 = tr("Your Input is") + "\n" + users_api_host + "\n" + tr("Press OK to apply&reboot");
+        QString cmd0 = tr("المدخلات الخاصة بك هي") + "\n" + users_api_host + "\n" + tr("اضغط على موافق للتطبيق وإعادة التشغيل");
         if (ConfirmationDialog::confirm(cmd0, this)) {
           params.put("OPKRServerAPI", users_api_host.toStdString());
           params.put("OPKRServer", "2");
@@ -6093,8 +6093,8 @@ OPKRServerAPI::OPKRServerAPI() : AbstractControl(tr("User's API"), tr("Set Your 
           QProcess::execute("reboot");
         }
       }
-    } else if (btn.text() == tr("UNSET")) {
-      if (ConfirmationDialog::confirm(tr("Do you want to unset? the API server gets back to Retropilot server and Device will be rebooted now."), this)) {
+    } else if (btn.text() == tr("عدم تعيين")) {
+      if (ConfirmationDialog::confirm(tr("هل تريد عدم ضبطها؟ يعود خادم API إلى خادم Retropilot وسيتم إعادة تشغيل الجهاز الآن."), this)) {
         params.remove("OPKRServerAPI");
         params.put("OPKRServer", "0");
         QProcess::execute("rm -f /data/params/d/DongleId");
@@ -6111,13 +6111,13 @@ void OPKRServerAPI::refresh() {
   auto str = QString::fromStdString(params.get("OPKRServerAPI"));
   if (str.length() > 0) {
     label.setText(QString::fromStdString(params.get("OPKRServerAPI")));
-    btn.setText(tr("UNSET"));
+    btn.setText(tr("عدم تعيين"));
   } else {
-    btn.setText(tr("SET"));
+    btn.setText(tr("تعيين"));
   }
 }
 
-OPKRMapboxStyle::OPKRMapboxStyle() : AbstractControl(tr("Mapbox Style"), tr("Set the Mapbox sytle to Comma/OPKR/User's"), "../assets/offroad/icon_shell.png") {
+OPKRMapboxStyle::OPKRMapboxStyle() : AbstractControl(tr("نمط مربع الخريطة"), tr("اضبط نمط مربع الخرائط على كوما / أو / مستخدم"), "../assets/offroad/icon_shell.png") {
   btn1.setStyleSheet(R"(
     padding: 0;
     border-radius: 50px;
@@ -6162,7 +6162,7 @@ OPKRMapboxStyle::OPKRMapboxStyle() : AbstractControl(tr("Mapbox Style"), tr("Set
   });
   QObject::connect(&btn3, &QPushButton::clicked, [=]() {
     params.put("OPKRMapboxStyleSelect", "2");
-    if (ConfirmationDialog::alert(tr("You've chosen own style. Please set your mapbox style to the param <MapboxStyleCustom>. File location: /data/params/d/MapboxStyleCustom"), this)) {}
+    if (ConfirmationDialog::alert(tr("لقد اخترت أسلوبك الخاص. يرجى تعيين نمط خريطة الخريطة الخاصة بك إلى المعلمة <MapboxStyleCustom>. مكان الملف: /data/params/d/MapboxStyleCustom"), this)) {}
     refresh();
   });
   refresh();
@@ -6248,7 +6248,7 @@ void OPKRMapboxStyle::refresh() {
   }
 }
 
-RESCountatStandstill::RESCountatStandstill() : AbstractControl(tr("RES Count at Standstill"), tr("Comma Default: 25, this value cannot be acceptable at some cars. So adjust the number if you want to. It generates RES CAN messages when leadcar is moving. If departure is failed, increase the number. In opposite, if CAN error occurs, decrease the number."), "../assets/offroad/icon_shell.png") {
+RESCountatStandstill::RESCountatStandstill() : AbstractControl(tr("العودة للمتابعة في حالة توقف تام"), tr("كوما الافتراضية: 25 ، لا يمكن قبول هذه القيمة في بعض السيارات. لذا اضبط الرقم إذا كنت تريد ذلك. يولد رسائل إعادة الكان عندما تتحرك السيارة. إذا فشلت المغادرة ، قم بزيادة الرقم. في المقابل ، إذا حدث خطأ في الكان ، فقم بتقليل الرقم."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6307,7 +6307,7 @@ void RESCountatStandstill::refresh() {
   btnplus.setText("+");
 }
 
-SpeedLimitSignType::SpeedLimitSignType() : AbstractControl(tr("SafetyCam SignType"), tr("Select SafetyCam SignType (Circle/Rectangle)"), "../assets/offroad/icon_shell.png") {
+SpeedLimitSignType::SpeedLimitSignType() : AbstractControl(tr("نوع لوحة السرعة"), tr("حدد نوع لوحة السرعة (دائرة / مستطيل)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6365,13 +6365,13 @@ SpeedLimitSignType::SpeedLimitSignType() : AbstractControl(tr("SafetyCam SignTyp
 void SpeedLimitSignType::refresh() {
   QString option = QString::fromStdString(params.get("OpkrSpeedLimitSignType"));
   if (option == "0") {
-    label.setText(tr("Circle"));
+    label.setText(tr("دائرية"));
   } else {
-    label.setText(tr("Rectangle"));
+    label.setText(tr("مستطيلة"));
   }
 }
 
-RadarLongHelperOption::RadarLongHelperOption() : AbstractControl(tr("Long Mode"), tr("Vision Only, Vision+Radar, Radar Only, OPKR Custom"), "../assets/offroad/icon_shell.png") {
+RadarLongHelperOption::RadarLongHelperOption() : AbstractControl(tr("الوضع الطويل"), tr("الرؤية فقط ، الرؤية + الرادار ، الرادار فقط ، OPKR مخصص"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6429,13 +6429,13 @@ RadarLongHelperOption::RadarLongHelperOption() : AbstractControl(tr("Long Mode")
 void RadarLongHelperOption::refresh() {
   QString option = QString::fromStdString(params.get("RadarLongHelper"));
   if (option == "0") {
-    label.setText(tr("Vision Only"));
+    label.setText(tr("الرؤية فقط"));
   } else if (option == "1") {
-    label.setText(tr("Vision+Radar"));
+    label.setText(tr("الرؤية + الرادار"));
   } else if (option == "2") {
-    label.setText(tr("Radar Only"));
+    label.setText(tr("الرادار فقط"));
   } else {
-    label.setText(tr("OPKR Custom"));
+    label.setText(tr("OPKR مخصص"));
   }
 }
 

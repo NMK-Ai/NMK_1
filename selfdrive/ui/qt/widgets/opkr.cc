@@ -6439,7 +6439,7 @@ void RadarLongHelperOption::refresh() {
   }
 }
 
-CurvDecelSelect::CurvDecelSelect() : AbstractControl(tr("Curv Decel Option"), tr("None, Vision+OSM, Vision Only, OSM Only"), "../assets/offroad/icon_shell.png") {
+CurvDecelSelect::CurvDecelSelect() : AbstractControl(tr("خيرات التهدئة عن المنحنى"), tr("بدون, الرؤية+الخرائط المفتوحة, الرؤية فقط, الخرائط المفتوحة فقط"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6497,17 +6497,17 @@ CurvDecelSelect::CurvDecelSelect() : AbstractControl(tr("Curv Decel Option"), tr
 void CurvDecelSelect::refresh() {
   QString option = QString::fromStdString(params.get("CurvDecelOption"));
   if (option == "0") {
-    label.setText(tr("None"));
+    label.setText(tr("بدون"));
   } else if (option == "1") {
-    label.setText(tr("Vision+OSM"));
+    label.setText(tr("الرؤية+الخرائط المفتوحة"));
   } else if (option == "2") {
-    label.setText(tr("Vision Only"));
+    label.setText(tr("الرؤية فقط"));
   } else {
-    label.setText(tr("OSM Only"));
+    label.setText(tr("الخرائط المفتوحة فقط"));
   }
 }
 
-AutoRESDelay::AutoRESDelay() : AbstractControl(tr("AutoRES Delay(sec)"), tr("Give delay time to trigger for AutoRES while driving."), "../assets/offroad/icon_shell.png") {
+AutoRESDelay::AutoRESDelay() : AbstractControl(tr("المتابعة التلقائية بدون تأخير(ثانية)"), tr("امنح وقت التأخير لتشغيل المتابعة التلقائية أثناء القيادة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6563,7 +6563,7 @@ AutoRESDelay::AutoRESDelay() : AbstractControl(tr("AutoRES Delay(sec)"), tr("Giv
 void AutoRESDelay::refresh() {
   QString option = QString::fromStdString(params.get("AutoRESDelay"));
   if (option == "0") {
-    label.setText(tr("No Delay"));
+    label.setText(tr("لا تأخير"));
   } else {
     label.setText(QString::fromStdString(params.get("AutoRESDelay")));
   }
@@ -6571,7 +6571,7 @@ void AutoRESDelay::refresh() {
   btnplus.setText("+");
 }
 
-OSMCustomSpeedLimitUD::OSMCustomSpeedLimitUD() : AbstractControl(tr("OSMCustomSpeedLimit([SL] [TargetSpeed])"), tr("Set the offset speed according to speed limit of OSM. (interpolation value)"), "../assets/offroad/icon_shell.png") {
+OSMCustomSpeedLimitUD::OSMCustomSpeedLimitUD() : AbstractControl(tr("حد السرعة المخصص على الخرائط ([SL] [السرعة المستهدفة])"), tr("Set the offset speed according to speed limit of OSM. (interpolation value)"), "../assets/offroad/icon_shell.png") {
 }
 
 OSMCustomSpeedLimit::OSMCustomSpeedLimit() : AbstractControl("", "", "") {
@@ -6606,7 +6606,7 @@ OSMCustomSpeedLimit::OSMCustomSpeedLimit() : AbstractControl("", "", "") {
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     int list_count1 = 0;
     int list_count2 = 0;
-    QString targetvalue1 = InputDialog::getText(tr("Set SL values with comma"), this, tr("Values are kph or mph"), false, 1, QString::fromStdString(params.get("OSMCustomSpeedLimitC")));
+    QString targetvalue1 = InputDialog::getText(tr("قم بتعيين قيم حد السرعة بكوما"), this, tr("القيم كم / س أو ميل / س"), false, 1, QString::fromStdString(params.get("OSMCustomSpeedLimitC")));
     if (targetvalue1.length() > 0 && targetvalue1 != QString::fromStdString(params.get("OSMCustomSpeedLimitC"))) {
       QStringList list1 = targetvalue1.split(",");
       list_count1 = list1.size();
@@ -6616,7 +6616,7 @@ OSMCustomSpeedLimit::OSMCustomSpeedLimit() : AbstractControl("", "", "") {
       QStringList list1 = QString::fromStdString(params.get("OSMCustomSpeedLimitC")).split(",");
       list_count1 = list1.size();
     }
-    QString targetvalue2 = InputDialog::getText(tr("Set CTSL values with comma"), this, "SL: " + QString::fromStdString(params.get("OSMCustomSpeedLimitC")), false, 1, QString::fromStdString(params.get("OSMCustomSpeedLimitT")));
+    QString targetvalue2 = InputDialog::getText(tr("قم بتعيين قيم CTSL بكوما"), this, "SL: " + QString::fromStdString(params.get("OSMCustomSpeedLimitC")), false, 1, QString::fromStdString(params.get("OSMCustomSpeedLimitT")));
     if (targetvalue2.length() > 0 && targetvalue2 != QString::fromStdString(params.get("OSMCustomSpeedLimitT"))) {
       QStringList list2 = targetvalue2.split(",");
       list_count2 = list2.size();
@@ -6627,7 +6627,7 @@ OSMCustomSpeedLimit::OSMCustomSpeedLimit() : AbstractControl("", "", "") {
       list_count2 = list2.size();
     }
     if (list_count1 != list_count2) {
-      ConfirmationDialog::alert(tr("Index count does not match. Check your input again."), this);
+      ConfirmationDialog::alert(tr("عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى."), this);
     }
   });
   refresh();
@@ -6641,7 +6641,7 @@ void OSMCustomSpeedLimit::refresh() {
   btn.setText(tr("EDIT"));
 }
 
-DesiredCurvatureLimit::DesiredCurvatureLimit() : AbstractControl(tr("DesiredCurvatureLimit"), tr("Adjust DisiredCurvatureLimit, Default is 0.05(DT_MDL), For HKG, maybe 0.2 is preferred from user's experience. If the steering digs into inside on intersection, upper the value. And then it will limit your scope of steering angle. In case of opposite situation, lower the value. this is multiplier of desired curvature rate not real limit value."), "../assets/offroad/icon_shell.png") {
+DesiredCurvatureLimit::DesiredCurvatureLimit() : AbstractControl(tr("حد الانحناء المسموح"), tr("ضبط حد الانحناء المحدد ، الافتراضي هو 0.05 (DT_MDL) ، بالنسبة لـ HKG ، ربما يفضل 0.2 من تجربة المستخدم. إذا حفر التوجيه إلى الداخل عند التقاطع ، قم بزيادة القيمة. وبعد ذلك سيحد من نطاقك لزاوية التوجيه. في حالة الوضع المعاكس ، قم بتخفيض القيمة. هذا هو مضاعف معدل الانحناء المطلوب وليس قيمة حد حقيقية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6739,7 +6739,7 @@ void DesiredCurvatureLimit::refresh() {
   label.setText("＊ " + QString::fromStdString(valuefs.toStdString()));
 }
 
-DynamicTRUD::DynamicTRUD() : AbstractControl(tr("DynamicTR: [Speed] [TRs]"), tr("Set TR of each speeds. (Mid range is interpolation values)"), "../assets/offroad/icon_shell.png") {
+DynamicTRUD::DynamicTRUD() : AbstractControl(tr("ديناميكي TR: [السرعة] [TRs]"), tr("ضبط TR لكل سرعات. (المدى المتوسط هو قيم الاستيفاء)"), "../assets/offroad/icon_shell.png") {
 }
 
 DynamicTRBySpeed::DynamicTRBySpeed() : AbstractControl("", "", "") {
@@ -6774,7 +6774,7 @@ DynamicTRBySpeed::DynamicTRBySpeed() : AbstractControl("", "", "") {
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     int list_count1 = 0;
     int list_count2 = 0;
-    QString targetvalue1 = InputDialog::getText(tr("Set Speed values with comma"), this, tr("Values are kph or mph"), false, 1, QString::fromStdString(params.get("DynamicTRSpd")));
+    QString targetvalue1 = InputDialog::getText(tr("قم بتعيين قيم السرعة لكوما"), this, tr("القيم كم / س أو ميل / س"), false, 1, QString::fromStdString(params.get("DynamicTRSpd")));
     if (targetvalue1.length() > 0 && targetvalue1 != QString::fromStdString(params.get("DynamicTRSpd"))) {
       QStringList list1 = targetvalue1.split(",");
       list_count1 = list1.size();
@@ -6784,7 +6784,7 @@ DynamicTRBySpeed::DynamicTRBySpeed() : AbstractControl("", "", "") {
       QStringList list1 = QString::fromStdString(params.get("DynamicTRSpd")).split(",");
       list_count1 = list1.size();
     }
-    QString targetvalue2 = InputDialog::getText(tr("Set TR values with comma"), this, "SPD: " + QString::fromStdString(params.get("DynamicTRSpd")), false, 1, QString::fromStdString(params.get("DynamicTRSet")));
+    QString targetvalue2 = InputDialog::getText(tr("قم بتعيين قيم TR بكوما"), this, "SPD: " + QString::fromStdString(params.get("DynamicTRSpd")), false, 1, QString::fromStdString(params.get("DynamicTRSet")));
     if (targetvalue2.length() > 0 && targetvalue2 != QString::fromStdString(params.get("DynamicTRSet"))) {
       QStringList list2 = targetvalue2.split(",");
       list_count2 = list2.size();
@@ -6795,7 +6795,7 @@ DynamicTRBySpeed::DynamicTRBySpeed() : AbstractControl("", "", "") {
       list_count2 = list2.size();
     }
     if (list_count1 != list_count2) {
-      ConfirmationDialog::alert(tr("Index count does not match. Check your input again."), this);
+      ConfirmationDialog::alert(tr("عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى."), this);
     }
   });
   refresh();
@@ -6806,10 +6806,10 @@ void DynamicTRBySpeed::refresh() {
   auto strs2 = QString::fromStdString(params.get("DynamicTRSet"));
   edit1.setText(QString::fromStdString(strs1.toStdString()));
   edit2.setText(QString::fromStdString(strs2.toStdString()));
-  btn.setText(tr("EDIT"));
+  btn.setText(tr("تحرير"));
 }
 
-LaneWidth::LaneWidth() : AbstractControl(tr("Set LaneWidth"), tr("Set LaneWidth (default:3.7)"), "../assets/offroad/icon_shell.png") {
+LaneWidth::LaneWidth() : AbstractControl(tr("تعيين عرض المسار"), tr("تعيين عرض المسار (الافتراضي: 3.7)"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6872,7 +6872,7 @@ void LaneWidth::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-SpeedLaneWidthUD::SpeedLaneWidthUD() : AbstractControl(tr("Speed LaneWidth: [Spd(m/s)] [LaneWidth]"), tr("Set LaneWidths by speed. Speed is m/s values not kph or mph. (Mid range is interpolation values)"), "../assets/offroad/icon_shell.png") {
+SpeedLaneWidthUD::SpeedLaneWidthUD() : AbstractControl(tr("عرض حارة السرعة: [السرعة (ث/ج)] [عرض المسار]"), tr("تعيين عرض المسار حسب السرعة. السرعة هي قيم ج/ث وليست كلم أو ميل. (المدى المتوسط هو قيم الاستيفاء)"), "../assets/offroad/icon_shell.png") {
 }
 
 SpeedLaneWidth::SpeedLaneWidth() : AbstractControl("", "", "") {
@@ -6907,7 +6907,7 @@ SpeedLaneWidth::SpeedLaneWidth() : AbstractControl("", "", "") {
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
     int list_count1 = 0;
     int list_count2 = 0;
-    QString targetvalue1 = InputDialog::getText(tr("Set Speed(m/s) values with comma"), this, tr("Values are m/s unit."), false, 1, QString::fromStdString(params.get("SpdLaneWidthSpd")));
+    QString targetvalue1 = InputDialog::getText(tr("اضبط قيم السرعة (ج/ث) بكوما"), this, tr("القيم ج/ث."), false, 1, QString::fromStdString(params.get("SpdLaneWidthSpd")));
     if (targetvalue1.length() > 0 && targetvalue1 != QString::fromStdString(params.get("SpdLaneWidthSpd"))) {
       QStringList list1 = targetvalue1.split(",");
       list_count1 = list1.size();
@@ -6917,7 +6917,7 @@ SpeedLaneWidth::SpeedLaneWidth() : AbstractControl("", "", "") {
       QStringList list1 = QString::fromStdString(params.get("SpdLaneWidthSpd")).split(",");
       list_count1 = list1.size();
     }
-    QString targetvalue2 = InputDialog::getText(tr("Set LW(m) values with comma"), this, "SPD: " + QString::fromStdString(params.get("SpdLaneWidthSpd")), false, 1, QString::fromStdString(params.get("SpdLaneWidthSet")));
+    QString targetvalue2 = InputDialog::getText(tr("قم بتعيين قيم LW (م) بكوما"), this, "SPD: " + QString::fromStdString(params.get("SpdLaneWidthSpd")), false, 1, QString::fromStdString(params.get("SpdLaneWidthSet")));
     if (targetvalue2.length() > 0 && targetvalue2 != QString::fromStdString(params.get("SpdLaneWidthSet"))) {
       QStringList list2 = targetvalue2.split(",");
       list_count2 = list2.size();
@@ -6928,7 +6928,7 @@ SpeedLaneWidth::SpeedLaneWidth() : AbstractControl("", "", "") {
       list_count2 = list2.size();
     }
     if (list_count1 != list_count2) {
-      ConfirmationDialog::alert(tr("Index count does not match. Check your input again."), this);
+      ConfirmationDialog::alert(tr("عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى."), this);
     }
   });
   refresh();
@@ -6939,10 +6939,10 @@ void SpeedLaneWidth::refresh() {
   auto strs2 = QString::fromStdString(params.get("SpdLaneWidthSet"));
   edit1.setText(QString::fromStdString(strs1.toStdString()));
   edit2.setText(QString::fromStdString(strs2.toStdString()));
-  btn.setText(tr("EDIT"));
+  btn.setText(tr("تحرير"));
 }
 
-OPKRTopTextView::OPKRTopTextView() : AbstractControl(tr("Bottom Text View"), tr("Date/Time/OSM Street Name"), "../assets/offroad/icon_shell.png") {
+OPKRTopTextView::OPKRTopTextView() : AbstractControl(tr("عرض النص السفلي"), tr("التاريخ / الوقت / خريطة الشوارع اسم الشارع"), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -6998,35 +6998,35 @@ OPKRTopTextView::OPKRTopTextView() : AbstractControl(tr("Bottom Text View"), tr(
 }
 
 void OPKRTopTextView::refresh() {
-  QString option = QString::fromStdString(params.get("TopTextView"));
+  QString option = QString::fromStdString(params.get("عرض النص العلوي"));
   if (option == "0") {
-    label.setText(tr("None"));
+    label.setText(tr("بدون"));
     QUIState::ui_state.scene.top_text_view = 0;
   } else if (option == "1") {
-    label.setText(tr("Date+Time"));
+    label.setText(tr("التاريخ + الوقت"));
     QUIState::ui_state.scene.top_text_view = 1;
   } else if (option == "2") {
-    label.setText(tr("Date"));
+    label.setText(tr("تاريخ"));
     QUIState::ui_state.scene.top_text_view = 2;
   } else if (option == "3") {
-    label.setText(tr("Time"));
+    label.setText(tr("الوقت"));
     QUIState::ui_state.scene.top_text_view = 3;
   } else if (option == "4") {
-    label.setText(tr("Date+Time+OSM"));
+    label.setText(tr("التاريخ + الوقت + خريطة الشوارع"));
     QUIState::ui_state.scene.top_text_view = 4;
   } else if (option == "5") {
-    label.setText(tr("Date+OSM"));
+    label.setText(tr("التاريخ + خريطة الشوارع"));
     QUIState::ui_state.scene.top_text_view = 5;
   } else if (option == "6") {
-    label.setText(tr("Time+OSM"));
+    label.setText(tr("الوقت + خريطة الشوارع"));
     QUIState::ui_state.scene.top_text_view = 6;
   } else {
-    label.setText(tr("OSM"));
+    label.setText(tr("خريطة الشوارع"));
     QUIState::ui_state.scene.top_text_view = 7;
   }
 }
 
-OPKREdgeOffset::OPKREdgeOffset() : AbstractControl("", tr("+ value to move car to left, - value to move car to right on each lane."), "") {
+OPKREdgeOffset::OPKREdgeOffset() : AbstractControl("", tr("+ قيمة لتحرك السيارة إلى اليسار, - قيمة لنقل السيارة إلى اليمين في كل حارة."), "") {
 
   labell1.setAlignment(Qt::AlignVCenter|Qt::AlignLeft);
   labell1.setText(tr("LeftEdge: "));
@@ -7056,7 +7056,7 @@ OPKREdgeOffset::OPKREdgeOffset() : AbstractControl("", tr("+ value to move car t
   hlayout->addWidget(&btnplusl);
 
   labelr1.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
-  labelr1.setText(tr("RightEdge: "));
+  labelr1.setText(tr("الحافة اليمنى: "));
   hlayout->addWidget(&labelr1);
   labelr.setAlignment(Qt::AlignVCenter|Qt::AlignLeft);
   labelr.setStyleSheet("color: #e0e879");
@@ -7156,7 +7156,7 @@ void OPKREdgeOffset::refreshr() {
 ToAvoidLKASFault::ToAvoidLKASFault() : AbstractControl("", "", "") {
 
   labell1.setAlignment(Qt::AlignVCenter|Qt::AlignLeft);
-  labell1.setText(tr("MaxAngle: "));
+  labell1.setText(tr("أقصى زاوية: "));
   hlayout->addWidget(&labell1);
   labell.setAlignment(Qt::AlignVCenter|Qt::AlignLeft);
   labell.setStyleSheet("color: #e0e879");
@@ -7183,7 +7183,7 @@ ToAvoidLKASFault::ToAvoidLKASFault() : AbstractControl("", "", "") {
   hlayout->addWidget(&btnplusl);
 
   labelr1.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
-  labelr1.setText(tr("MaxFrame: "));
+  labelr1.setText(tr("أقصى إطار: "));
   hlayout->addWidget(&labelr1);
   labelr.setAlignment(Qt::AlignVCenter|Qt::AlignLeft);
   labelr.setStyleSheet("color: #e0e879");
@@ -7351,7 +7351,7 @@ void RoutineDriveOption::refresh() {
   }
 }
 
-RPMAnimatedMaxValue::RPMAnimatedMaxValue() : AbstractControl(tr("AnimatedRPM Max"), tr("Set Max RPM for animated rpm value."), "../assets/offroad/icon_shell.png") {
+RPMAnimatedMaxValue::RPMAnimatedMaxValue() : AbstractControl(tr("رسومات دوران المحرك أقصى"), tr("تعيين أقصى قيمة لعرض دوران المحرك."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -7410,7 +7410,7 @@ void RPMAnimatedMaxValue::refresh() {
   label.setText(QString::fromStdString(params.get("AnimatedRPMMax")));
 }
 
-UserSpecificFeature::UserSpecificFeature() : AbstractControl(tr("FeatureNumber"), tr("User Specific Feature"), "") {
+UserSpecificFeature::UserSpecificFeature() : AbstractControl(tr("رقم الميزة"), tr("ميزة خاصة بالمستخدم"), "") {
   btn.setStyleSheet(R"(
     padding: -10;
     border-radius: 35px;
@@ -7432,7 +7432,7 @@ UserSpecificFeature::UserSpecificFeature() : AbstractControl(tr("FeatureNumber")
   hlayout->addWidget(&btn);
 
   QObject::connect(&btn, &QPushButton::clicked, [=]() {
-    QString targetvalue = InputDialog::getText(tr("User Specific Features"), this, tr("Put your number you know."), false, 1, QString::fromStdString(params.get("UserSpecificFeature")));
+    QString targetvalue = InputDialog::getText(tr("ميزات خاصة بالمستخدم"), this, tr("ضع رقم خاص بك."), false, 1, QString::fromStdString(params.get("UserSpecificFeature")));
     if (targetvalue.length() > 0 && targetvalue != QString::fromStdString(params.get("UserSpecificFeature"))) {
       params.put("UserSpecificFeature", targetvalue.toStdString());
       refresh();
@@ -7447,7 +7447,7 @@ void UserSpecificFeature::refresh() {
   btn.setText(tr("SET"));
 }
 
-MultipleLatSelect::MultipleLatSelect() : AbstractControl(tr("Multi LateralControl"), tr("Multiple Lateral Tune by Speed/Angle."), "../assets/offroad/icon_shell.png") {
+MultipleLatSelect::MultipleLatSelect() : AbstractControl(tr("تحكم جانبي متعدد"), tr("ضبط جانبي متعدد حسب السرعة / الزاوية."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -8005,7 +8005,7 @@ void MultipleLateralAngle::refreshr() {
   labelr.setText(list[1]);
 }
 
-StoppingDist::StoppingDist() : AbstractControl(tr("Stopping Distance(m)"), tr("Car starts to stop under the value."), "../assets/offroad/icon_shell.png") {
+StoppingDist::StoppingDist() : AbstractControl(tr("مسافة الفرملة(m)"), tr("تبدأ السيارة في التوقف عند القيمة المضافة."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");
@@ -8068,7 +8068,7 @@ void StoppingDist::refresh() {
   label.setText(QString::fromStdString(valuefs.toStdString()));
 }
 
-VariableCruiseLevel::VariableCruiseLevel() : AbstractControl(tr("Button Spamming Level"), tr("High values make early stopping and starting, but might be not comfortable. Low values are the opposite."), "../assets/offroad/icon_shell.png") {
+VariableCruiseLevel::VariableCruiseLevel() : AbstractControl(tr("زر مستويات القراءة"), tr("القيم العالية تجعل التوقف والبدء مبكرًا ، ولكنها قد لا تكون مريحة. القيم المنخفضة هي عكس ذلك."), "../assets/offroad/icon_shell.png") {
 
   label.setAlignment(Qt::AlignVCenter|Qt::AlignRight);
   label.setStyleSheet("color: #e0e879");

@@ -1,24 +1,24 @@
-# Welcome to OPKR
+# مرحبًا بك في OPKR
 
-Table of Contents
+جدول المحتويات
 ==================
 
 <img src="https://i.imgur.com/aOxwC8R.png" align="right"
      alt="OPKR" width="175" height="240">
 
-* [Join Our Discord](#-join-our-discord-)
-* [About This Fork](#-about-this-fork)
-* [Main Features](#-main-features)
-* [Branch Definitions](#-branch-definitions)
-* [How To Install](#-how-to-install)
-* [Settings Menu](#-setting-menu)
-* [Special Thanks](#-special-thanks)
-* [Donate](#-donate-)
+* [انضم إلى الديسكورد] (# - انضم إلى ديسكورد-)
+* [عن هذا الفرع البرمجي](#-هن-عذا-الفرع-البرمجي)
+* [العناصر الرئيسية](#-العناصر-الرئيسية)
+* [تعريفات الفرع](#-تعريفات-الفرع)
+* [كيفية تثبيت](#-كيفية-التثبيت)
+* [قائمة الإعدادات](#-قائمة-الإعدادات)
+* [شكر خاص](#-شكر-خاص)
+* [الدعم](#-الدعم-)
 
-Join our Discord
+انضم إلينا في الديسكورد
 =================
 
-Join The OPKR Server!
+انضم إلى خادم OPKR!
 
 * https://discord.gg/6H9k4B5a
 

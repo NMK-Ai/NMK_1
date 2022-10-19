@@ -3094,7 +3094,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7354"/>
         <source>Set Max RPM for animated rpm value.</source>
-        <translation>최대 RPM 애니메이션 값을 설정합니다.</translation>
+        <translation>يضبط الحد الأقصى لقيمة عرض دوران المحرك.</translation>
     </message>
 </context>
 <context>
@@ -3102,27 +3102,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7413"/>
         <source>FeatureNumber</source>
-        <translation>사용자기능번호</translation>
+        <translation>رقم الميزة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7413"/>
         <source>User Specific Feature</source>
-        <translation>사용자 기능 번호</translation>
+        <translation>ميزة خاصة بالمستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7435"/>
         <source>User Specific Features</source>
-        <translation>사용자 기능</translation>
+        <translation>ميزات خاصة بالمستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7435"/>
         <source>Put your number you know.</source>
-        <translation>사전에 알고 있는 번호를 적으세요.</translation>
+        <translation>اكتب رقمًا تعرفه مسبقًا..</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7447"/>
         <source>SET</source>
-        <translation>설정</translation>
+        <translation>تعيين</translation>
     </message>
 </context>
 <context>
@@ -3130,12 +3130,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7450"/>
         <source>Multi LateralControl</source>
-        <translation>멀티 조향 제어</translation>
+        <translation>التحكم في التوجيه المتعدد</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7450"/>
         <source>Multiple Lateral Tune by Speed/Angle.</source>
-        <translation>속도/각도별 멀티 조향 튜닝.</translation>
+        <translation>لحن جانبي حسب السرعة / الزاوية.</translation>
     </message>
 </context>
 <context>
@@ -3143,7 +3143,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7526"/>
         <source>SPD: </source>
-        <translation>속도: </translation>
+        <translation>السرعة: </translation>
     </message>
 </context>
 <context>
@@ -3151,7 +3151,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7768"/>
         <source>ANG: </source>
-        <translation>각도: </translation>
+        <translation>الزاوية: </translation>
     </message>
 </context>
 <context>
@@ -3159,12 +3159,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="8008"/>
         <source>Stopping Distance(m)</source>
-        <translation>정지 거리(m)</translation>
+        <translation>مسافة التوقف (م)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="8008"/>
         <source>Car starts to stop under the value.</source>
-        <translation>차간거리가 해당값 이하로 되면 차가 멈추기 시작합니다.</translation>
+        <translation>تبدأ السيارة في التوقف عند أقل من القيمة.</translation>
     </message>
 </context>
 <context>
@@ -3172,12 +3172,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="8071"/>
         <source>Button Spamming Level</source>
-        <translation>크루즈 가감속 레벨</translation>
+        <translation>زر مستوى التسارع والتباطؤ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="8071"/>
         <source>High values make early stopping and starting, but might be not comfortable. Low values are the opposite.</source>
-        <translation>값이 높으면 가감속 수치 변화가 빨라 이른 가감속이 가능할수도 있지만 사용에 불편할 수 있습니다. 낮은 값은 그 반대입니다.</translation>
+        <translation>القيم العالية تجعل التوقف والبدء مبكرًا ، ولكنها قد لا تكون مريحة. القيم المنخفضة هي عكس ذلك.</translation>
     </message>
 </context>
 <context>
@@ -3185,12 +3185,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="135"/>
         <source>Use Legacy SSH Key</source>
-        <translation>기존 SSH 키 사용</translation>
+        <translation>استخدم مفتاح أس أس أتش القديم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="135"/>
         <source>Public KEY (0.8.2 or less) is used when accessing SSH.</source>
-        <translation>SSH 접속시 기존 공개키(0.8.2 혹은 그 이하 버전용)가 사용됩니다.</translation>
+        <translation>استخدام المفتاح العام (0.8.2 أو أقل) عند الوصول إلى أس أس أتش.</translation>
     </message>
 </context>
 <context>
@@ -3198,12 +3198,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="147"/>
         <source>Use Auto Resume at Stop</source>
-        <translation>정지상태에서 자동Resume 사용</translation>
+        <translation>استخدم استئناف تلقائي عند التوقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="147"/>
         <source>It uses the automatic departure function when stopping while using SCC.</source>
-        <translation>SCC 사용 중 정지 시 자동 출발 기능을 사용합니다.</translation>
+        <translation>يستخدم وظيفة المغادرة التلقائية عند التوقف أثناء استخدام مثبت السرعة الذكي.</translation>
     </message>
 </context>
 <context>
@@ -3211,12 +3211,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="159"/>
         <source>Use Cruise Button Spamming</source>
-        <translation>크루즈 버튼 가감속 사용</translation>
+        <translation>استخدام زر مثبت السرعة عشوائياً</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="159"/>
         <source>Use the cruise button while using SCC to assist in acceleration and deceleration.</source>
-        <translation>SCC를 사용하는 동안 가속과 감속을 보조하기 위해 크루즈 버튼 입력을 사용합니다. 크루즈 설정속도를 이용한 차간거리조절, 커브감속, 안전구간 감속 기능 등을 사용시에 반드시 켜야 합니다.</translation>
+        <translation>استخدم زر مثبت السرعة أثناء استخدام الرادار الذكي للمساعدة في التسارع والتباطؤ, يجب تشغيله عند استخدام وظائف إبطاء المنحنى وتباطؤ قسم الأمان..</translation>
     </message>
 </context>
 <context>
@@ -3224,12 +3224,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="171"/>
         <source>Change Cruise Gap at Stop</source>
-        <translation>정지 시 크루즈갭 변경</translation>
+        <translation>قم بتغيير فجوة مثبت السرعة عند التوقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="171"/>
         <source>For a quick start when stopping, the cruise gap will be changed to 1 step, and after departure, it will return to the original cruise gap according to certain conditions.</source>
-        <translation>정차 시 빠른 출발을 위해 크루즈 갭은 1단계로 변경되며 출발 후에는 일정 조건에 따라 원래 크루즈 갭으로 복귀합니다.</translation>
+        <translation>لبداية سريعة عند التوقف ، سيتم تغيير فجوة مثبت السرعة إلى خطوة واحدة ، وبعد المغادرة ، ستعود إلى فجوة الرحلة الأصلية وفقًا لشروط معينة.</translation>
     </message>
 </context>
 <context>
@@ -3237,12 +3237,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="183"/>
         <source>Use Auto Engagement</source>
-        <translation>자동 인게이지 사용</translation>
+        <translation>استخدم التحكم التلقائي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="183"/>
         <source>If the cruise button status is standby (CRUISE indication only and speed is not specified) in the Disengagement state, activate the automatic Engagement.</source>
-        <translation>크루즈 버튼 상태가 대기 상태(CRUISE 표시만 있고 속도가 지정되지 않음)인 경우 자동 인게이지를 활성화합니다.</translation>
+        <translation>إذا كانت حالة زر الرحلة في وضع الاستعداد (إشارة مثبت السرعة فقط ولم يتم تحديد السرعة) في حالة فك الارتباط ، فقم بتنشيط الاشتباك التلقائي.</translation>
     </message>
 </context>
 <context>
@@ -3250,12 +3250,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="195"/>
         <source>Use Auto RES while Driving</source>
-        <translation>주행 중 자동RES 사용</translation>
+        <translation>المتابعة التلقائية أثناء القيادة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="195"/>
         <source>If the brake is applied while using the SCC and the standby mode is changed (CANCEL is not applicable), set it back to the previous speed when the brake pedal is released/accelerated pedal is operated. It operates when the cruise speed is set and the vehicle speed is more than 30 km/h or the car in front is recognized.</source>
-        <translation>SCC를 사용하는 동안 브레이크를 밟고 대기 모드를 변경한 경우(CANCEL버튼으로 크루즈 취소한 경우는 실행되지 않음) 브레이크 페달을 놓거나 가속 페달을 작동할 때 SCC를 재 설정합니다. 차량 속도가 30km/h를 넘거나 앞차가 인식될 때 작동합니다.</translation>
+        <translation>إذا تم الضغط على الفرامل أثناء استخدام نظام التحكم في المحرك وتغير وضع الاستعداد (لا ينطبق إلغاء الأمر) ، فقم بإعادتها إلى السرعة السابقة عند تحرير دواسة الفرامل / الضغط على دواسة التسارع. تعمل عندما يتم ضبط سرعة الانسيابية وتكون سرعة السيارة أكثر من 30 كم / ساعة أو يتم التعرف على السيارة التي أمامك.</translation>
     </message>
 </context>
 <context>
@@ -3263,12 +3263,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="207"/>
         <source>Enable Battery Charging Control</source>
-        <translation>배터리 충전 제어 사용</translation>
+        <translation>تفعيل التحكم في شحن البطارية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="207"/>
         <source>It uses the battery charge control function.</source>
-        <translation>배터리 충전 제어 기능을 사용합니다.</translation>
+        <translation>يستخدم وظيفة التحكم في شحن البطارية.</translation>
     </message>
 </context>
 <context>
@@ -3276,12 +3276,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="219"/>
         <source>Show BSM Status</source>
-        <translation>BSM 상태 표시</translation>
+        <translation>عرض حالة النقطة العمياء</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="219"/>
         <source>If a car is detected in the rear, it will be displayed on the screen.</source>
-        <translation>후방에서 차량이 감지되면 화면에 표시됩니다.</translation>
+        <translation>إذا تم اكتشاف سيارة في الخلف ، فسيتم عرضها على الشاشة.</translation>
     </message>
 </context>
 <context>
@@ -3289,12 +3289,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="236"/>
         <source>User-Friendly Control(UFC) Mode</source>
-        <translation>UFC(User-Friendly Control) 모드</translation>
+        <translation>وضع التحكم سهل الاستخدام (UFC)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="236"/>
         <source>OP activates with Main Cruise Switch, AutoRES while driving, Seperate Lat/Long and etc</source>
-        <translation>오픈파일럿이 메인 크루즈 스위치를 이용하여 활성화하고 주행 중 AutoRES, Lat/Long 분리 기능 등을 사용시에는 켜야합니다.</translation>
+        <translation>يتم تنشيط القائد الآلي باستخدام مفتاح السرعة الرئيسي ، و المتبعة التلقائية أثناء القيادة ، وفصل المتأخر / الطويل وما إلى ذلك.</translation>
     </message>
 </context>
 <context>
@@ -3302,12 +3302,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="248"/>
         <source>Support WhitePanda</source>
-        <translation>화이트판다 지원</translation>
+        <translation>دعم الباندا البيضاء</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="248"/>
         <source>Turn on this function if you use WhitePanda.</source>
-        <translation>화이트 판다를 사용할 경우 이 기능을 켜십시오.</translation>
+        <translation>قم بتشغيل هذه الوظيفة إذا كنت تستخدم الباندا البيضاء.</translation>
     </message>
 </context>
 <context>
@@ -3315,12 +3315,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="260"/>
         <source>Ignore of Steering Warning</source>
-        <translation>스티어링 경고 무시</translation>
+        <translation>تجاهل تحذير التوجيه</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="260"/>
         <source>Turn on the function when a steering error occurs in the vehicle and the open pilot cannot be executed (some vehicles only). Do not turn on the function if it occurs in a normal error environment while driving.</source>
-        <translation>차량에서 스티어링 오류가 발생하여 오픈파일럿을 실행할 수 없는 경우(일부 차량만 해당) 이 기능을 켜십시오. 운전 중 정상적인 에러 환경에서 발생한다면 이 기능을 켜지 마십시오.</translation>
+        <translation>قم بتشغيل الوظيفة عند حدوث خطأ في التوجيه في السيارة ولا يمكن تنفيذ القائد الآلي (بعض المركبات فقط). لا تقم بتشغيل الوظيفة إذا حدثت في بيئة خطأ عادية أثناء القيادة.</translation>
     </message>
 </context>
 <context>
@@ -3328,12 +3328,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="272"/>
         <source>Use Live SteerRatio</source>
-        <translation>라이브 SteerRatio 사용</translation>
+        <translation>استخدام زاوية المقود المباشرة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="272"/>
         <source>Live SteerRatio is used instead of variable/fixed SteerRatio.</source>
-        <translation>가변/고정 SteerRatio 대신 라이브 SteerRatio가 사용됩니다.</translation>
+        <translation>معلومات زاوية المقود يستخدم بدلا من المتغير/زاوية المقود الثابتة.</translation>
     </message>
 </context>
 <context>
@@ -3341,12 +3341,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="284"/>
         <source>SteerMax/Variable SteerMax Toggle</source>
-        <translation>SteerMax/가변SteerMax 토글</translation>
+        <translation>تبديل SteerMax / متغير SteerMax</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="284"/>
         <source>Use the variable SteerMax by curvature. If this is off, runs only with base value below. STBase: SteerMax Default value. STMax: SteerMax Maximum value.</source>
-        <translation>곡률별로 변하는 SteerMax를 사용합니다. 이 옵션이 꺼져 있으면 아래 값에서만 실행됩니다. SM기본: SteerMax 기본값. SM최대: SteerMax 최대값.</translation>
+        <translation>يستخدم أقصى إلتفاف الذي يختلف حسب الانحناء. إذا تم إيقاف تشغيل هذا الخيار ، فسيتم تشغيله فقط على القيم أدناه. افتراضي SM: الافتراضي أقصى إلتفاف. SM : أقصى إلتفاف .</translation>
     </message>
 </context>
 <context>
@@ -3354,12 +3354,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="296"/>
         <source>DeltaUpDown/Variable Delta Toggle</source>
-        <translation>Delta UpDown/가변 Delta 토글</translation>
+        <translation>Delta UpDown/عامل Delta تبديل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="296"/>
         <source>Use variable SteerDelta by curvature. If this is off, runs only with base value below. DUBase: Steer DeltaUp Default value. DUMax: Steer DeltaUp Maximum value. DDBase: Steer DeltaDown Default value. DDMax: Steer DeltaDown Maximum value.</source>
-        <translation>곡률별로 변하는 SteerDelta를 사용합니다. 이 옵션이 꺼져 있으면 아래 값에서만 실행됩니다. DtUp기본: Steer DeltaUp 기본값입니다. DtUp최대: 스티어링 델타 업 최대값. DtDn기본: Steer DeltaDown 기본값. DtDn최대: Steer DeltaDown 최대값.</translation>
+        <translation>استخدم SteerDelta المتغير حسب الانحناء. إذا كان هذا في وضع إيقاف التشغيل ، يتم تشغيله فقط مع القيمة الأساسية أدناه. DUBase: توجيه DeltaUp القيمة الافتراضية. DUMax: توجيه DeltaUp القيمة القصوى. DDBase: توجيه DeltaDown القيمة الافتراضية. DDMax: توجيه DeltaDown القيمة القصوى.</translation>
     </message>
 </context>
 <context>
@@ -3367,12 +3367,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="308"/>
         <source>Use Auto Screen Record</source>
-        <translation>자동 화면 녹화 사용</translation>
+        <translation>استخدم تسجيل الشاشة التلقائي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="308"/>
         <source>Automatically record/stop the screen while driving. Recording begins after departure, and recording ends when the vehicle stops.</source>
-        <translation>주행 중에 자동으로 화면을 녹화/정지합니다. 출발 후 녹화가 시작되고 차량이 정지하면 녹화가 종료됩니다.</translation>
+        <translation>تسجيل / إيقاف الشاشة تلقائيًا أثناء القيادة. يبدأ التسجيل بعد المغادرة ، وينتهي التسجيل عند توقف السيارة.</translation>
     </message>
 </context>
 <context>
@@ -3380,12 +3380,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="325"/>
         <source>Stop Steer Assist on Turn Signals</source>
-        <translation>방향지시등 작동시 조향보조 정지</translation>
+        <translation>توقف مساعدة المقود عند إشارة الإنعاطف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="325"/>
         <source>When driving below the lane change speed, the automatic steering is temporarily paused while the turn signals on.</source>
-        <translation>차선 변경 속도 이하로 주행할 경우 방향 지시등이 켜지는 동안 자동 스티어링이 일시적으로 정지됩니다.</translation>
+        <translation>عند القيادة بسرعة أقل من سرعة تغيير الحارة ، يتم إيقاف التوجيه التلقائي مؤقتًا أثناء تشغيل إشارات الانعطاف.</translation>
     </message>
 </context>
 <context>
@@ -3393,12 +3393,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="337"/>
         <source>HotSpot on Boot</source>
-        <translation>부팅 시 핫스팟 사용</translation>
+        <translation>نقطة اتصال عند الإقلاع</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="337"/>
         <source>It automatically runs a hotspot when booting.</source>
-        <translation>부팅 시 핫스팟이 자동으로 실행됩니다.</translation>
+        <translation>يقوم تلقائيًا بتشغيل نقطة اتصال عند التشغيل.</translation>
     </message>
 </context>
 <context>
@@ -3406,19 +3406,19 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="349"/>
         <source>Reset MaxSpeed Over CurrentSpeed</source>
-        <translation>설정속도를 최대속도로 동기화</translation>
+        <translation>إعادة تعيين السرعة القصوى على السرعة الحالية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="349"/>
         <source>If the current speed exceeds the set speed, synchronize the set speed with the current speed.</source>
-        <translation>현재 속도가 설정 속도를 초과할 경우 설정 속도를 현재 속도와 동기화합니다.</translation>
+        <translation>إذا تجاوزت السرعة الحالية السرعة التي تم ضبطها ، فقم بمزامنة السرعة المضبوطة مع السرعة الحالية.</translation>
     </message>
 </context>
 <context>
     <name>DebugUiOneToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="361"/>
-        <source>DEBUG UI 1</source>
+        <source>واجهة المستخدم 1</source>
         <translation>디버그 보기 1</translation>
     </message>
 </context>
@@ -3426,7 +3426,7 @@
     <name>DebugUiTwoToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="378"/>
-        <source>DEBUG UI 2</source>
+        <source>واجهة المستخدم 2</source>
         <translation>디버그 보기 2</translation>
     </message>
 </context>
@@ -3434,7 +3434,7 @@
     <name>DebugUiThreeToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="395"/>
-        <source>DEBUG UI 3</source>
+        <source>واجهة المستخدم 3</source>
         <translation>디버그 보기 3</translation>
     </message>
 </context>
@@ -3443,12 +3443,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="412"/>
         <source>Show LongControl LOG</source>
-        <translation>롱 컨트롤 로그</translation>
+        <translation>إظهار سجل التحكم الطويل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="412"/>
         <source>Display logs for long tuning debugs instead of variable cruise logs on the screen.</source>
-        <translation>화면에 가변 크루즈 로그 대신 롱 튜닝 디버깅을 위한 로그를 표시합니다.</translation>
+        <translation>عرض السجلات لضبط الأخطاء لفترة طويلة بدلاً من سجلات مثبت السرعة المتغيرة على الشاشة.</translation>
     </message>
 </context>
 <context>
@@ -3456,12 +3456,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="424"/>
         <source>Use Smart Prebuilt</source>
-        <translation>스마트 프리필트 사용</translation>
+        <translation>استخدام الإنشاء الذكي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="424"/>
         <source>Create a Prebuilt file and speed up booting. When this function is turned on, the booting speed is accelerated using the cache, and if you press the update button in the menu after modifying the code, or if you rebooted with the &apos;gi&apos; command in the command window, remove it automatically and compile it.</source>
-        <translation>Prebuilt 파일을 만들고 부팅 속도를 높입니다. 이 기능을 켜면 캐시를 이용해 부팅 속도가 빨라지며, 코드를 수정한 뒤 메뉴에서 업데이트 버튼을 누르거나 명령창에서 &apos;gi&apos; 명령으로 재부팅한 경우 자동으로 삭제하고 컴파일합니다.</translation>
+        <translation>Prebuilt قم بإنشاء ملف تم إنشاؤه مسبقًا وقم بتسريع التشغيل. عند تشغيل هذه الوظيفة ، يتم تسريع سرعة التمهيد باستخدام ذاكرة التخزين المؤقت ، وإذا قمت بالضغط على زر التحديث في القائمة بعد تعديل الرمز ، أو إذا قمت بإعادة التشغيل باستخدام &apos;gi&apos; الأمر في نافذة الأوامر ، قم بإزالته تلقائيًا وجمعه.</translation>
     </message>
 </context>
 <context>
@@ -3469,7 +3469,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="436"/>
         <source>Set LDWS Vehicles</source>
-        <translation>LDWS 차량 설정</translation>
+        <translation>LDWS المركبات بنظام</translation>
     </message>
 </context>
 <context>
@@ -3477,12 +3477,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="448"/>
         <source>Use FingerPrint 2.0</source>
-        <translation>핑거프린트 2.0 사용</translation>
+        <translation>البصمة البرمجية 2.0 </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="448"/>
         <source>Activate Fingerprint 2.0. Activate the vehicle with ECU recognition.</source>
-        <translation>핑거프린트 2.0을 활성화합니다. ECU 인식으로 차량을 활성화하십시오.</translation>
+        <translation>قم بتنشيط البصمة البرمجية 2.0. لتمكين السيارة من التعرف على وحدة التحكم الإلكترونية.</translation>
     </message>
 </context>
 <context>
@@ -3490,12 +3490,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="460"/>
         <source>Set DriverGear by Force</source>
-        <translation>강제 드라이브 기어 설정</translation>
+        <translation>تعيين تروس القير بالقوة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="460"/>
         <source>It is used when the gear recognition problem. Basically, CABANA data should be analyzed, but it is temporarily resolved.</source>
-        <translation>기어 인식 문제가 있을 때 사용합니다. 기본적으로 CABANA 데이터를 분석해야 하지만 임시로 해결합니다.</translation>
+        <translation>يتم استخدامه عند مشكلة التعرف على التروس. بشكل أساسي ، يجب تحليل بيانات الكابانا ، ولكن يتم حلها مؤقتًا.</translation>
     </message>
 </context>
 <context>
@@ -3503,12 +3503,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="472"/>
         <source>Turn Off Communication Issue Alarm</source>
-        <translation>프로세스간 통신오류 알람 끄기</translation>
+        <translation>قم بإيقاف تشغيل إنذار مشكلة الاتصال</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="472"/>
         <source>Turn this option on to disable the communication issue alarm.</source>
-        <translation>프로세스간 통신오류 알람을 비활성화하려면 이 옵션을 켜십시오. 켜는것을 추천합니다.</translation>
+        <translation>قم بتشغيل هذا الخيار لتعطيل إنذار مشكلة الاتصال.</translation>
     </message>
 </context>
 <context>
@@ -3516,12 +3516,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="484"/>
         <source>Run Navigation on Boot</source>
-        <translation>부팅 시 네비게이션 실행</translation>
+        <translation>تشغيل الملاحة أثناء الإقلاع</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="484"/>
         <source>Automatically execute the navigation (waze) when switching to the driving screen after booting.</source>
-        <translation>부팅 후 주행 화면으로 전환 시 내비게이션을 자동으로 실행합니다. 실행 후 일정시간 이후 다시 주행화면으로 돌아옵니다.</translation>
+        <translation>قم بتنفيذ التنقل (ويز) تلقائيًا عند التبديل إلى شاشة القيادة بعد التشغيل.</translation>
     </message>
 </context>
 <context>
@@ -3529,12 +3529,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="496"/>
         <source>Set BatteryLess Eon</source>
-        <translation>배터리리스 장치 설정</translation>
+        <translation>تعيين أقل حد للشحن </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="496"/>
         <source>This is a toggle for batteryless EON. Related settings apply.</source>
-        <translation>이것은 배터리가 없는 장치를 위한 토글입니다. 관련 설정이 적용됩니다.</translation>
+        <translation>هذا تبديل لـ EON بدون بطارية. تنطبق الإعدادات ذات الصلة.</translation>
     </message>
 </context>
 <context>
@@ -3542,12 +3542,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="508"/>
         <source>Use LiveTune and Show UI</source>
-        <translation>라이브튠 및 UI 사용</translation>
+        <translation>التعديل المباشر وعرض واجهة المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="508"/>
         <source>Display the UI related to live tuning on the screen. Various tuning values can be adjusted live on the driving screen. It is reflected in the parameter when adjusting, and the value is maintained even after turning off the toggle and rebooting.</source>
-        <translation>실시간 튜닝과 관련된 UI를 화면에 표시합니다. 주행 화면에서 다양한 튜닝 값을 실시간으로 조정할 수 있습니다. 조정 시 파라미터에 반영되며, 토글을 끄고 재부팅한 후에도 값이 유지됩니다.</translation>
+        <translation>اعرض واجهة المستخدم المتعلقة بالتوليف المباشر على الشاشة. يمكن تعديل قيم الضبط المختلفة مباشرة على شاشة القيادة. ينعكس في المعلمة عند الضبط ، ويتم الحفاظ على القيمة حتى بعد إيقاف تشغيل التبديل وإعادة التشغيل.</translation>
     </message>
 </context>
 <context>
@@ -3555,12 +3555,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="527"/>
         <source>Git Pull On Boot</source>
-        <translation>부팅 시 Git Pull</translation>
+        <translation>تحديث النظام أثناء الإقلاع</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="527"/>
         <source>If there is an update after the boot, run Git Pull automatically and reboot.</source>
-        <translation>부팅 후 업데이트가 있을 경우 Git Pull을 자동으로 실행하고 재부팅합니다.</translation>
+        <translation>إذا كان هناك تحديث بعد التمهيد ، فقم بتشغيل Git Pull تلقائيًا وأعد التشغيل.</translation>
     </message>
 </context>
 <context>
@@ -3568,12 +3568,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="539"/>
         <source>Adjust Stopping Distance</source>
-        <translation>정지 거리 조정</translation>
+        <translation>ضبط مسافة التوقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="539"/>
         <source>Stop a little further ahead than the radar stop distance. If you approach the car in front of you at a high speed, it may sometimes be difficult to stop enough, so if you are uncomfortable, turn off the function.</source>
-        <translation>레이더 정지 거리를 조정합니다. 앞차에 고속으로 접근하면 충분히 정차하기 어려운 경우가 있을 수 있으므로 불편하면 기능을 끄도록 합니다.</translation>
+        <translation>توقف قليلاً أمام مسافة توقف الرادار. إذا اقتربت من السيارة التي أمامك بسرعة عالية ، فقد يكون من الصعب أحيانًا التوقف بدرجة كافية ، لذلك إذا كنت غير مرتاح ، فقم بإيقاف تشغيل الوظيفة.</translation>
     </message>
 </context>
 <context>
@@ -3581,12 +3581,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="551"/>
         <source>Show TMUX Error</source>
-        <translation>TMUX 오류 표시</translation>
+        <translation>إظهار خطأ TMUX</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="551"/>
         <source>Display the error on the EON screen when a process error occurs while driving or off-road.</source>
-        <translation>주행 중 또는 오프로드에서 프로세스 오류가 발생할 경우 장치 화면에 오류를 표시합니다.</translation>
+        <translation>اعرض الخطأ على شاشة الأيون عند حدوث خطأ في العملية أثناء القيادة أو على الطرق الوعرة.</translation>
     </message>
 </context>
 <context>
@@ -3594,12 +3594,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="568"/>
         <source>Use Stock SafetyCAM Speed</source>
-        <translation>순정 안전구간 속도제어 사용</translation>
+        <translation>استخدام سرعة لوحات المرور الأصلية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="568"/>
         <source>When decelerating the safety section, use the safety speed from the vehicle navigation system (limited to some vehicles with the corresponding data).</source>
-        <translation>안전 구간에서 감속할 때 차량 내비게이션 시스템의 안전 속도를 사용합니다.(해당 데이터가 있는 일부 차량에 한함).</translation>
+        <translation>عند إبطاء قسم الأمان ، استخدم سرعة الأمان من نظام الملاحة في السيارة (يقتصر على بعض المركبات مع البيانات المقابلة).</translation>
     </message>
 </context>
 <context>
@@ -3607,12 +3607,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="580"/>
         <source>Enable E2E Long</source>
-        <translation>E2E 롱 사용</translation>
+        <translation>تمكين  مراقبة العين المطولة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="580"/>
         <source>Activate E2E Long. It may work unexpectedly. Be careful.</source>
-        <translation>E2E 롱을 활성화합니다. 예기치 않게 작동할 수 있습니다. 조심하세요.</translation>
+        <translation>تنشيط مراقبة العين المطولة. قد تعمل بشكل غير متوقع. كن حذرا.</translation>
     </message>
 </context>
 <context>
@@ -3620,12 +3620,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="592"/>
         <source>Stop at Stop Sign</source>
-        <translation>정지 신호에서 정지 기능 사용</translation>
+        <translation>توقف عند علامة التوقف</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="592"/>
         <source>Openpilot tries to stop at stop sign depends on Model.</source>
-        <translation>오픈파일럿은 모델에 따라 정지 신호에서 정지를 시도할 수 있습니다.</translation>
+        <translation>القائد اللآلي يحاول التوقف عند إشارة التوقف يعتمد على مودل الذكاء الاصطناعي.</translation>
     </message>
 </context>
 <context>
@@ -3633,12 +3633,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="604"/>
         <source>Use GoogleMap for Mapbox</source>
-        <translation>맵박스에 구글 지도 사용</translation>
+        <translation>قوقل ماب لصندوق الخرائط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="604"/>
         <source>Use GoogleMap when you search a destination.</source>
-        <translation>목적지를 검색할 때 구글 지도를 사용합니다.</translation>
+        <translation>استخدم قوقل ماب للبحث عن الموقع.</translation>
     </message>
 </context>
 <context>
@@ -3646,12 +3646,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="616"/>
         <source>Enable OSM</source>
-        <translation>OSM 사용</translation>
+        <translation>تفعيل السرعة من الخرائط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="616"/>
         <source>This enables OSM.</source>
-        <translation>OSM을 활성화합니다.</translation>
+        <translation>تفعيل السرعة من الخرائط.</translation>
     </message>
 </context>
 <context>
@@ -3659,12 +3659,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="628"/>
         <source>Enable OSM SpeedLimit</source>
-        <translation>OSM 속도 제한 사용</translation>
+        <translation>تفعيل حد السرعة من الخرائط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="628"/>
         <source>This enables OSM speedlimit.</source>
-        <translation>OSM 속도 제한을 활성화합니다.</translation>
+        <translation>يتيح ذلك تحديد سرعة الخرائط على المركبة.</translation>
     </message>
 </context>
 <context>
@@ -3672,12 +3672,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="640"/>
         <source>Ignore Can Error on ISG</source>
-        <translation>ISG에서 캔 오류 무시</translation>
+        <translation>يمكن تجاهل الخطأ في ISG</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="640"/>
         <source>Turn this on, if can error occurs on ISG operation.</source>
-        <translation>ISG 작동중에 오류가 발생하는 경우 이 기능을 켜십시오.</translation>
+        <translation>قم بتشغيل هذه الميزة في حالة حدوث خطأ أثناء تشغيل ISG.</translation>
     </message>
 </context>
 <context>
@@ -3685,12 +3685,12 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="652"/>
         <source>StockLKAS Enabled at Disengagement</source>
-        <translation>디스인게이지 시 순정 LKAS 사용</translation>
+        <translation>تم تمكين نظام البقاء في المسار الأصلي عند فك الارتباط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="652"/>
         <source>Turn this on, if you want to use Stock LKAS at OP disengaged status. Seems this related to cluster error when OP active because Stock CAN messages over PANDA or not.</source>
-        <translation>순정 LKAS를 오픈파일럿 해제 상태에서 사용하려면 이 스위치를 켜십시오. 순정 CAN 메시지가 판다를 통해 전송되는지 여부에 따라 오픈파일럿 활성 시 클러스터 오류와 관련이 있는 것으로 보입니다.</translation>
+        <translation>قم بتشغيل هذا ، إذا كنت تريد استخدام نظام البقاء في المسار الأصلي في حالة عدم ارتباط القائد الآلي. يبدو أن هذا مرتبط بخطأ الكتلة عندما يكون القائد الآلي نشطًا لأن رسائل الكان الأصلية عبر الباندا أم لا.</translation>
     </message>
 </context>
 <context>
@@ -3698,7 +3698,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="664"/>
         <source>Enable FCA11 Message</source>
-        <translation>FCA11 메시지 사용</translation>
+        <translation>FCA11 تفعيل رسائل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="664"/>
@@ -3729,7 +3729,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="688"/>
         <source>If you want to use Mapbox, turn on and then connect to device using web browser http://(device ip):8082  Mapbox setting will show up and type mapbox pk and sk token(you can created this on mapbox.com website). If you want to search destinations with googlemap, first, you should create google api key and enable Enable GoogleMap for Mapbox</source>
-        <translation>لاستخدام Mapbox ، انتقل إلى متصفح الويب http: // (device ip): 8082 ، وستظهر إعدادات mapbox وأدخل الرموز المميزة لـ mapbox pk و sk (يمكنك إنشاء واحدة على موقع الويب mapbox.com). للبحث عن وجهة باستخدام خرائط Google ، قم أولاً بإنشاء مفتاح Google api وأدخل المفتاح في الرمز المميز.</translation>
+        <translation>لاستخدام صندوق الخرائط ، انتقل إلى متصفح الويب http: // (device ip): 8082 ، وستظهر إعدادات mapbox وأدخل الرموز المميزة لـ mapbox pk و sk (يمكنك إنشاء واحدة على موقع الويب mapbox.com). للبحث عن وجهة باستخدام خرائط Google ، قم أولاً بإنشاء مفتاح Google api وأدخل المفتاح في الرمز المميز.</translation>
     </message>
 </context>
 <context>
@@ -3750,7 +3750,7 @@
     <message>
         <location filename="../qt/widgets/opkr.h" line="712"/>
         <source>Disable Radar</source>
-        <translation>레이더 사용 안 함</translation>
+        <translation>تعطسل الرادار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.h" line="712"/>

@@ -2977,27 +2977,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6910"/>
         <source>Set Speed(m/s) values with comma</source>
-        <translation>속도(m/s) 값 설정</translation>
+        <translation>اضبط قيم السرعة (م / ث) بكوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6910"/>
         <source>Values are m/s unit.</source>
-        <translation>값은 m/s 단위입니다.</translation>
+        <translation>القيم م / ث.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6920"/>
         <source>Set LW(m) values with comma</source>
-        <translation>차선폭(m) 값 설정</translation>
+        <translation>قم بتعيين قيم LW (m) بكوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6931"/>
         <source>Index count does not match. Check your input again.</source>
-        <translation>인덱스 수가 일치하지 않습니다. 입력한 내용을 다시 확인하십시오.</translation>
+        <translation>عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6942"/>
         <source>EDIT</source>
-        <translation>변경</translation>
+        <translation>تحرير</translation>
     </message>
 </context>
 <context>
@@ -3005,52 +3005,52 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6945"/>
         <source>Bottom Text View</source>
-        <translation>하단 텍스트 뷰</translation>
+        <translation>عرض النص السفلي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6945"/>
         <source>Date/Time/OSM Street Name</source>
-        <translation>날짜/시간/OSM거리명</translation>
+        <translation>التاريخ / الوقت / اسم شارع س ع خ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7003"/>
         <source>None</source>
-        <translation>없음</translation>
+        <translation>بدون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7006"/>
         <source>Date+Time</source>
-        <translation>날짜+시간</translation>
+        <translation>التاريخ + الوقت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7009"/>
         <source>Date</source>
-        <translation>날짜</translation>
+        <translation>التاريخ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7012"/>
         <source>Time</source>
-        <translation>시간</translation>
+        <translation>الوقت</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7015"/>
         <source>Date+Time+OSM</source>
-        <translation>날짜+시간+OSM</translation>
+        <translation>التاريخ + الوقت + س ع خ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7018"/>
         <source>Date+OSM</source>
-        <translation>날짜+OSM</translation>
+        <translation>التاريخ + السرعة على الخريطة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7021"/>
         <source>Time+OSM</source>
-        <translation>시간+OSM</translation>
+        <translation>الوقت + السرعة على الخريطة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7024"/>
         <source>OSM</source>
-        <translation>OSM</translation>
+        <translation>السرعة على الخريطة</translation>
     </message>
 </context>
 <context>
@@ -3058,17 +3058,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7029"/>
         <source>+ value to move car to left, - value to move car to right on each lane.</source>
-        <translation>+값은차를 왼쪽으로 이동, -값은 오른쪽으로 이동.</translation>
+        <translation>+ قيمة لنقل السيارة إلى اليسار ، - قيمة لنقل السيارة إلى اليمين في كل حارة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7032"/>
         <source>LeftEdge: </source>
-        <translation>좌측엣지: </translation>
+        <translation>الحافة اليسرى: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7059"/>
         <source>RightEdge: </source>
-        <translation>우측엣지: </translation>
+        <translation>الحافة اليمنى: </translation>
     </message>
 </context>
 <context>
@@ -3076,12 +3076,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7159"/>
         <source>MaxAngle: </source>
-        <translation>MaxAngle: </translation>
+        <translation>أقصى زاوية: </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7186"/>
         <source>MaxFrame: </source>
-        <translation>MaxFrame: </translation>
+        <translation>أقصى إطار: </translation>
     </message>
 </context>
 <context>
@@ -3089,7 +3089,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7354"/>
         <source>AnimatedRPM Max</source>
-        <translation>RPM 애니메이션 최대값</translation>
+        <translation>عرض أقصى دوران للمحرك</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="7354"/>

@@ -2469,12 +2469,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5599"/>
         <source>LiveSR Adjust(%)</source>
-        <translation>라이브SR 조정(%)</translation>
+        <translation>ضبط LiveSR (٪)(%)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5599"/>
         <source>When using LiveSR, the learned value is arbitrarily adjusted (%) and used. -Value:Lower from learned value, +Value:Lower from learned value</source>
-        <translation>LiveSR을 사용할 때 학습된 값을 임의로 조정(%)하여 사용합니다. -값:학습된 값에서 낮춤, + 값:학습된 값에서 높임</translation>
+        <translation>عند استخدام LiveSR ، يتم ضبط القيمة التي تم تعلمها عشوائيًا (٪) واستخدامها. - القيمة: أقل من القيمة المكتسبة ، + القيمة: أقل من القيمة المكتسبة</translation>
     </message>
 </context>
 <context>
@@ -2482,12 +2482,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5663"/>
         <source>VisionCurvDecel([CV] [TargetSpeed])</source>
-        <translation>비전커브감속([CV] [목표속도])</translation>
+        <translation>التباطؤ عن رؤية المنحنى  ([CV] [السرعة المستهدفة])</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5663"/>
         <source>Adjust the curve deceleration speed according to the model speed(curvature). (interpolation and list value)</source>
-        <translation>모델 속도(곡률)에 따라 곡선 감속 속도를 조정합니다. (기준 및 목록 값)</translation>
+        <translation>اضبط سرعة تباطؤ المنحنى وفقًا لسرعة النموذج (الانحناء). (الاستيفاء وقائمة القيمة)</translation>
     </message>
 </context>
 <context>
@@ -2495,27 +2495,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5698"/>
         <source>Set CV values with comma</source>
-        <translation>CV 값 설정</translation>
+        <translation>قم بتعيين قيم السيرة الذاتية بكوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5698"/>
         <source>Values are kph or mph</source>
-        <translation>곡률(CV)값 입니다</translation>
+        <translation>القيم كم / س أو ميل / س</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5708"/>
         <source>Set TS values with comma</source>
-        <translation>TS(목표속도) 값 설정</translation>
+        <translation>ضبط قيمة TS (السرعة المستهدفة)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5719"/>
         <source>Index count does not match. Check your input again.</source>
-        <translation>인덱스 수가 일치하지 않습니다. 입력한 내용을 다시 확인하십시오.</translation>
+        <translation>عدد الفهرس غير متطابق. تحقق من المدخلات الخاصة بك مرة أخرى.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5730"/>
         <source>EDIT</source>
-        <translation>변경</translation>
+        <translation>تحرير</translation>
     </message>
 </context>
 <context>
@@ -2523,12 +2523,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5733"/>
         <source>OSMCurvDecel([TSL] [TargetSpeed])</source>
-        <translation>OSM커브감속([TSL] [목표속도])</translation>
+        <translation>سرعة الشارع على الخريطة للتباطؤ على المنحنى ([TSL] [السرعة المستهدفة])</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5733"/>
         <source>Adjust the curve deceleration speed according to turn speed limit of OSM. (interpolation value)</source>
-        <translation>OSM의 커브 속도 제한에 따라 커브 감속 속도를 조절합니다.(보간값)</translation>
+        <translation>اضبط سرعة تباطؤ المنحنى وفقًا لحد سرعة الدوران لسرعة الشراع على الخريطة.</translation>
     </message>
 </context>
 <context>
@@ -2536,27 +2536,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5768"/>
         <source>Set TSL values with comma</source>
-        <translation>TSL 값 설정</translation>
+        <translation>قم بتعيين قيمة TSL</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5768"/>
         <source>Valus are TSL</source>
-        <translation>값은 OSM의 TurnSpeedLimit입니다</translation>
+        <translation>القيمة هي الحد الأقصى لسرعة الشارع على الخريطة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5778"/>
         <source>Set TS values with comma</source>
-        <translation>TS(목표속도) 값 설정</translation>
+        <translation>قم بتعيين قيم TS بكوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5789"/>
         <source>Index count does not match. Check your input again.</source>
-        <translation>인덱스 수가 일치하지 않습니다. 입력한 내용을 다시 확인하십시오.</translation>
+        <translation>عدد الفهارس غير متطابق. الرجاء إعادة التحقق مما أدخلته.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5800"/>
         <source>EDIT</source>
-        <translation>변경</translation>
+        <translation>تحرير</translation>
     </message>
 </context>
 <context>
@@ -2564,27 +2564,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5803"/>
         <source>EON Detach Alert Sound</source>
-        <translation>장치 분리 알림음</translation>
+        <translation>صوت التنبيه في الأيون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5803"/>
         <source>Device alert you a alarm to detach the EON when ignition off.(NO Alert/KOR/ENG)</source>
-        <translation>시동이 꺼지면 장치를 분리하도록 알림을 보냅니다.(없음/한국어/영어)</translation>
+        <translation>يقوم الجهاز بتنبيهك بإنذار لفصل الأيون عند إيقاف تشغيل الإشعال (لا يوجد تنبيه / كوري / إنجليزي)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5861"/>
         <source>None</source>
-        <translation>없음</translation>
+        <translation>بدون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5863"/>
         <source>KOR</source>
-        <translation>한국어</translation>
+        <translation>كوري</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5865"/>
         <source>ENG</source>
-        <translation>영어</translation>
+        <translation>انجليزي</translation>
     </message>
 </context>
 <context>
@@ -2592,27 +2592,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5869"/>
         <source>Navigation Select</source>
-        <translation>네비게이션 선택</translation>
+        <translation>تحديد الملاحة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5869"/>
         <source>Select the navigation you want to use.(Mappy/Waze/None)</source>
-        <translation>사용할 네비게이션을 선택합니다.(맵피/웨이즈/없음)</translation>
+        <translation>حدد برنامج الملاحة الذي تريد استخدامه. (موبي / ويز / بدون)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5927"/>
         <source>Mappy</source>
-        <translation>맵피</translation>
+        <translation>موبي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5929"/>
         <source>Waze</source>
-        <translation>웨이즈</translation>
+        <translation>ويز</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5931"/>
         <source>None</source>
-        <translation>없음</translation>
+        <translation>بدون</translation>
     </message>
 </context>
 <context>
@@ -2620,37 +2620,37 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5935"/>
         <source>API Server</source>
-        <translation>서버 API</translation>
+        <translation>خادم API</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5935"/>
         <source>Set API server to Retropilot/Comma/User&apos;s</source>
-        <translation>API 서버를 레트로파일럿/Comma/사용자로 설정</translation>
+        <translation>اضبط خادم واجهة برمجية التطبيقات على القائد الآلي / كوما / المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5966"/>
         <source>Retropilot</source>
-        <translation>레트로파일럿</translation>
+        <translation>القائد الآلي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5967"/>
         <source>Comma</source>
-        <translation>Comma</translation>
+        <translation>كوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5968"/>
         <source>User&apos;s</source>
-        <translation>사용자</translation>
+        <translation>المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5976"/>
         <source>You&apos;ve chosen comma server. Your uploads might be ignored if you upload your data. I highly recommend you should reset the device to avoid be banned.</source>
-        <translation>콤마 서버를 선택했습니다. 공식장치를 사용하는 경우 장치가 블락되지 않도록 장치를 완전 초기화하고 콤마 순정 소프트웨어로 설치하는것을 강력히 권장합니다.</translation>
+        <translation>تم تحديد خادم كوما. إذا كنت تستخدم جهازًا رسميًا ، فيوصى بشدة بتهيئة الجهاز تمامًا وتثبيته باستخدام برنامج أصلي من الفاصلة لتجنب حظر الجهاز..</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="5981"/>
         <source>You&apos;ve chosen own server. Please set your api host at the menu below.</source>
-        <translation>자체 서버를 선택했습니다. 아래 메뉴에서 api 호스트를 설정하십시오.</translation>
+        <translation>اخترت الخادم الخاص بي. قم بتعيين مضيف API الخاص بك في القائمة أدناه.</translation>
     </message>
 </context>
 <context>
@@ -2658,24 +2658,24 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6067"/>
         <source>User&apos;s API</source>
-        <translation>사용자 API</translation>
+        <translation>واجهة برمجة تطبيقات المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6067"/>
         <source>Set Your API server URL or IP</source>
-        <translation>API 서버 URL 또는 IP 설정</translation>
+        <translation>قم بتعيين عنوان URL لخادم API أو IP</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6083"/>
         <location filename="../qt/widgets/opkr.cc" line="6116"/>
         <source>SET</source>
-        <translation>설정</translation>
+        <translation>تعيين</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6096"/>
         <location filename="../qt/widgets/opkr.cc" line="6114"/>
         <source>UNSET</source>
-        <translation>해제</translation>
+        <translation>عدم تعيين</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6084"/>

@@ -2680,22 +2680,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6084"/>
         <source>Input Your API(url or ip):</source>
-        <translation>API(url 또는 ip) 입력:</translation>
+        <translation>أدخل واجهة برمجة التطبيقات الخاصة بك (عنوان url أو ip):</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6086"/>
         <source>Your Input is</source>
-        <translation>입력 내용</translation>
+        <translation>المدخلات الخاصة بك هي</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6086"/>
         <source>Press OK to apply and reboot</source>
-        <translation>적용하려면 [확인]을 누르십시오</translation>
+        <translation>انقر فوق [موافق] للتطبيق</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6097"/>
         <source>Do you want to unset? the API server gets back to Retropilot server and Device will be rebooted now.</source>
-        <translation>설정을 해제하시겠습니까? API 서버가 레트로파일럿 서버로 바뀌며 장치가 지금 재부팅됩니다.</translation>
+        <translation>هل أنت متأكد أنك تريد إيقاف تشغيله؟ يتم تحويل خادم واجهة برمجة التطبيقات إلى القائد الآلي خلفي وسيتم إعادة تشغيل الجهاز الآن.</translation>
     </message>
 </context>
 <context>
@@ -2703,17 +2703,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6120"/>
         <source>Mapbox Style</source>
-        <translation>맵박스 스타일</translation>
+        <translation>نمط الخريطة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6120"/>
         <source>Set the Mapbox sytle to Comma/OPKR/User&apos;s</source>
-        <translation>Mapbox 시스템을 Comma/OPKR/사용자로 설정</translation>
+        <translation>Mapbox النظام Comma/OPKR/تعيين كمستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6151"/>
         <source>Comma</source>
-        <translation>Comma</translation>
+        <translation>كوما</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6152"/>
@@ -2723,12 +2723,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6153"/>
         <source>User&apos;s</source>
-        <translation>사용자</translation>
+        <translation>المستخدم</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6165"/>
         <source>You&apos;ve chosen own style. Please set your mapbox style to the param (MapboxStyleCustom). File location: /data/params/d/MapboxStyleCustom</source>
-        <translation>자신만의 스타일을 선택하셨습니다. 파라미터(MapboxStyleCustom)에 본인의 스타일값을 입력하세요. 파일 위치: /data/params/d/MapboxStyleCustom</translation>
+        <translation>لقد اخترت طريقتك الخاصة. أدخل قيمة النمط الخاص بك في المعلمة (MapboxStyleCustom). مكان الملف: /data/params/d/MapboxStyleCustom</translation>
     </message>
 </context>
 <context>
@@ -2736,12 +2736,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6251"/>
         <source>RES Count at Standstill</source>
-        <translation>정지상태에서 RES 횟수</translation>
+        <translation>الاستعادة في حالة توقف تام</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6251"/>
         <source>Comma Default: 25, this value cannot be acceptable at some cars. So adjust the number if you want to. It generates RES CAN messages when leadcar is moving. If departure is failed, increase the number. In opposite, if CAN error occurs, decrease the number.</source>
-        <translation>콤마 기본값: 25, 일부 차량에서는 이 값이 작동하지 않을 수 있습니다. 숫자를 조정하여 해당 기능이 작동되도록 하십시오. 선행차가 움직일 때 RES버튼의 CAN 메시지를 보냅니다. 출발에 실패하면 횟수를 늘립니다. 반대로 CAN 오류가 발생하면 숫자를 줄이십시오.</translation>
+        <translation>الفاصلة الافتراضية: 25 ، قد لا تعمل هذه القيمة في بعض المركبات. اضبط الأرقام لجعل هذه الميزة تعمل. عندما تتحرك السيارة السابقة ، يتم إرسال رسالة الكان لزر الاستعادة. إذا لم تنجح البداية ، فقم بزيادة عدد الممثلين. على العكس من ذلك ، إذا تلقيت خطأ الكان ، فقم بتقليل الرقم.</translation>
     </message>
 </context>
 <context>
@@ -2749,22 +2749,22 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6310"/>
         <source>SafetyCam SignType</source>
-        <translation>안전구간 표지판 유형</translation>
+        <translation>نوع لوحة الأمان المرورية</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6310"/>
         <source>Select SafetyCam SignType (Circle/Rectangle)</source>
-        <translation>안전구간표지판 타입(원/사각) 선택</translation>
+        <translation>حدد نوع إشارة لوحة الأمان (دائرة / مستطيل)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6368"/>
         <source>Circle</source>
-        <translation>원형</translation>
+        <translation>دائرة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6370"/>
         <source>Rectangle</source>
-        <translation>사각</translation>
+        <translation>مستطيل</translation>
     </message>
 </context>
 <context>
@@ -2772,32 +2772,32 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6374"/>
         <source>Long Mode</source>
-        <translation>롱 모드</translation>
+        <translation>الوضع الطويل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6374"/>
         <source>Vision Only, Vision+Radar, Radar Only, OPKR Custom</source>
-        <translation>비전전용, 비전+레이더, 레이더전용, OPKR 커스텀</translation>
+        <translation>الرؤية فقط ، الرؤية + الرادار ، الرادار فقط ،خيارات مخصصة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6432"/>
         <source>Vision Only</source>
-        <translation>비전전용</translation>
+        <translation>الرؤية فقط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6434"/>
         <source>Vision+Radar</source>
-        <translation>비전+레이더</translation>
+        <translation>رؤية + رادار</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6436"/>
         <source>Radar Only</source>
-        <translation>레이더전용</translation>
+        <translation>الردار فقط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6438"/>
         <source>OPKR Custom</source>
-        <translation>OPKR 커스텀</translation>
+        <translation>خيارات مخصصة</translation>
     </message>
 </context>
 <context>
@@ -2805,32 +2805,32 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6442"/>
         <source>Curv Decel Option</source>
-        <translation>커브 감속 옵션</translation>
+        <translation>خيار التباطؤ على المنحنى</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6442"/>
         <source>None, Vision+OSM, Vision Only, OSM Only</source>
-        <translation>미사용, 비전+OSM, 비전전용, OSM전용</translation>
+        <translation>بدون, الرؤية+س ع , الرؤية فقط, س ع خ </translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6500"/>
         <source>None</source>
-        <translation>미사용</translation>
+        <translation>بدون</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6502"/>
         <source>Vision+OSM</source>
-        <translation>비전+OSM</translation>
+        <translation>الرؤية+س ع خ</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6504"/>
         <source>Vision Only</source>
-        <translation>비전전용</translation>
+        <translation>الرؤية فقط</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6506"/>
         <source>OSM Only</source>
-        <translation>OSM전용</translation>
+        <translation>س ع خ فقط</translation>
     </message>
 </context>
 <context>
@@ -2838,17 +2838,17 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6510"/>
         <source>AutoRES Delay(sec)</source>
-        <translation>자동RES 지연(초)</translation>
+        <translation>تأخير المتابعة التلقائية (ثانية)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6510"/>
         <source>Give delay time to trigger for AutoRES while driving.</source>
-        <translation>주행 중 자동RES를 실행할 때 지연 시간을 줍니다.</translation>
+        <translation>امنح وقت التأخير لتشغيل المتابعة التلقائية أثناء القيادة.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6566"/>
         <source>No Delay</source>
-        <translation>지연없음</translation>
+        <translation>لا تأخير</translation>
     </message>
 </context>
 <context>
@@ -2856,12 +2856,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6574"/>
         <source>OSMCustomSpeedLimit([SL] [TargetSpeed])</source>
-        <translation>OSM임의속도제한([SL] [목표속도])</translation>
+        <translation>حد السرعة المخصص س ع خ ([SL] [السرعة المستهدفة])</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6574"/>
         <source>Set the offset speed according to speed limit of OSM. (interpolation value)</source>
-        <translation>OSM의 제한속도에 따른 오프셋 속도를 설정합니다.(중간값은 보간값)</translation>
+        <translation>اضبط سرعة الإزاحة وفقًا لحد السرعة في س ع خ. (قيمة الاستيفاء)</translation>
     </message>
 </context>
 <context>
@@ -2869,27 +2869,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6609"/>
         <source>Set SL values with comma</source>
-        <translation>SL 값 설정</translation>
+        <translation>قم بتعيين قيم SL</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6609"/>
         <source>Values are kph or mph</source>
-        <translation>SpeedLimit값 설정(kph or mph)</translation>
+        <translation>القيم كم / س أو ميل / س</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6619"/>
         <source>Set CTSL values with comma</source>
-        <translation>커스텀SL 값 설정</translation>
+        <translation>قم بتعيين قيم CTSL</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6630"/>
         <source>Index count does not match. Check your input again.</source>
-        <translation>인덱스 수가 일치하지 않습니다. 입력한 내용을 다시 확인하십시오.</translation>
+        <translation>عدد الفهارس غير متطابق. الرجاء إعادة التحقق مما أدخلته.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6641"/>
         <source>EDIT</source>
-        <translation>변경</translation>
+        <translation>تحرير</translation>
     </message>
 </context>
 <context>
@@ -2897,12 +2897,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6644"/>
         <source>DesiredCurvatureLimit</source>
-        <translation>DesiredCurvatureLimit</translation>
+        <translation>حد الانحناء المرغوب</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6644"/>
         <source>Adjust DisiredCurvatureLimit, Default is 0.05(DT_MDL), For HKG, maybe 0.2 is preferred from user&apos;s experience. If the steering digs into inside on intersection, upper the value. And then it will limit your scope of steering angle. In case of opposite situation, lower the value. this is multiplier of desired curvature rate not real limit value.</source>
-        <translation>DisiredCurvatureLimit 조정합니다. 기본값은 0.05(DT_MDL)입니다. HKG의 경우 사용자의 경험에 의해 0.2가 선호됩니다. 스티어링이 교차로에서 안쪽으로 파고들면 값을 높입니다. 그러면 스티어링 각도의 범위가 제한될 것입니다. 반대의 경우 값을 낮춥니다. 이것은 실제 제한값이 아닌 원하는 곡률 속도의 승수입니다.</translation>
+        <translation>ضبط حد الانحناء المحدد. الافتراضي هو 0.05 (DT_MDL). بالنسبة لـ HKG ، يفضل 0.2 من خلال تجربة المستخدم. قم بزيادة القيمة عندما يحفر التوجيه للداخل عند التقاطع. سيحد هذا من نطاق زوايا التوجيه. في الحالة المعاكسة ، اخفض القيمة. هذا هو مضاعف معدل الانحناء المطلوب ، وليس حدًا فعليًا.</translation>
     </message>
 </context>
 <context>
@@ -2910,12 +2910,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6742"/>
         <source>DynamicTR: [Speed] [TRs]</source>
-        <translation>다이나믹TR: [속도] [TRs]</translation>
+        <translation>ديناميكي: [السرعة] [TRs]</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6742"/>
         <source>Set TR of each speeds. (Mid range is interpolation values)</source>
-        <translation>각 속도의 TR을 설정합니다. (중간 범위는 보간값입니다.)</translation>
+        <translation>ضبط TR لكل سرعات. (المدى المتوسط هو قيم الاستيفاء)</translation>
     </message>
 </context>
 <context>
@@ -2923,27 +2923,27 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6777"/>
         <source>Set Speed values with comma</source>
-        <translation>속도 값 설정</translation>
+        <translation>ضبط قيمة السرعة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6777"/>
         <source>Values are kph or mph</source>
-        <translation>값은 kph 혹은 mph 입니다.</translation>
+        <translation>القيم كم / س أو ميل / س.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6787"/>
         <source>Set TR values with comma</source>
-        <translation>TR 값 설정</translation>
+        <translation>قم بتعيين قيمة TR</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6798"/>
         <source>Index count does not match. Check your input again.</source>
-        <translation>인덱스 수가 일치하지 않습니다. 입력한 내용을 다시 확인하십시오.</translation>
+        <translation>عدد الفهارس غير متطابق. الرجاء إعادة التحقق مما أدخلته.</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6809"/>
         <source>EDIT</source>
-        <translation>변경</translation>
+        <translation>تحرير</translation>
     </message>
 </context>
 <context>
@@ -2951,12 +2951,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6812"/>
         <source>Set LaneWidth</source>
-        <translation>차선 폭 설정(m)</translation>
+        <translation>إعداد عرض الممر (م)</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6812"/>
         <source>Set LaneWidth (default:3.7)</source>
-        <translation>차선 폭 설정(기본값: 3.7m)</translation>
+        <translation>ضبط عرض الممر (الافتراضي: 3.7 م)</translation>
     </message>
 </context>
 <context>
@@ -2964,12 +2964,12 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6875"/>
         <source>Speed LaneWidth: [Spd(m/s)] [LaneWidth]</source>
-        <translation>스피드 차선폭: [속도(m/s)] [차선폭]</translation>
+        <translation>عرض حارة السرعة: [السرعة (م / ث)] [عرض الحارة]</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="6875"/>
         <source>Set LaneWidths by speed. Speed is m/s values not kph or mph. (Mid range is interpolation values)</source>
-        <translation>속도를 기준으로 차선 폭을 설정합니다. 속도는 kph 또는 mph가 아닌 m/s 값입니다(중간 범위는 보간 값입니다)</translation>
+        <translation>اضبط عرض الممر على أساس السرعة. السرعة هي قيمة م / ث ، وليس كم / س أو ميل / س (النطاق الأوسط هو قيمة الاستيفاء)</translation>
     </message>
 </context>
 <context>

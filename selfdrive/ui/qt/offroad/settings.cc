@@ -295,7 +295,7 @@ SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
   osVersionLbl = new LabelControl(tr("إصدار نظام التشغيل"));
   versionLbl = new LabelControl(tr("فرع"));
   lastUpdateLbl = new LabelControl(tr("التحقق من آخر تحديث"), "", "");
-  updateBtn = new ButtonControl(tr("Check for Updates"), "");
+  updateBtn = new ButtonControl(tr("تحقق من وجود تحديثات"), "");
   connect(updateBtn, &ButtonControl::clicked, [=]() {
     if (params.getBool("IsOffroad")) {
       fs_watch->addPath(QString::fromStdString(params.getParamPath("LastUpdateTime")));

@@ -265,7 +265,7 @@
     <message>
         <location filename="../qt/widgets/prime.cc" line="42"/>
         <source>Error getting serial: contact support</source>
-        <translation>시리얼번호 조회 실패: 고객센터에 문의하세요</translation>
+        <translation>فشل البحث عن الرقم التسلسلي: اتصل بخدمة العملاء</translation>
     </message>
 </context>
 <context>
@@ -533,7 +533,7 @@
     <message>
         <location filename="../qt/offroad/settings.cc" line="195"/>
         <source>Refresh</source>
-        <translation>리프레시</translation>
+        <translation>تحديث</translation>
     </message>
     <message>
         <location filename="../qt/offroad/settings.cc" line="200"/>
@@ -2119,7 +2119,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3512"/>
         <source>The value cannot exceed SteerMax</source>
-        <translation>값은 SteerMax لا يمكن أن تتجاوز القيمة</translation>
+        <translation>القيمة SteerMax لا يمكن أن تتجاوز القيمة</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="3529"/>

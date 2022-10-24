@@ -100,9 +100,9 @@ void Sidebar::updateState(const UIState &s) {
   ItemStatus tempStatus = {{tr("الحرارة"), tr("ساخن")}, danger_color};
   auto ts = deviceState.getThermalStatus();
   if (ts == cereal::DeviceState::ThermalStatus::GREEN) {
-    tempStatus = {{tr("الحرارة"), tr("مرتفع")}, good_color};
+    tempStatus = {{tr("الحرارة"), tr("جيد")}, good_color};
   } else if (ts == cereal::DeviceState::ThermalStatus::YELLOW) {
-    tempStatus = {{tr("الحرارة"), tr("جيد")}, warning_color};
+    tempStatus = {{tr("الحرارة"), tr("مرتفع")}, warning_color};
   }
   setProperty("tempStatus", QVariant::fromValue(tempStatus));
 

@@ -1881,7 +1881,7 @@
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2419"/>
         <source>RelBrake</source>
-        <translation>브레이크해제시</translation>
+        <translation>عندما يتم تحرير الفرامل</translation>
     </message>
     <message>
         <location filename="../qt/widgets/opkr.cc" line="2421"/>
@@ -3418,24 +3418,24 @@
     <name>DebugUiOneToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="361"/>
-        <source>واجهة المستخدم 1</source>
-        <translation>디버그 보기 1</translation>
+        <source>DEBUG UI 1</source>
+        <translation>واجهة المستخدم 1</translation>
     </message>
 </context>
 <context>
     <name>DebugUiTwoToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="378"/>
-        <source>واجهة المستخدم 2</source>
-        <translation>디버그 보기 2</translation>
+        <source>DEBUG UI 2</source>
+        <translation>واجهة المستخدم 2</translation>
     </message>
 </context>
 <context>
     <name>DebugUiThreeToggle</name>
     <message>
         <location filename="../qt/widgets/opkr.h" line="395"/>
-        <source>واجهة المستخدم 3</source>
-        <translation>디버그 보기 3</translation>
+        <source>DEBUG UI 3</source>
+        <translation>واجهة المستخدم 3</translation>
     </message>
 </context>
 <context>

@@ -308,7 +308,7 @@ SoftwarePanel::SoftwarePanel(QWidget* parent) : ListWidget(parent) {
     QString commit_local = QString::fromStdString(Params().get("GitCommit").substr(0, 10));
     QString commit_remote = QString::fromStdString(Params().get("GitCommitRemote").substr(0, 10));
     QString empty = "";
-    desc += tr("محلي:٪ 1 وحدة تحكم عن بعد:٪ 2٪ 3٪ 4 ").arg(commit_local, commit_remote, empty, empty);
+    desc += tr("النظام لا يحتاج إلى تحديث").arg(commit_local, commit_remote, empty, empty);
     
     if (!last_ping.length()) {
       desc += tr("اتصال الشبكة مفقود أو غير مستقر. تحقق من الاتصال.");

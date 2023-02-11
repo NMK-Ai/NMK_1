@@ -23,7 +23,7 @@ class DRIVER_MONITOR_SETTINGS():
     self.EnableDriverMonitoring = Params().get_bool("OpkrEnableDriverMonitoring")
 
     self._DT_DMON = DT_DMON
-    self._AWARENESS_TIME = 30000. # passive wheeltouch total timeout
+    self._AWARENESS_TIME = 300. # passive wheeltouch total timeout
     self._AWARENESS_PRE_TIME_TILL_TERMINAL = 12.
     self._AWARENESS_PROMPT_TIME_TILL_TERMINAL = 6.
     self._DISTRACTED_TIME = 11. if self.EnableDriverMonitoring else 30000. # active monitoring total timeout
